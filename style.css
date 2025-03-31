@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Pretendard-Regular", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+  height: 70px;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+}
+
+header img {
+  height: 51px;
+  cursor: pointer;
+}
+
+.nav-content {
+  width: 1120px;
+  margin: 0px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-button {
+  background-color: #3692ff;
+  width: 128px;
+  height: 48px;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero {
+  height: 540px;
+  background-color: #cfe5ff;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero-content {
+  width: 1120px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+}
+
+.hero-button {
+  height: 56px;
+  padding: 16px 124px;
+  background-color: #3692ff;
+  color: #fff;
+  border: 0;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.hero img {
+  height: 340px;
+}
+
+.card-section {
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 444px;
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  border-radius: 12px;
+  padding: 0px 12px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.card-content-rev {
+  display: flex;
+  text-align: end;
+  flex-direction: column;
+  margin-left: 24px;
+}
+
+.card span {
+  color: #3692ff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.card h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  letter-spacing: 2%;
+  margin: 0;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cfe5ff;
+}
+
+.footer-content {
+  width: 1120px;
+  height: 540px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 69px;
+}
+
+.footer-content h1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  margin: 0;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  background-color: #111827;
+  height: 160px;
+  padding: 32px 0px;
+}
+
+.footer-info-content {
+  width: 1120px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  color: #9ca3af;
+}
+
+.footer-menu {
+  color: #fff;
+  display: flex;
+  gap: 30px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social img {
+  cursor: pointer;
+}
