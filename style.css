@@ -56,8 +56,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-grow: 1;
-    
     height: 51px;
+
     height: 3.1875rem;
 }
 .logo{
@@ -98,7 +98,6 @@ section.main-img-area{
 
     height: 33.75rem;
 }
-
 article.main-img-wrap{
     padding-top: 200px;  /*아랫단 맞추기*/
     display: flex;
@@ -119,7 +118,6 @@ article.main-img-wrap div.main-text{
     padding-bottom:3.75rem;
     gap:2rem;
 }
-
 article.main-img-wrap>div h2{
     font-size: 40px;
     font-weight: 700;
@@ -127,7 +125,6 @@ article.main-img-wrap>div h2{
 
     font-size: 2.5rem;
 }
-
 article.main-img-wrap>div button{
     background-color: #3692FF;
     border-radius: 40px;
@@ -142,7 +139,6 @@ article.main-img-wrap>div button{
 article.main-img-wrap>div button:hover{
     background-color: #1251AA;
 }
-
 article.main-img-wrap>div button span{
     display: inline-block;
     height: 32px;
@@ -249,7 +245,6 @@ main section article>div>span{     /* 각 영역의 파란색 글씨들(Hot item
     /* 540-397 */
     padding-top: 143px;
 
-
     height: 33.75rem;
     margin-top: 8.625rem;
     padding-top: 8.9375rem;
@@ -330,7 +325,7 @@ footer{
     height: 1.25rem;
 }
 
-@media screen and (min-width: 1920px) { /*1920 이상일 때 16px고정*/
+@media screen and (min-width: 1920px) { /*1920 이상일 때 root font-size:16px고정*/
     html{
         font-size: 16px;
     }
