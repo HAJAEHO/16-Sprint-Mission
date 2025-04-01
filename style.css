@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Pretendard, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;   
+
+}
+
+header {
+  background-color: #ffffff;
+  border-style: 1px solid #DFDFDF;
+  width: 1920px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-contents {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login {
+  background-color: #3692FF;
+  color: #ffffff;
+  width: 128px;
+  height: 48px;
+  padding: 12px 23px;
+  gap: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main section {
+  background-color: #ffffff;
+  width: 1920px;
+  height: auto;
+  padding: 138px 466px;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  background-color: #CFE5FF;
+  width: auto;
+  height: 540px;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.panda {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.panda.bottom {
+  align-items: center;
+  gap: 69px;
+}
+
+
+.panda.description {
+  padding-bottom: 60px;
+  gap: 32px;
+}
+
+.looking {
+  background-color: #3692FF;
+  color: #F9FAFB;
+  height: 56px;
+  border-radius: 40px;
+  padding: 14px 124px;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+section .contents {
+  background-color: #FCFCFC;
+  width: 988px;
+  height: auto;
+  max-height: 444px;
+  border-radius: 12px;
+  gap: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents > img {
+  height: 100%;
+}
+
+.contents .content {
+  padding-right: 24px;
+  gap: 12px;
+}
+
+.content .title {
+  color: #3692FF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.content .description {
+  color: #374151;
+  gap: 24px;
+}
+
+.content.left {
+  text-align: right;
+  padding-left: 24px;
+  padding-right: 0;
+}
+
+.description h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.description p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+footer {
+  background-color: #111827;
+  width: 1920px;
+  height: 160px;
+  padding: 32px 400px;
+  gap: 10px;
+}
+
+.footer-info {
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.footer-page {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  gap: 12px;
+}
