@@ -65,7 +65,7 @@
 }
 
 /* header */
-.header {
+#header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,57 +73,57 @@
   background: var(--white);
   padding: 0 200px;
 }
-.header .inner {
+#header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: auto;
   flex: 1;
 }
-.header .logo a {
+#header .logo a {
   display: block;
   width: 153px;
 }
 
 /* footer */
-.footer {
+#footer {
   padding: 32px 0 108px;
   background: var(--footer-bg);
 }
-.footer .inner {
+#footer .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footer .copy {
+#footer .copy {
   color: #9ca3af;
 }
-.footer .foot_link ul {
+#footer .foot_link ul {
   display: flex;
   align-items: center;
 }
-.footer .foot_link ul a {
+#footer .foot_link ul a {
   display: block;
   padding: 0 15px;
   color: #e5e7eb;
 }
-.footer .sns_link ul {
+#footer .sns_link ul {
   display: flex;
   align-items: center;
 }
-.footer .sns_link ul a {
+#footer .sns_link ul a {
   display: block;
   padding: 0 6px;
 }
 
 @media screen and (max-width: 1200px) {
-  .header {
+  #header {
     padding: 0 50px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .header {
+  #header {
     padding: 0 16px;
   }
 }
@@ -138,22 +138,22 @@
     height: 48px;
     font-size: 18px;
   }
-  .footer {
+  #footer {
     padding: 32px 0 65px;
   }
-  .footer .inner {
+  #footer .inner {
     position: relative;
     align-items: flex-start;
     flex-direction: column-reverse;
     gap: 25px;
   }
-  .footer .foot_link ul {
+  #footer .foot_link ul {
     gap: 30px;
   }
-  .footer .foot_link ul a {
+  #footer .foot_link ul a {
     padding: 0;
   }
-  .footer .sns_link {
+  #footer .sns_link {
     position: absolute;
     top: 0;
     right: 0;
