@@ -66,18 +66,19 @@
 
 /* header */
 .header {
-  /* position: sticky;
-  top: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
   height: 70px;
   background: #fff;
+  padding: 0 200px;
 }
 .header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: auto;
+  flex: 1;
 }
 .header .logo a {
   display: block;
@@ -116,8 +117,14 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .header .inner {
-    width: calc(100% - 32px);
+  .header {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 16px;
   }
 }
 
