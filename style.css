@@ -14,8 +14,9 @@ body {
 
 header {
   background-color: #ffffff;
-  border-style: 1px solid #DFDFDF;
-  width: 1920px;
+  border: 1px solid #DFDFDF;
+  width: 100%;
+  min-width: 1920px;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -23,10 +24,28 @@ header {
 }
 
 .header-contents {
-  width: 1120px;
+  width: 100%;
+  max-width: 1120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo a {
+  color: #3692FF;
+  font-family: 'ROKAF Sans';
+  font-size: 25.63px;
+  font-weight: 700;
+  line-height: 100%;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .login {
@@ -48,9 +67,10 @@ header {
 
 main section {
   background-color: #ffffff;
-  width: 1920px;
+  width: 100%;
+  min-width: 1920px;
   height: auto;
-  padding: 138px 466px;
+  padding: 80px 10%;
   gap: 10px;
   display: flex;
   justify-content: center;
@@ -59,7 +79,8 @@ main section {
 
 .blue {
   background-color: #CFE5FF;
-  width: auto;
+  width: 100%;
+  min-width: 1920px;
   height: 540px;
   top: 70px;
   display: flex;
@@ -102,6 +123,7 @@ main section {
 
 section .contents {
   background-color: #FCFCFC;
+  position: relative;
   width: 988px;
   height: auto;
   max-height: 444px;
@@ -117,6 +139,7 @@ section .contents {
 }
 
 .contents .content {
+  position: relative;
   padding-right: 24px;
   gap: 12px;
 }
@@ -153,15 +176,19 @@ section .contents {
 
 footer {
   background-color: #111827;
-  width: 1920px;
+  width: 100%;
+  min-width: 1920px;
   height: 160px;
   padding: 32px 400px;
   gap: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-info {
   color: #ffffff;
   width: 100%;
+  max-width: 1120px;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
