@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "variables.css";
 @import "common.css";
 
 /* ====== main ====== */
@@ -12,7 +13,7 @@
 
 /* main_visual_sec */
 .main .main_visual_sec {
-  background: #cfe5ff;
+  background: var(--main-banner-bg);
 }
 .main .main_visual_sec .inner {
   display: flex;
@@ -30,7 +31,7 @@
 
 /* service_sec */
 .main .service_sec {
-  background: #fff;
+  background: var(--white);
 }
 .main .service_article {
   padding: 138px 0;
@@ -50,7 +51,7 @@
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 700;
-  color: #3692ff;
+  color: var(--service-cat-color);
 }
 .main .service_cont .desc {
   margin-top: 24px;
@@ -76,7 +77,7 @@
 /* banner_sec */
 .main .banner_sec {
   margin-top: 138px;
-  background: #cfe5ff;
+  background: var(--main-banner-bg);
 }
 .main .banner_sec .inner {
   display: flex;
