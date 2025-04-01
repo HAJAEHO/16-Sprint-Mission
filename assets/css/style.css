@@ -158,21 +158,21 @@ ol {
   font-weight: 700;
 }
 
-/* visual_sec */
-.main .visual_sec {
+/* main_visual_sec */
+.main .main_visual_sec {
   background: #cfe5ff;
 }
-.main .visual_sec .inner {
+.main .main_visual_sec .inner {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   height: 540px;
 }
-.main .visual_sec .text_box {
+.main .main_visual_sec .text_box {
   padding-bottom: 100px;
   flex: 0 0 auto;
 }
-.main .visual_sec .text_box .btn {
+.main .main_visual_sec .text_box .btn {
   margin-top: 32px;
 }
 
@@ -254,7 +254,7 @@ ol {
   .main .main_title {
     font-size: 36px;
   }
-  .main .visual_sec .inner {
+  .main .main_visual_sec .inner {
     height: 400px;
   }
   .main .service_article {
@@ -285,11 +285,11 @@ ol {
   .main .main_title {
     font-size: 32px;
   }
-  .main .visual_sec .inner {
+  .main .main_visual_sec .inner {
     display: block;
     height: auto;
   }
-  .main .visual_sec .text_box {
+  .main .main_visual_sec .text_box {
     padding: 84px 0 210px;
     text-align: center;
   }
@@ -350,10 +350,10 @@ ol {
     top: 0;
     right: 0;
   }
-  .main .visual_sec .text_box {
+  .main .main_visual_sec .text_box {
     padding: 48px 0 132px;
   }
-  .main .visual_sec .text_box .btn {
+  .main .main_visual_sec .text_box .btn {
     margin-top: 18px;
   }
   .main .service_article {
