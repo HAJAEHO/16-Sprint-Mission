@@ -1,0 +1,346 @@
+@charset "UTF-8";  
+
+@font-face { /*Pretendard폰트*/
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    /* font-size: 16px; */
+    font-size: 0.83333333vw;
+    /*
+    => 가변 사이즈로
+       브라우저 너비 1920=> 100vw  
+      16/1920*100 =0.83333...
+    */
+}
+.w1120{
+   width: 1120px;
+   margin: 0 auto;
+   
+   width: 70rem;
+}
+.nav-side-margin{
+    /* 브라우저 크기 1920보다 작을 때 nav에만 적용할 클래스*/
+    margin: 0 auto;
+    width: 70rem;
+}
+
+body{
+    background-color: #CFE5FF;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.wrap{
+    background-color: #FCFCFC;
+    font-family: 'Pretendard-Regular', sans-serif;
+    color: #374151;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+/* Header */
+header{
+    height: 70px;
+    padding: 9px 0;
+
+    height: 4.375rem; 
+    padding: 0.5625rem 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    
+    height: 51px;
+    height: 3.1875rem;
+}
+.logo{
+    width: 153px;
+    display: inline-block;
+  
+    width: 9.5625rem;
+}
+.login-btn{
+    display: inline-block;
+    padding: 12px 23px;
+    background-color: #3692FF;
+    color: #fff;
+    border-radius: 8px;
+    height: 48px;
+    width: 128px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    font-size: 16px;
+
+    padding: 0.75rem 1.4375rem; 
+    height: 3rem;
+    width: 8rem; 
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+.login-btn:hover{
+    background-color: #1251AA;
+}
+
+
+
+/* Main */
+section.main-img-area{
+    background-color:#CFE5FF ;
+    height: 540px;
+
+    height: 33.75rem;
+}
+
+article.main-img-wrap{
+    padding-top: 200px;  /*아랫단 맞추기*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+   padding-top: 12.5rem ;
+   gap: 0.4375rem;
+}
+article.main-img-wrap div.main-text{
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+
+    padding-bottom:3.75rem;
+    gap:2rem;
+}
+
+article.main-img-wrap>div h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+
+    font-size: 2.5rem;
+}
+
+article.main-img-wrap>div button{
+    background-color: #3692FF;
+    border-radius: 40px;
+    padding: 0 124px;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+
+    padding: 0 7.75rem;
+    height: 3.5rem;
+}
+article.main-img-wrap>div button:hover{
+    background-color: #1251AA;
+}
+
+article.main-img-wrap>div button span{
+    display: inline-block;
+    height: 32px;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #F9FAFB;
+
+    height: 2rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+.main-img{
+    width: 746px;
+    height: 340px;
+
+    width: 46.625rem;
+    height: 21.25rem;
+}
+
+
+/* hot-item */
+.hot-item, .search, .register{  /*각 영역 section 공통 설정*/
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    height: 45rem;
+}
+section>.contents{    /*각 영역 article 공통 설정*/
+    background-color: #FCFCFC;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 64px;
+    border-radius: 12px;
+    width: 988px;
+    padding:0 24px;
+
+    gap: 4rem;
+    width: 61.75rem;
+    padding: 0 1.5rem;
+}
+section>article img{
+    width: 579px;
+    height: 444px;
+
+    width: 36.1875rem;
+    height: 27.75rem;
+}
+main section article>div>span{     /* 각 영역의 파란색 글씨들(Hot item, Search, Register) */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #3692FF;
+
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+.contents>div> h2{  /* 각 영역의 굵은 글씨 */
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing:  0.02em;  /*2%*/
+
+    margin-top: 0.75rem;
+    font-size: 2.5rem;
+}
+.contents>div p{   /*각 영역의 설명(p태그)*/
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* search */
+.search-text{
+    text-align: right;
+}
+
+/*register*/
+.register .contents{
+    padding: 0; /*양 옆 패딩 없음*/
+}
+.register .contents img{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+/* ad */
+.ad-banner{
+    height: 540px;
+    background-color:#CFE5FF ;
+    /* 3608-3470 */
+    margin-top: 138px;
+    /* 540-397 */
+    padding-top: 143px;
+
+
+    height: 33.75rem;
+    margin-top: 8.625rem;
+    padding-top: 8.9375rem;
+}
+.ad-banner>div{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 69px;
+
+    gap: 4.3125rem;
+}
+.ad-banner .ad-text{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    padding-bottom: 60px;
+
+    font-size: 2.5rem;
+    padding-bottom: 3.75rem;
+}
+
+.ad-banner img{
+    width: 746px;
+  
+    width: 46.625rem;
+}
+
+
+/* Footer */
+footer{
+    height: 160px;
+    background-color: #111827;
+    color: #fff;
+    padding: 32px 0;
+
+    height: 10rem;
+    padding: 2rem 0;
+}
+.footer-content{
+    height: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    height: 1.25rem;
+}
+.footer-content{
+    color: #9CA3AF;
+}
+.footer-content>div{
+    display: flex;
+    align-items: center;
+    flex-basis: 159px;
+    gap: 30px;
+
+    flex-basis: 9.9375rem;
+    gap: 1.875rem;
+}
+.footer-content>div a{
+    color: #E5E7EB;
+    display: inline-block;
+}
+
+.sns-list{
+    flex-basis: 116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-basis: 7.25rem;
+}
+.sns-list li img{
+    width: 20px;
+    height: 20px;
+
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+@media screen and (min-width: 1920px) { /*1920 이상일 때 16px고정*/
+    html{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1919px){ /*1920보다 작을 때 nav여백만 200px고정*/
+    .nav-side-margin{
+        margin: 0 200px;
+        width: auto;
+    }
+}
+
+
