@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* common */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Pretendard", sans-serif;
+  background: #fcfcfc;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  color: #374151;
+}
+
+.content {
+  padding-top: 4.375rem;
+}
+
+.inner {
+  width: 70rem;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4.375rem;
+  padding: 0 12.5rem;
+  z-index: 9;
+  background: #fff;
+  display: flex;
+}
+
+header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 70rem;
+  padding: 0.625rem 0;
+}
+
+header .logo {
+  width: 9.625rem;
+  height: 3.25rem;
+}
+
+header .login-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 3rem;
+  padding: 0.75rem 1.5rem;
+  background: #3692ff;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* section */
+section {
+  padding: 8.625rem 0;
+  background: #fff;
+}
+
+section .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 61.75rem;
+  gap: 4rem;
+  background: #fcfcfc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+section .inner img {
+  width: 36.25rem;
+  height: 27.75rem;
+}
+
+section .info .tagline {
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #3692ff;
+}
+
+section .info h2 {
+  margin-bottom: 1.5rem;
+}
+
+section .info p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #374151;
+}
+
+section:nth-of-type(2) {
+  text-align: right;
+}
+section:nth-of-type(2) .inner img {
+  order: 2;
+}
+
+section:last-of-type .inner {
+  justify-content: flex-start;
+}
+
+/* banner */
+.banner {
+  background: #cfe5ff;
+}
+
+.banner .inner {
+  height: 33.75rem;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.banner.top .inner {
+  background-image: url("images/Img_home_top.png");
+  background-size: 46.625rem 21.25rem;
+}
+
+.banner.bottom {
+  margin-top: 8.625rem;
+}
+
+.banner.bottom .inner {
+  background-image: url("images/Img_home_bottom.png");
+  background-size: 46.625rem 24.875rem;
+}
+
+.banner .info {
+  padding-top: 15rem;
+}
+
+.banner.bottom .banner .info {
+  padding-top: 16rem;
+}
+
+.banner .info h2 {
+  margin-bottom: 2rem;
+}
+
+.banner .info a {
+  display: inline-block;
+  margin-bottom: 6.25rem;
+  padding: 1rem 7.75rem;
+  text-align: center;
+  background: #3692ff;
+  color: #fff;
+  border-radius: 40px;
+  font-size: 1.25rem;
+}
+
+/* footer */
+footer {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+footer .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0 6.75rem;
+}
+
+.copyright {
+  color: #9ca3af;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.sns {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* 심화 요구사항 */
+@media (max-width: 1600px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
