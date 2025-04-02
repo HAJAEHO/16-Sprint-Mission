@@ -7,7 +7,7 @@
     font-style: normal;
 }
 
-html {
+:root {
     /* font-size: 16px; */
     font-size: 0.83333333vw;
     /*
@@ -15,25 +15,36 @@ html {
        브라우저 너비 1920=> 100vw  
       16/1920*100 =0.83333...
     */
+
+  /* 컨테이너 관련 변수 */
+  --container-width: 70rem;
+  --container-margin: 0 auto;
+  
+  /* 색상 변수 */
+  --primary-color: #3692FF;
+  --primary-hover: #1251AA;
+  --secondary-color:#FCFCFC;
+  --background-color: #CFE5FF;
+  --text-color: #374151;
 }
 
 body {
-    background-color: #CFE5FF;
+    background-color: var(--background-color);
     width: 100vw;
     overflow-x: hidden;
 }
 
 .wrap {
-    background-color: #FCFCFC;
+    background-color: var(--secondary-color);
     font-family: 'Pretendard-Regular', sans-serif;
-    color: #374151;
+    color: var(--text-color);
     max-width: 1920px;
     margin: 0 auto;
 }
 
-.w1120 {
-    margin: 0 auto;
-    width: 70rem;
+.w1120 { /*다음 커밋에서 선택자 네이밍 다시*/
+    margin: var(--container-margin);
+    width: var(--container-width);
 }
 
 .nav-side-margin { /* 추후 브라우저 창 줄일 시 nav여백 고정할 클래스*/
@@ -62,7 +73,7 @@ nav {
 
 .login-btn {
     display: inline-block;
-    background-color: #3692FF;
+    background-color: var(--primary-color);
     color: #fff;
     border-radius: 8px;
     font-weight: 600;
@@ -75,12 +86,12 @@ nav {
 }
 
 .login-btn:hover {
-    background-color: #1251AA;
+    background-color: var(--primary-hover);
 }
 
 /* Main */
 section.main-img-area {
-    background-color: #CFE5FF;
+    background-color: var(--background-color);
     height: 33.75rem;
 }
 
@@ -107,7 +118,7 @@ article.main-img-wrap>div h2 {
 }
 
 article.main-img-wrap>div button {
-    background-color: #3692FF;
+    background-color: var(--primary-color);
     height: 56px;
     border: none;
     cursor: pointer;
@@ -116,7 +127,7 @@ article.main-img-wrap>div button {
 }
 
 article.main-img-wrap>div button:hover {
-    background-color: #1251AA;
+    background-color: var(--primary-hover);
 }
 
 article.main-img-wrap>div button span {
@@ -148,7 +159,7 @@ article.main-img-wrap>div button span {
 
 section>.contents {
     /*각 영역 article 공통 설정*/
-    background-color: #FCFCFC;
+    background-color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -166,7 +177,7 @@ section>article img {
 main section article>div>span {
     /* 각 영역의 파란색 글씨들(Hot item, Search, Register) */
     font-weight: 700;
-    color: #3692FF;
+    color: var(--primary-color);
 
     font-size: 1.125rem;
     line-height: 1.625rem;
@@ -207,7 +218,7 @@ main section article>div>span {
 
 /* ad */
 .ad-banner {
-    background-color: #CFE5FF;
+    background-color: var(--background-color);
     height: 33.75rem;
     margin-top: 8.625rem;
     padding-top: 8.9375rem;
@@ -275,7 +286,7 @@ footer {
 
 @media screen and (min-width: 1920px) {
     /*1920 이상일 때 root font-size:16px고정*/
-    html {
+    :root {
         font-size: 16px;
     }
 }
