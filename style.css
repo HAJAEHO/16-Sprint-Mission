@@ -12,11 +12,18 @@ body {
 
 }
 
+container {
+  width: 100%;
+  min-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 header {
   background-color: #ffffff;
   border: 1px solid #DFDFDF;
   width: 100%;
-  min-width: 1920px;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -68,7 +75,6 @@ header {
 main section {
   background-color: #ffffff;
   width: 100%;
-  min-width: 1920px;
   height: auto;
   padding: 80px 10%;
   gap: 10px;
@@ -77,10 +83,9 @@ main section {
   align-items: center;
 }
 
-.blue {
+.branding {
   background-color: #CFE5FF;
   width: 100%;
-  min-width: 1920px;
   height: 540px;
   top: 70px;
   display: flex;
@@ -88,19 +93,19 @@ main section {
   align-items: flex-end;
 }
 
-.panda {
+.branding-contents {
   display: flex;
   justify-content: center;
   gap: 7px;
 }
 
-.panda.bottom {
+.branding-contents.bottom {
   align-items: center;
   gap: 69px;
 }
 
 
-.panda.description {
+.description--branding-contents {
   padding-bottom: 60px;
   gap: 32px;
 }
@@ -121,7 +126,7 @@ main section {
 }
 
 
-section .contents {
+section .feature-contents {
   background-color: #FCFCFC;
   position: relative;
   width: 988px;
@@ -134,11 +139,11 @@ section .contents {
   align-items: center;
 }
 
-.contents > img {
+.feature-contents > img {
   height: 100%;
 }
 
-.contents .content {
+.feature-contents .content {
   position: relative;
   padding-right: 24px;
   gap: 12px;
@@ -156,7 +161,7 @@ section .contents {
   gap: 24px;
 }
 
-.content.left {
+.content.reverse {
   text-align: right;
   padding-left: 24px;
   padding-right: 0;
@@ -177,7 +182,6 @@ section .contents {
 footer {
   background-color: #111827;
   width: 100%;
-  min-width: 1920px;
   height: 160px;
   padding: 32px 400px;
   gap: 10px;
