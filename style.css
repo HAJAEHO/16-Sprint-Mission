@@ -17,21 +17,9 @@ html {
     */
 }
 
-.w1120 {
-    width: 1120px;
-    margin: 0 auto;
-
-    width: 70rem;
-}
-
-.nav-side-margin { /* 브라우저 크기 1920보다 작을 때 nav에만 적용할 클래스*/
-    margin: 0 auto;
-    width: 70rem;
-}
-
 body {
     background-color: #CFE5FF;
-    width: 100vw;
+    width: 100vw; /*스크롤바 무시하고 1920*/
     overflow-x: hidden;
 }
 
@@ -43,7 +31,17 @@ body {
     margin: 0 auto;
 }
 
+.w1120 {
+    width: 1120px;
+    margin: 0 auto;
 
+    width: 70rem;
+}
+
+.nav-side-margin { /* 브라우저 크기 1920보다 작을 때 nav에만 적용할 클래스*/
+    margin: 0 auto;
+    width: 1120px;
+}
 
 /* Header */
 header {
@@ -94,8 +92,6 @@ nav {
 .login-btn:hover {
     background-color: #1251AA;
 }
-
-
 
 /* Main */
 section.main-img-area {
@@ -174,8 +170,6 @@ article.main-img-wrap>div button span {
     height: 21.25rem;
 }
 
-
-
 /* hot-item */
 .hot-item,
 .search,
@@ -231,8 +225,7 @@ main section article>div>span {
     font-weight: 700;
     font-size: 40px;
     line-height: 140%;
-    letter-spacing: 0.02em;
-    /*2%*/
+    letter-spacing: 0.02em; /*2%*/
 
     margin-top: 0.75rem;
     font-size: 2.5rem;
@@ -250,14 +243,10 @@ main section article>div>span {
     line-height: 2rem;
 }
 
-
-
 /* search */
 .search-text {
     text-align: right;
 }
-
-
 
 /*register*/
 .register .contents {
@@ -269,8 +258,6 @@ main section article>div>span {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
-
-
 
 /* ad */
 .ad-banner {
@@ -366,19 +353,15 @@ footer {
     height: 1.25rem;
 }
 
-
-
 @media screen and (min-width: 1920px) {
-
     /*1920 이상일 때 root font-size:16px고정*/
     html {
         font-size: 16px;
     }
 }
 
-@media screen and (max-width: 1919px) {
-
-    /*1920보다 작을 때 nav여백만 200px고정*/
+@media screen and (max-width: 1520px) {
+    /*1520보다 작을 때 nav여백만 200px고정*/
     .nav-side-margin {
         margin: 0 200px;
         width: auto;
