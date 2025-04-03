@@ -1,0 +1,197 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    margin: 10px 0 0;
+}
+
+
+
+/* Layout */
+.container {
+    margin: 0 auto;
+}
+
+.gnb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    padding: 0 200px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    padding: clamp(66px, 13vw, 200px) 0 0;
+    width: 100%;
+    background-color: #cfe5ff;
+}
+
+.banner-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents {
+    width: clamp(370px, 77vw, 1120px);
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: clamp(320px, 68vw, 988px);
+    height: clamp(148px, 30vw, 444px);
+    margin: clamp(46px, 9.5vw, 138px);
+    border-radius: 12px;
+    background-color: #fcfcfc;
+}
+
+.content-right {
+    text-align: right;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: clamp(3px, 0.6vw, 10px);
+    padding-left: clamp(6px, 1.3vw, 20px);
+}
+
+.bottom-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom {
+    background-color: #111827;
+
+}
+
+.footer-bottom-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: clamp(3px, 0.6vw, 10px) clamp(6px, 1.3vw, 20px) clamp(10px, 2.2vw, 32px);
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 12px;
+
+}
+
+
+
+
+/* Typo */
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(13px, 2.7vw, 40px);
+    line-height: 140%;
+    color: #374151;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: clamp(8px, 1.6vw, 24px);
+    line-height: clamp(10px, 2.2vw, 32px);
+    color: #374151;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: clamp(6px, 1.2vw, 18px);
+    line-height: clamp(8px, 1.8vw, 26px);
+    color: #3692ff;
+}
+
+.footer-list a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: clamp(5px, 1.1vw, 16px);
+    line-height: 100%;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: clamp(5px, 1.1vw, 16px);
+    line-height: 100%;
+    color: #9ca3af;
+}
+
+
+
+
+/* Component */
+
+.panda-logo-md {
+    width: clamp(51px, 10vw, 153px);
+    height: auto;
+}
+
+.button-deco {
+    background-color: #3692ff;
+    color: #f3f4f6;
+    text-decoration: none;
+    font-size: clamp(5px, 1.1vw, 16px);
+    font-weight: 600;
+}
+
+.login-button {
+
+    padding: clamp(4px, 0.8vw, 12px) clamp(7px, 1.5vw, 23px);
+    border-radius: 8px;
+}
+
+.search {
+    padding: clamp(5px, 1.2vw, 16px) clamp(41px, 8.6vw, 124px);
+    border-radius: 40px;
+    font-size: clamp(6px, 1.3vw, 20px);
+    font-weight: 600;
+    line-height: clamp(11px, 2.2vw, 32px);
+}
+
+.banner-image-top {
+    width: clamp(248px, 51vw, 746px);
+    height: auto;
+}
+
+.banner-image-bottom {
+    width: clamp(248px, 51vw, 746px);
+    height: auto;
+}
+
+.content-img {
+    width: clamp(193px, 40vw, 579px);
+    height: 100%;
+}
+
+.social-logo {
+    width: clamp(6px, 1.3vw, 20px);
+    height: auto;
+}
+
+.is-clickable {
+    cursor: pointer;
+}
