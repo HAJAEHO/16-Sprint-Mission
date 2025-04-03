@@ -95,7 +95,7 @@ section .inner img {
   height: 27.75rem;
 }
 
-section .info .tagline {
+section .info .info-label {
   margin-bottom: 0.75rem;
   font-size: 1.125rem;
   font-weight: 700;
