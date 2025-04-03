@@ -17,7 +17,7 @@ header .inner {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 70rem;
+  max-width: var(--inner-width);
   padding: 0.625rem 0;
 }
 
@@ -33,7 +33,7 @@ header .login-button {
   width: 8rem;
   height: 3rem;
   padding: 0.75rem 1.5rem;
-  background: #3692ff;
+  background: var(--primary-color);
   color: #fff;
   border-radius: 8px;
 }
@@ -48,9 +48,9 @@ section .inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 61.75rem;
+  width: var(--inner-width-small);
   gap: 4rem;
-  background: #fcfcfc;
+  background: var(--background-light);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -64,7 +64,7 @@ section .info .info-label {
   margin-bottom: 0.75rem;
   font-size: 1.125rem;
   font-weight: 700;
-  color: #3692ff;
+  color: var(--primary-color);
 }
 
 section .info h2 {
@@ -75,7 +75,7 @@ section .info p {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2rem;
-  color: #374151;
+  color: var(--text-primary);
 }
 
 section:nth-of-type(2) {
@@ -131,7 +131,7 @@ section:last-of-type .inner {
   margin-bottom: 6.25rem;
   padding: 1rem 7.75rem;
   text-align: center;
-  background: #3692ff;
+  background: var(--primary-color);
   color: #fff;
   border-radius: 40px;
   font-size: 1.25rem;
