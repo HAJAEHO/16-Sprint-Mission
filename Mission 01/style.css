@@ -1,0 +1,174 @@
+body {
+    font-family: 'Pretendard', sans-serif;
+    margin: 10px 0 0;
+}
+
+/* Layout */
+.container {
+    margin: 0 auto;
+}
+
+.gnb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    padding: 0 200px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    padding: 200px 0 0;
+    width: 100%;
+    background-color: #cfe5ff;
+}
+
+.banner-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main.section {
+    width: 988px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 988px;
+    height: 444px;
+    margin: 138px auto;
+    border-radius: 12px;
+    background-color: #fcfcfc;
+}
+
+.content_text.content_right {
+    text-align: right;
+}
+
+.content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.bottom-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom {
+    background-color: #111827;
+
+}
+
+.footer-bottom-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 10px 20px 32px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 12px;
+
+}
+
+/* Typo */
+
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    color: #374151;
+    white-space: nowrap;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #374151;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #3692ff;
+}
+
+.footer-list a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #9ca3af;
+    white-space: nowrap;
+}
+
+/* Component */
+
+.panda-logo-md {
+    width: 153px;
+    height: 51px;
+}
+
+.button-deco {
+    background-color: #3692ff;
+    color: #f3f4f6;
+    text-decoration: none;
+}
+
+.login-button {
+    padding: 12px 23px;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+.search {
+    padding: 16px 124px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    white-space: nowrap;
+}
+
+.content_img {
+    width: 579px;
+}
+
+.is-clickable {
+    cursor: pointer;
+}
