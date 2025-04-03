@@ -3,16 +3,15 @@
   src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
 }
 
-:root {
-  --primary-color: #3692ff;
-}
-
 header {
   background-color: #fff;
+  width: 100%;
   height: 70px;
   padding: 9px;
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 0;
 }
 
 header img {

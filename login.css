@@ -1,0 +1,91 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form,
+label {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  height: 36px;
+  background-color: var(--gray100);
+  border: 0;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+form button {
+  padding: 16px 0px;
+  border: 0;
+  border-radius: 40px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#password {
+  display: inline-flex;
+  position: relative;
+}
+
+#password>button {
+  position: absolute;
+  background-color: transparent;
+  right: 20px;
+  top: 0px;
+  z-index: 1;
+}
+
+.easy-login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6f2ff;
+  border-radius: 8px;
+  padding: 16px 23px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.easy-login-icon {
+  display: flex;
+  gap: 16px;
+}
+
+.easy-login-icon>button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 16px;
+}
+
+footer>a {
+  color: var(--primary-color);
+}
