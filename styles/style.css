@@ -1,39 +1,4 @@
 @charset "utf-8";
-/* common */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 16px;
-}
-body {
-  font-family: "Pretendard", sans-serif;
-  background: #fcfcfc;
-  overflow-x: hidden;
-}
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  font-size: 1rem;
-}
-h2 {
-  font-size: 2.5rem;
-  line-height: 1.4;
-  color: #374151;
-}
-
-.content {
-  padding-top: 4.375rem;
-}
-
-.inner {
-  width: 70rem;
-  margin: 0 auto;
-}
-
 /* header */
 header {
   position: fixed;
@@ -136,7 +101,7 @@ section:last-of-type .inner {
 }
 
 .banner.top .inner {
-  background-image: url("images/Img_home_top.png");
+  background-image: url("../../images/Img_home_top.png");
   background-size: 46.625rem 21.25rem;
 }
 
@@ -145,7 +110,7 @@ section:last-of-type .inner {
 }
 
 .banner.bottom .inner {
-  background-image: url("images/Img_home_bottom.png");
+  background-image: url("../images/Img_home_bottom.png");
   background-size: 46.625rem 24.875rem;
 }
 
