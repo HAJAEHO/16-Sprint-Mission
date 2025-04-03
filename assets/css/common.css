@@ -1,0 +1,161 @@
+/* ====== common ====== */
+#wrap {
+  background: #fcfcfc;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  color: var(--white);
+  font-weight: 600;
+  background: var(--btn-default-bg);
+  transition: background 0.2s ease;
+}
+.btn:not(.white):hover {
+  background: var(--btn-hover-bg);
+}
+.btn:not(.white):active {
+  background: var(--btn-active-bg);
+}
+.btn:not(.white):disabled {
+  background: var(--btn-disabled-bg);
+  cursor: default;
+}
+
+.btn.white {
+  border: 1px solid var(--btn-white-color);
+  color: var(--btn-white-color);
+  background: var(--btn-white-bg);
+}
+
+/* small */
+.btn.sm {
+  min-width: 88px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* medium */
+.btn.md {
+  min-width: 240px;
+  height: 48px;
+  font-size: 18px;
+  border-radius: 40px;
+}
+
+/* large */
+.btn.lg {
+  min-width: 357px;
+  height: 56px;
+  font-size: 18px;
+  border-radius: 40px;
+}
+
+.btn.h40 {
+  height: 40px;
+}
+
+.inner {
+  max-width: 1120px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+
+/* header */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background: var(--white);
+  padding: 0 200px;
+}
+#header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  flex: 1;
+}
+#header .logo a {
+  display: block;
+  width: 153px;
+}
+
+/* footer */
+#footer {
+  padding: 32px 0 108px;
+  background: var(--footer-bg);
+}
+#footer .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .copy {
+  color: #9ca3af;
+}
+#footer .foot_link ul {
+  display: flex;
+  align-items: center;
+}
+#footer .foot_link ul a {
+  display: block;
+  padding: 0 15px;
+  color: #e5e7eb;
+}
+#footer .sns_link ul {
+  display: flex;
+  align-items: center;
+}
+#footer .sns_link ul a {
+  display: block;
+  padding: 0 6px;
+}
+
+@media screen and (max-width: 1200px) {
+  #header {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn.sm {
+    min-width: 128px;
+    font-size: 16px;
+  }
+  .btn.lg {
+    min-width: 240px;
+    height: 48px;
+    font-size: 18px;
+  }
+  #footer {
+    padding: 32px 0 65px;
+  }
+  #footer .inner {
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+  #footer .foot_link ul {
+    gap: 30px;
+  }
+  #footer .foot_link ul a {
+    padding: 0;
+  }
+  #footer .sns_link {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

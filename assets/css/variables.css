@@ -1,0 +1,23 @@
+/* ====== variable ====== */
+:root {
+  /* Colors */
+  --primary-color: #3692ff;
+  --primary-bg: #cfe5ff;
+  --white: #fff;
+  --dark-bg: #111827;
+
+  /* btn */
+  --btn-default-bg: var(--primary-color);
+  --btn-hover-bg: #1967d6;
+  --btn-active-bg: #1251aa;
+  --btn-disabled-bg: #9ca3af;
+  --btn-white-color: var(--primary-color);
+  --btn-white-bg: #f9fafb;
+
+  /* footer */
+  --footer-bg: var(--dark-bg);
+
+  /* main */
+  --main-banner-bg: var(--primary-bg);
+  --service-cat-color: var(--primary-color);
+}
