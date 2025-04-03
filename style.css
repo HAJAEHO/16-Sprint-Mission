@@ -181,17 +181,15 @@ main img {
 footer {
   background-color: #111827;
   height: 160px;
-  display: grid;
-  grid-template-columns: minmax(20px, 400px) 1fr minmax(20px, 400px);
 }
 
 footer .container {
   padding-top: 32.5px;
+  max-width: 1120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 100px;
-  grid-column: 2;
+  margin: 0px auto;
   font-size: clamp(8px, 2vw, 16px);
 }
 
