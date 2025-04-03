@@ -183,7 +183,6 @@ main section article>div>span {
     /* 각 영역의 파란색 글씨들(Hot item, Search, Register) */
     font-weight: 700;
     color: var(--primary-color);
-
     font-size: 1.125rem;
     line-height: 1.625rem;
 }
