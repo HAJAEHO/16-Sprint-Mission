@@ -15,14 +15,19 @@
   <body>
     <header>
       <div class="inner">
-        <a href="/">
+        <a href="/" aria-label="판다마켓 홈으로 이동">
           <img src="images/logo.png" alt="판다마켓 로고" />
         </a>
-        <a href="pages/login.html" class="login-button">로그인</a>
+        <a
+          href="pages/login.html"
+          aria-label="로그인 페이지로 이동"
+          class="login-button"
+          >로그인</a
+        >
       </div>
     </header>
-    <div class="content">
-      <div class="banner top">
+    <main class="content">
+      <div class="banner top" aria-label="상단 배너">
         <div class="inner">
           <div class="info">
             <h2>일상의 모든 물건을<br />거래해 보세요</h2>
@@ -30,7 +35,7 @@
           </div>
         </div>
       </div>
-      <section>
+      <section aria-label="인기 상품 확인">
         <div class="inner">
           <img
             src="images/Img_home_01.png"
@@ -46,7 +51,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section aria-label="상품 검색">
         <div class="inner">
           <img
             src="images/Img_home_02.png"
@@ -62,7 +67,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section aria-label="상품 등록">
         <div class="inner">
           <img
             src="images/Img_home_03.png"
@@ -75,7 +80,7 @@
           </div>
         </div>
       </section>
-      <div class="banner bottom">
+      <div class="banner bottom" aria-label="하단 배너">
         <div class="inner">
           <div class="info">
             <h2>
@@ -85,29 +90,44 @@
           </div>
         </div>
       </div>
-    </div>
-    <footer>
+    </main>
+    <footer aria-label="하단 정보">
       <div class="inner">
         <div class="copyright">©codeit - 2024</div>
         <div class="footer-menu">
-          <a href="pages/privacy.html">Privacy Policy</a>
-          <a href="pages/faq.html">FAQ</a>
+          <a href="pages/privacy.html" aria-label="개인정보처리방침"
+            >Privacy Policy</a
+          >
+          <a href="pages/faq.html" aria-label="자주 묻는 질문">FAQ</a>
         </div>
-        <div class="sns">
-          <a href="https://www.facebook.com/?locale=ko_KR" target="_blank">
-            <img src="images/ic_facebook.png" alt="페이스북 바로가기" />
+        <div class="sns" aria-label="SNS 바로가기">
+          <a
+            href="https://www.facebook.com/?locale=ko_KR"
+            target="_blank"
+            aria-label="페이스북 열기"
+          >
+            <img src="images/ic_facebook.png" alt="페이스북 아이콘" />
           </a>
-          <a href="https://x.com/login?lang=ko" target="_blank">
-            <img src="images/ic_twitter.png" alt="트위터 바로가기" />
+          <a
+            href="https://x.com/login?lang=ko"
+            target="_blank"
+            aria-label="트위터 열기"
+          >
+            <img src="images/ic_twitter.png" alt="트위터 아이콘" />
           </a>
           <a
             href="https://www.youtube.com/?hl=ko&gl=KR&app=desktop"
             target="_blank"
+            aria-label="유튜브 열기"
           >
-            <img src="images/ic_youtube.png" alt="유튜브 바로가기" />
+            <img src="images/ic_youtube.png" alt="유튜브 아이콘" />
           </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="images/ic_instagram.png" alt="인스타그램 바로가기" />
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            aria-label="인스타그램 열기"
+          >
+            <img src="images/ic_instagram.png" alt="인스타그램 아이콘" />
           </a>
         </div>
       </div>
