@@ -1,0 +1,23 @@
+@import "/css/reset.css";
+@import "/css/variables.css";
+@import "/css/home.css";
+@import "/css/login.css";
+
+html,
+body {
+  height: 100%;
+  background-color: var(--content-bg);
+}
+
+.button {
+  background-color: #3692ff;
+  border: 0;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: var(--primary-300);
+}
