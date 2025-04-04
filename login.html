@@ -10,42 +10,47 @@
 </head>
 
 <body>
-  <header>
-    <a href="index.html">
-      <img src="image/logo_big.png" width="396px" alt="판다마켓 로고">
-    </a>
-  </header>
-  <main>
-    <section>
-      <form>
-        <label for="email">
-          <span>이메일</span>
-          <input type="email" name="email" placeholder="codeit@email.com">
-        </label>
-        <label for="password">
-          <span>비밀번호</span>
-          <div id="password">
-            <input type="password" name="password" placeholder="비밀번호" id="password">
-            <button type="button" id="pw-visible">
-              <img src="image/btn_visibility_off_24px.png" alt="비밀번호 가리기">
-            </button>
-          </div>
-        </label>
-        <button type="submit">로그인</button>
-      </form>
-    </section>
-    <section class="easy-login-container">
-      <span>간편 로그인하기</span>
-      <div class="easy-login-icon">
-        <a href="https://www.google.com/"><img src="image/Component 2.png" alt="간편로그인 구글"></a>
-        <a href="https://www.kakaocorp.com/page/"><img src="image/Component 3.png" alt="간편로그인 카카오"></a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <span>판다마켓이 처음이신가요?</span>
-    <a href="signup.html">회원가입</a>
-  </footer>
+  <div id="wrapper">
+    <header>
+      <a href="index.html">
+        <img src="image/logo_big.png" width="396px" alt="판다마켓 로고">
+      </a>
+    </header>
+    <main>
+      <section>
+        <form>
+          <label for="email">
+            <span>이메일</span>
+            <input type="email" name="email" placeholder="codeit@email.com" autocomplete="on">
+          </label>
+          <label for="password">
+            <span>비밀번호</span>
+            <div class="password-container">
+              <input type="password" name="password" placeholder="비밀번호">
+              <button type="button" id="pw-visible">
+                <img src="image/btn_visibility_off_24px.png" alt="비밀번호 가리기">
+              </button>
+            </div>
+          </label>
+          <button type="submit">로그인</button>
+        </form>
+      </section>
+      <section class="easy-login-container">
+        <span>간편 로그인하기</span>
+        <div class="easy-login-icon">
+          <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><img src="image/Component 2.png"
+              alt="간편로그인 구글"></a>
+
+          <a href="https://www.kakaocorp.com/page/" target="_blank" rel="noopener noreferrer"><img
+              src="image/Component 3.png" alt="간편로그인 카카오"></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>판다마켓이 처음이신가요?</span>
+      <a href="signup.html">회원가입</a>
+    </footer>
+  </div>
 </body>
 
 </html>

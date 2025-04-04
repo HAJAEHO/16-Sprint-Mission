@@ -1,4 +1,4 @@
-body {
+#wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,12 +48,12 @@ form button {
   cursor: pointer;
 }
 
-#password {
+.password-container {
   display: inline-flex;
   position: relative;
 }
 
-#password>button {
+.password-container>button {
   position: absolute;
   background-color: transparent;
   right: 20px;
