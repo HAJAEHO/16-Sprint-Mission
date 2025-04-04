@@ -37,8 +37,6 @@ header .login-button {
   width: 8rem;
   height: 3rem;
   padding: 0.75rem 1.5rem;
-  background: var(--primary-color);
-  color: #fff;
   border-radius: 8px;
 }
 
@@ -134,9 +132,6 @@ section .info p {
   display: inline-block;
   margin-bottom: 6.25rem;
   padding: 1rem 7.75rem;
-  text-align: center;
-  background: var(--primary-color);
-  color: #fff;
   border-radius: 40px;
   font-size: 1.25rem;
 }

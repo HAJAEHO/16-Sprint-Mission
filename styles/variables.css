@@ -2,6 +2,8 @@
 :root {
   /* colors */
   --primary-color: #3692ff;
+  --primary-hover-color: #1967d6;
+  --primary-click-color: #1251aa;
   --text-primary: #374151;
   --background-light: #fcfcfc;
 

@@ -16,6 +16,7 @@ h2 {
   color: var(--text-primary);
 }
 
+/* layout */
 .content {
   padding-top: 4.375rem;
 }
@@ -23,4 +24,20 @@ h2 {
 .inner {
   width: var(--inner-width);
   margin: 0 auto;
+}
+
+/* button */
+.btn {
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--primary-hover-color);
+}
+.btn-primary:active {
+  background: var(--primary-click-color);
 }
