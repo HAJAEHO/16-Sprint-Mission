@@ -78,14 +78,14 @@ section .info p {
   color: var(--text-primary);
 }
 
-section:nth-of-type(2) {
+.section-search {
   text-align: right;
 }
-section:nth-of-type(2) .inner img {
+.section-search .inner img {
   order: 2;
 }
 
-section:last-of-type .inner {
+.section-register .inner {
   justify-content: flex-start;
 }
 
