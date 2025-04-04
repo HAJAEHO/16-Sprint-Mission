@@ -1,6 +1,6 @@
 # 스프린트 미션 1
 ## 배포 링크
->
+>https://gentle-lamington-bbd035.netlify.app/
 ## 요구사항
 - 랜딩 페이지의 url path는 루트(‘/’) 입니다.
 - title은 “판다마켓”으로 설정해 주세요.
