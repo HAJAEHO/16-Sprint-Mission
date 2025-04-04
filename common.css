@@ -1,0 +1,27 @@
+:root {
+    /* Colors */
+    --color-primary: #3692FF;
+    --color-background-blue: #CFE5FF;
+    --color-text-white: #F3F4F6;
+    --color-text-grey: #374151;
+
+    /* Font Sizes */
+    --font-size-xs: 16px;
+    --font-size-sm: 18px;
+    --font-size-md: 20px;
+    --font-size-lg: 24px;
+    --font-size-xl: 40px;
+
+    /* Border Radius */
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 40px;
+}
+
+body {
+    font-family: "Pretendard Variable";
+}
+
+a {
+    cursor: pointer;
+}
