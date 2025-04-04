@@ -41,7 +41,7 @@ header .login-button {
 
 /* section */
 section {
-  padding: 8.625rem 0;
+  padding: var(--spacing-large) 0;
   background: #fff;
 }
 
@@ -106,7 +106,7 @@ section .info p {
 }
 
 .banner.bottom {
-  margin-top: 8.625rem;
+  margin-top: var(--spacing-large);
 }
 
 .banner.bottom .inner {
@@ -135,8 +135,8 @@ section .info p {
 
 /* footer */
 footer {
-  background: #111827;
-  color: #e5e7eb;
+  background: var(--gray900);
+  color: var(--gray200);
 }
 
 footer .inner {
@@ -146,7 +146,7 @@ footer .inner {
 }
 
 .copyright {
-  color: #9ca3af;
+  color: var(--gray400);
 }
 
 .footer-menu {
