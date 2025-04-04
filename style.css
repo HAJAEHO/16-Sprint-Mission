@@ -1,0 +1,292 @@
+@font-face {
+    /*Pretendard폰트*/
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    /* font-size: 16px; */
+    font-size: 0.83333333vw;
+    /*
+    => 가변 사이즈로
+       브라우저 너비 1920=> 100vw  
+      16/1920*100 =0.83333...
+    */
+
+    /* 컨테이너 관련 변수 */
+    --container-width: 70rem;
+    --container-margin: 0 auto;
+
+    /* 색상 변수 */
+    --primary-color: #3692FF;
+    --primary-hover: #1251AA;
+    --secondary-color: #FCFCFC;
+    --background-color: #CFE5FF;
+    --text-color: #374151;
+    --white-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.page-wrapper {
+    background-color: var(--secondary-color);
+    font-family: 'Pretendard-Regular', sans-serif;
+    color: var(--text-color);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    /*w1120 -> 추천해주신 container로 이름 변경*/
+    margin: var(--container-margin);
+    width: var(--container-width);
+}
+
+/* Header */
+header {
+    height: 4.375rem;
+    padding: 0.5625rem 0;
+    /*기본 체크사항 4 설명해주신 대로 동작하도록 수정*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 70rem;
+    height: 3.1875rem;
+    margin: 0 200px;
+}
+
+.nav__logo img {
+    display: inline-block;
+    width: 9.5625rem;
+}
+
+.nav__button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0.75rem 1.4375rem;
+    height: 3rem;
+    width: 8rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.nav__button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Main */
+section.main__hero {
+    background-color: var(--background-color);
+    height: 33.75rem;
+}
+
+article.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4375rem;
+    /*아랫단 맞추기*/
+    padding-top: 12.5rem;
+}
+
+article.hero__content .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 3.75rem;
+}
+
+.hero__text h2 {
+    font-weight: 700;
+    line-height: 140%;
+    font-size: 2.5rem;
+}
+
+.hero__text button {
+    background-color: var(--primary-color);
+    height: 56px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 0 7.75rem;
+    height: 3.5rem;
+}
+
+.hero__text button:hover {
+    background-color: var(--primary-hover);
+}
+
+.hero__text button span {
+    display: inline-block;
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #F9FAFB;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.hero__img {
+    width: 46.625rem;
+    height: 21.25rem;
+}
+
+/* hot-item */
+.main__hot-item,
+.main__search,
+.main__register {
+    /*각 영역 section 공통 설정*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    height: 45rem;
+}
+
+.hot-item__content,
+.search__content,
+.register__content {
+    /*각 영역 article 공통 설정*/
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 12px;
+    gap: 4rem;
+    width: 61.75rem;
+    padding: 0 1.5rem;
+}
+
+section>article img {
+    width: 36.1875rem;
+    height: 27.75rem;
+}
+
+main section article>div>span {
+    /* 각 영역의 파란색 글씨들(Hot item, Search, Register) */
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+.container>div>h2 {
+    /* 각 영역의 굵은 글씨 */
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.02em; /*2%*/
+    margin-top: 0.75rem;
+    font-size: 2.5rem;
+}
+
+.container>div p {
+    /*각 영역의 설명(p태그)*/
+    font-weight: 500;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* search */
+.search__text {
+    text-align: right;
+}
+
+/*register*/
+.register__content {
+    padding: 0;
+    /*양 옆 패딩 없음*/
+}
+
+.register__content img {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+/* banner */
+.main__banner {
+    background-color: var(--background-color);
+    height: 33.75rem;
+    margin-top: 8.625rem;
+    padding-top: 8.9375rem;
+}
+
+.main__banner>div {
+    display: flex;
+    align-items: center;
+    gap: 4.3125rem;
+}
+
+.banner__text {
+    font-weight: 700;
+    line-height: 140%;
+    font-size: 2.5rem;
+    padding-bottom: 3.75rem;
+}
+
+.main__banner img {
+    width: 46.625rem;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: var(--white-color);
+    height: 10rem;
+    padding: 2rem 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    height: 1.25rem;
+    color: #9CA3AF;
+}
+
+.footer__container>div {
+    display: flex;
+    align-items: center;
+    flex-basis: 9.9375rem;
+    gap: 1.875rem;
+}
+
+.footer__container>div a {
+    color: #E5E7EB;
+    display: inline-block;
+}
+
+.footer__sns-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 7.25rem;
+}
+
+.footer__sns-list li img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+@media screen and (min-width: 1920px) {
+    /*1920 이상일 때 root font-size:16px고정*/
+    :root {
+        font-size: 16px;
+    }
+}
