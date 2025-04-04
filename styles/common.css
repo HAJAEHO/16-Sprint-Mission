@@ -1,0 +1,43 @@
+@charset "utf-8";
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Pretendard", sans-serif;
+  background: var(--background-light);
+  overflow-x: hidden;
+}
+a {
+  font-size: 1rem;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+/* layout */
+.content {
+  padding-top: 4.375rem;
+}
+
+.inner {
+  width: var(--inner-width);
+  margin: 0 auto;
+}
+
+/* button */
+.btn {
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--primary-hover-color);
+}
+.btn-primary:active {
+  background: var(--primary-click-color);
+}

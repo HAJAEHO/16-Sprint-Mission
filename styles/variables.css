@@ -1,0 +1,14 @@
+@charset "utf-8";
+:root {
+  /* colors */
+  --primary-color: #3692ff;
+  --primary-hover-color: #1967d6;
+  --primary-click-color: #1251aa;
+  --text-primary: #374151;
+  --background-light: #fcfcfc;
+
+  /* layout */
+  --inner-width: 70rem;
+  --inner-width-small: 61.75rem;
+  --spacing-large: 8.625rem;
+}
