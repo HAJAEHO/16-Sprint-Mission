@@ -1,0 +1,89 @@
+.header-contents {
+  width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contents img {
+  width: 40px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo a {
+  color: var(--primary-color);
+  font-size: 25.63px;
+  font-weight: 700;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.banner {
+  background-color: var(--background-light);
+  height: 540px;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 80% bottom;
+  background-size: 55%;
+}
+
+#hero {
+  background-image: url("images/hero-banner.png");
+}
+
+#features {
+  padding-bottom: 138px;
+}
+
+#bottomBanner {
+  background-image: url("images/bottom-banner.png");
+}
+
+#loginLinkButton {
+  padding: 12px 23px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.banner .pill-button {
+  margin-top: 32px;
+}
+
+.feature-box {
+  padding: 138px 0;
+  gap: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.feature:nth-child(2) {
+  text-align: right;
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-tag {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: var(--text-dark);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-top: 24px;
+}

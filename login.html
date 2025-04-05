@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+
+<body>
+  <div class="login-contents">
+    <div class="auth-logo">
+      <img src="images/panda_logo.png"> <!-- 로고 사진 사이즈 수정해야함-->
+      <a href="/">판다마켓</a>
+    </div>
+
+    <div class="login-content">
+
+      <form>
+        <div>
+          <label for="login-email">이메일</label>
+          <input id="login-email" name="email" type="email">
+        </div>
+        <div>
+          <label for="login-password">비밀번호</label>
+          <div class="password-container">
+            <input id="login-password" name="password" type="password">
+            <img src="images/btn_unvisibility.png" id="togglePassword">
+          </div>
+        </div>
+        <button class="button auth-button" type="submit">
+          로그인
+        </button>
+      </form>
+
+      <div class="other-login">
+        <div class="login-easy">
+          간편 로그인 하기
+          <div class="social-login">
+            <a href="https://www.google.com/" target="_blank">
+              <img src="images/google.png" alt="google" width="42">
+            </a>
+            <a href="https://kakaocorp.com/page/" target="_blank">
+              <img src="images/kakaotalk.png" alt="kakaotalk" width="42">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="link_to_signup">
+        <p>판다마켓이 처음이신가요?</p>
+        <a href="signup.html">회원가입</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
