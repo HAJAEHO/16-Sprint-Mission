@@ -13,13 +13,10 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <div class="inner">
-        <a href="/" aria-label="판다마켓 홈으로 이동">
-          <picture>
-            <source srcset="images/logo-153.png" media="(min-width: 480px)" />
-            <img src="images/logo-100.png" alt="판다마켓 로고" />
-          </picture>
+    <header class="header">
+      <div class="header-container">
+        <a href="/" class="logo" aria-label="판다마켓 홈으로 이동">
+          <img src="images/logo-153.png" alt="판다마켓 로고" />
         </a>
         <a
           href="login.html"
@@ -30,10 +27,10 @@
       </div>
     </header>
     <main class="content">
-      <div class="banner top" aria-label="상단 배너">
-        <div class="inner">
-          <div class="info">
-            <h2>일상의 모든 물건을<br />거래해 보세요</h2>
+      <div class="banner banner-hero" aria-label="상단 배너">
+        <div class="banner-container">
+          <div class="banner-info">
+            <h2 class="banner-title">일상의 모든 물건을<br />거래해 보세요</h2>
             <a
               href="items.html"
               aria-label="상품 페이지로 이동"
@@ -43,8 +40,8 @@
           </div>
         </div>
       </div>
-      <section class="section-hotitem" aria-label="인기 상품 확인">
-        <div class="inner">
+      <section class="section section-hotitem" aria-label="인기 상품 확인">
+        <div class="section-container">
           <img
             srcset="
               images/Img_home_01-344.png 344w,
@@ -58,18 +55,18 @@
             src="images/Img_home_01.png"
             alt="두 마리의 팬더가 인기 상품인 초록색 티셔츠를 보고 있는 모습입니다."
           />
-          <div class="info">
-            <div class="info-label">Hot item</div>
-            <h2>인기 상품을<br />확인해 보세요</h2>
-            <p>
+          <div class="section-info">
+            <div class="section-label">Hot item</div>
+            <h2 class="section-title">인기 상품을<br />확인해 보세요</h2>
+            <p class="section-desc">
               가장 HOT한 중고거래 물품을<br />
               판다 마켓에서 확인해 보세요
             </p>
           </div>
         </div>
       </section>
-      <section class="section-search" aria-label="상품 검색">
-        <div class="inner">
+      <section class="section section-search" aria-label="상품 검색">
+        <div class="section-container">
           <img
             srcset="
               images/Img_home_02-344.png 344w,
@@ -83,18 +80,20 @@
             src="images/Img_home_02.png"
             alt="돋보기로 상품들 중 가운데 상품을 확대해서 보는 모습입니다."
           />
-          <div class="info">
-            <div class="info-label">Search</div>
-            <h2>
+          <div class="section-info">
+            <div class="section-label">Search</div>
+            <h2 class="section-title">
               구매를 원하는<br />
               상품을 검색하세요
             </h2>
-            <p>구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요</p>
+            <p class="section-desc">
+              구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요
+            </p>
           </div>
         </div>
       </section>
-      <section class="section-register" aria-label="상품 등록">
-        <div class="inner">
+      <section class="section section-register" aria-label="상품 등록">
+        <div class="section-container">
           <img
             srcset="
               images/Img_home_03-344.png 344w,
@@ -108,17 +107,19 @@
             src="images/Img_home_03.png"
             alt="아래에 폴더들이 있고, 그 위에 마법봉으로 가운데의 연필꽂이, 공책, 하트 프레임 안경을 가리키는 모습입니다."
           />
-          <div class="info">
-            <div class="info-label">Register</div>
-            <h2>판매를 원하는<br />상품을 등록하세요</h2>
-            <p>어떤 물건이든 판매하고 싶은 상품을<br />쉽게 등록하세요</p>
+          <div class="section-info">
+            <div class="section-label">Register</div>
+            <h2 class="section-title">판매를 원하는<br />상품을 등록하세요</h2>
+            <p class="section-desc">
+              어떤 물건이든 판매하고 싶은 상품을<br />쉽게 등록하세요
+            </p>
           </div>
         </div>
       </section>
-      <div class="banner bottom" aria-label="하단 배너">
-        <div class="inner">
-          <div class="info">
-            <h2>
+      <div class="banner" aria-label="하단 배너">
+        <div class="banner-container">
+          <div class="banner-info">
+            <h2 class="banner-title">
               믿을 수 있는<br />
               판다마켓 중고 거래
             </h2>
@@ -126,8 +127,8 @@
         </div>
       </div>
     </main>
-    <footer aria-label="하단 정보">
-      <div class="inner">
+    <footer class="footer" aria-label="하단 정보">
+      <div class="footer-container">
         <div class="copyright">©codeit - 2024</div>
         <div class="footer-menu">
           <a href="privacy.html" aria-label="개인정보처리방침"

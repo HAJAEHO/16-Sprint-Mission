@@ -19,8 +19,8 @@
   --background-blue: #e6f2ff;
 
   /* layout */
-  --inner-width: 70rem;
-  --inner-width-small: 61.75rem;
+  --container-width: 70rem;
+  --container-width-small: 61.75rem;
   --spacing-large: 8.625rem;
 
   /* border-radius */

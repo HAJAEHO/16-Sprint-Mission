@@ -24,8 +24,10 @@ h2 {
   padding-top: 4.375rem;
 }
 
-.inner {
-  width: var(--inner-width);
+.header-container,
+.banner-container,
+.footer-container {
+  width: var(--container-width);
   margin: 0 auto;
 }
 
