@@ -155,22 +155,6 @@ footer .inner {
 }
 
 /*=== 로그인 페이지 ===*/
-#loginPage > .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-#loginForm .logo {
-  width: 24.75rem;
-  margin-bottom: 2.5rem;
-}
-
-#loginBtn {
-  width: 100%;
-}
-
 .easy-login {
   display: flex;
   justify-content: space-between;
@@ -185,18 +169,6 @@ footer .inner {
 .easy-login-icons {
   display: flex;
   gap: 1rem;
-}
-
-.signup-link {
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.signup-link a {
-  text-decoration: underline;
-  color: var(--primary-color);
-  font-size: 14px;
 }
 
 /*=== responsive ===*/

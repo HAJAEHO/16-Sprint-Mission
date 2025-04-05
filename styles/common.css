@@ -79,7 +79,19 @@ form input {
   font-size: 1rem;
 }
 
-.container > form {
+form .logo {
+  width: 24.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container form {
   width: 40rem;
 }
 
@@ -92,6 +104,10 @@ form input {
 
 .visible-wrap {
   position: relative;
+}
+
+form .btn-lg {
+  width: 100%;
 }
 
 .btn-password-visible {
@@ -108,4 +124,16 @@ form input {
 }
 .btn-password-visible[aria-pressed="false"] {
   background: url("../images/ic_visibility_off.svg") no-repeat center;
+}
+
+.form-footer {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-footer a {
+  text-decoration: underline;
+  color: var(--primary-color);
+  font-size: 14px;
 }
