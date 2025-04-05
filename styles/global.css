@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Pretendard', sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+header{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 버튼스타일 */
+.btn-small-40 {
+    padding: 12px 24px;
+    background-color: #3692FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
