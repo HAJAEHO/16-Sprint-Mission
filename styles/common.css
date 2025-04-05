@@ -81,7 +81,7 @@ form input {
 
 form .logo {
   width: 24.75rem;
-  margin-bottom: 2.5rem;
+  margin: 14.375rem 0 2.5rem;
 }
 
 .form-container {
@@ -89,6 +89,7 @@ form .logo {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-bottom: 14.375rem;
 }
 
 .form-container form {
