@@ -3,6 +3,7 @@
 }
 
 body{
+  font-family: 'Pretendard', sans-serif;
   color: #374151;
   width: 100%;
   margin: 0;
@@ -10,11 +11,19 @@ body{
 }
 
 header{ 
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .top{
@@ -29,12 +38,9 @@ header{
 
 .imgPlusWord{
   display: flex;
-  
   align-items: center;
   gap: 7px;
 }
-
-
 
 .words{
   display: flex;
@@ -57,15 +63,15 @@ header{
 }
 
 .goToLogin{
-  font-size: 16px;
+  font-size: clamp(14px, 1.2vw, 16px);
   font-weight: 600;
   line-height: 26px;
-  margin: 0 200px; 
+  margin: 0; 
   border: 1px solid #3692FF;
   background-color: #3692FF;
   border-radius: 8px;
   color: #F9FAFB;
-  padding: 12px 23px;
+  padding: 0.7rem 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,4 +164,26 @@ a{
 .icons{
   display: flex;
   gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .imgPlusWord {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .R {
+    align-items: center;
+    text-align: center;
+  }
+
+  .ffooter {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    height: auto;
+    padding: 2rem;
+  }
 }
