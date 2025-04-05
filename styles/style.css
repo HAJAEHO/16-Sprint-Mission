@@ -3,6 +3,7 @@
 @import "common.css";
 @import "variables.css";
 
+/*=== 메인 페이지 ===*/
 /* header */
 header {
   position: fixed;
@@ -30,13 +31,8 @@ header .logo {
 }
 
 header .login-button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   width: 8rem;
   height: 3rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
 }
 
 /* section */
@@ -52,7 +48,7 @@ section .inner {
   width: var(--inner-width-small);
   gap: 4rem;
   background: var(--background-light);
-  border-radius: 20px;
+  border-radius: var(--border-radius-md);
   overflow: hidden;
 }
 
@@ -127,9 +123,8 @@ section .info p {
 
 .banner .info a {
   display: inline-block;
+  width: 22.25rem;
   margin-bottom: 6.25rem;
-  padding: 1rem 7.75rem;
-  border-radius: 40px;
   font-size: 1.25rem;
 }
 
@@ -157,6 +152,51 @@ footer .inner {
 .sns {
   display: flex;
   gap: 0.75rem;
+}
+
+/*=== 로그인 페이지 ===*/
+#loginPage > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#loginForm .logo {
+  width: 24.75rem;
+  margin-bottom: 2.5rem;
+}
+
+#loginBtn {
+  width: 100%;
+}
+
+.easy-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius-xs);
+  background: var(--background-blue);
+  font-size: 1rem;
+  color: var(--gray800);
+}
+
+.easy-login-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.signup-link {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.signup-link a {
+  text-decoration: underline;
+  color: var(--primary-color);
+  font-size: 14px;
 }
 
 /*=== responsive ===*/

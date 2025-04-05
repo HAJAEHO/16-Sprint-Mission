@@ -16,9 +16,16 @@
   --primary-click-color: #1251aa;
   --text-primary: var(--gray600);
   --background-light: #fcfcfc;
+  --background-blue: #e6f2ff;
 
   /* layout */
   --inner-width: 70rem;
   --inner-width-small: 61.75rem;
   --spacing-large: 8.625rem;
+
+  /* border-radius */
+  --border-radius-xs: 8px;
+  --border-radius-sm: 12px;
+  --border-radius-md: 20px;
+  --border-radius-lg: 40px;
 }

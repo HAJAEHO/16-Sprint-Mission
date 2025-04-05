@@ -2,14 +2,17 @@
 html {
   font-size: 16px;
 }
+
 body {
   font-family: "Pretendard", sans-serif;
   background: var(--background-light);
   overflow-x: hidden;
 }
+
 a {
   font-size: 1rem;
 }
+
 h2 {
   font-size: 2.5rem;
   line-height: 1.4;
@@ -27,8 +30,18 @@ h2 {
 }
 
 /* button */
-.btn {
+a[class*="btn"] {
   text-align: center;
+}
+.btn-lg {
+  padding: 1rem;
+  border-radius: var(--border-radius-lg);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.btn-sm {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-xs);
 }
 
 .btn-primary {
@@ -40,4 +53,59 @@ h2 {
 }
 .btn-primary:active {
   background: var(--primary-click-color);
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--gray800);
+}
+
+form input {
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem 1.5rem 0.875rem;
+  background: var(--gray100);
+  border-radius: var(--border-radius-sm);
+  font-size: 1rem;
+}
+
+.container > form {
+  width: 40rem;
+}
+
+.form-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.visible-wrap {
+  position: relative;
+}
+
+.btn-password-visible {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+.btn-password-visible[aria-pressed="true"] {
+  background: url("../images/ic_visibility_on.svg") no-repeat center;
+}
+.btn-password-visible[aria-pressed="false"] {
+  background: url("../images/ic_visibility_off.svg") no-repeat center;
 }
