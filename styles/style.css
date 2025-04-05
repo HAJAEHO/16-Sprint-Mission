@@ -278,6 +278,21 @@ footer .inner {
   .section-search .inner img {
     order: 0;
   }
+
+  .easy-login-icons img {
+    width: 44px;
+  }
+}
+
+@media (max-width: 640px) {
+  .form-container form {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  form .logo {
+    width: 65%;
+  }
 }
 
 /* mobile */
