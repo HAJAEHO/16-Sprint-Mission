@@ -1,4 +1,4 @@
-.login-contents {
+.auth-contents {
   width: 640px;
   height: 100vh;
   margin: auto;
@@ -19,14 +19,13 @@
   gap: 20px;
 }
 
-.auto-logo img {
+.auth-logo img {
   width: auto;
   height: auto;
 }
 
-.auto-logo a {
-  color: #3692FF;
-  font-family: ROKAF Sans;
+.auth-logo a {
+  color: var(--primary-color);
   font-size: 66.34px;
   font-weight: 700;
   text-decoration: none;
