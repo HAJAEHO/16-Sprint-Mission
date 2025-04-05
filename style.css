@@ -14,10 +14,19 @@ header{
      margin-top: 0;
      margin-bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
+.head-block{
+    width: 100%;
+    max-width: 1080px;
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    
+}
 
 button.login{
     display: inline-block;
@@ -143,9 +152,10 @@ footer{
     height: 160px;
     max-width: 1920px;
     margin: 0px auto;
-     display: flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     padding-top: 28px;
+    gap:380px;
 }
 
 /* e.t.c.*/
