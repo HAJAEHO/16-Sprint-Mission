@@ -15,16 +15,17 @@
   <body>
     <main>
       <div class="form-container">
-        <form id="signupForm" method="POST">
-          <div class="logo">
+        <form class="form" id="signupForm" method="POST">
+          <div class="form-logo">
             <a href="/signup.html" aria-label="새로고침">
               <img src="images/logo-396.png" alt="판다마켓 로고" width="396" />
             </a>
           </div>
           <div class="form-contents">
             <div class="form-control">
-              <label for="userEmail">이메일</label>
+              <label class="form-label" for="userEmail">이메일</label>
               <input
+                class="form-input"
                 type="email"
                 name="userEmail"
                 id="userEmail"
@@ -33,8 +34,9 @@
               />
             </div>
             <div class="form-control">
-              <label for="userNickname">닉네임</label>
+              <label class="form-label" for="userNickname">닉네임</label>
               <input
+                class="form-input"
                 type="text"
                 name="userNickname"
                 id="userNickname"
@@ -42,9 +44,10 @@
               />
             </div>
             <div class="form-control">
-              <label for="userPassword">비밀번호</label>
+              <label class="form-label" for="userPassword">비밀번호</label>
               <div class="visible-wrap">
                 <input
+                  class="form-input"
                   type="password"
                   name="userPassword"
                   id="userPassword"
@@ -59,9 +62,12 @@
               </div>
             </div>
             <div class="form-control">
-              <label for="userPasswordChk">비밀번호 확인</label>
+              <label class="form-label" for="userPasswordChk"
+                >비밀번호 확인</label
+              >
               <div class="visible-wrap">
                 <input
+                  class="form-input"
                   type="text"
                   name="userPasswordChk"
                   id="userPasswordChk"
@@ -95,7 +101,12 @@
             </div>
             <div class="form-footer">
               이미 회원이신가요?
-              <a href="login.html" aria-label="로그인 페이지로 이동">로그인</a>
+              <a
+                class="form-footer-link"
+                href="login.html"
+                aria-label="로그인 페이지로 이동"
+                >로그인</a
+              >
             </div>
           </div>
         </form>

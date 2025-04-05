@@ -289,12 +289,12 @@
 }
 
 @media (max-width: 640px) {
-  .form-container form {
+  .form {
     width: 100%;
     padding: 0 1.5rem;
   }
 
-  form .logo {
+  .form-logo {
     width: 65%;
   }
 }
