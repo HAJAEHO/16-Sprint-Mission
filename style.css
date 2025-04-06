@@ -1,0 +1,384 @@
+/* Nav */
+.Nav {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--white);
+}
+
+.Login_Btn {
+  width: 128px;
+  height: 48px;
+  border: none;
+  color: var(--white);
+  border-radius: 4px;
+  background-color: var(--brand-blue);
+}
+
+.Nav_Wrap {
+  display: flex;
+  width: 60%;
+  padding: 20px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Main_Top */
+.Main_Top {
+  display: flex;
+  position: relative;
+  height: 540px;
+  justify-content: center;
+  align-items: end;
+  background-color: var(--Secondary-blue);
+}
+
+.Landing_Wrap {
+  position: absolute;
+  right: 20%;
+  order: 2;
+}
+
+.Contents_Wrap_Top {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  order: 1;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+
+.Main_Bottom {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 540px;
+  justify-content: center;
+  align-items: end;
+  background-color: var(--Secondary-blue);
+}
+
+.Banner_Wrap {
+  position: absolute;
+  right: 20%;
+  order: 2;
+}
+
+.Contents_Wrap_Bottom {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  order: 1;
+  margin-bottom: 180px;
+  flex-direction: column;
+}
+
+.Shop_Btn {
+  height: 56px;
+  border: none;
+  color: white;
+  border-radius: 40px;
+  background-color: var(--brand-blue);
+}
+
+/*섹션*/
+.Section {
+  display: flex;
+  padding: 5% 20%;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.Section_Left {
+  display: flex;
+  padding: 5% 20%;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.Section_Wrap {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 5%;
+}
+
+.Section_Wrap_2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  gap: 5%;
+}
+
+.Section_Label {
+    width: 100%;
+}
+
+.Section_Contents_Title {
+    width: 100%;
+}
+
+.Section_Contents_Description {
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    display: grid;
+    width: 100%;
+    height: 160px;
+    padding: 1% 20% 0% 20%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--Secondary-900);
+    gap: 8px;
+}
+
+.Sns_Icons {
+    display: flex;
+    flex-direction: space-between;
+    gap: 8px;
+}
+
+.PP {
+    width: 100%;
+    text-align: right;
+}
+
+/* 스타일 시트 */
+:root {
+  /*color*/
+  --white: #ffffff;
+  --background: #fcfcfc;
+  --border: #dfdfdf;
+  --brand-blue: #3692ff;
+  --Secondary-blue: #cfe5ff;
+  --Secondary-700: #374151;
+  --Secondary-900: #111827;
+  /*size*/
+  --title: 40px;
+  --description: 24px;
+  --label: 18px;
+  /* weight */
+  --bold: 700;
+  --regular: 500;
+}
+
+h1 {
+  color: var(--Secondary-900);
+  font-weight: var(--bold);
+  font-size: var(--title);
+}
+
+h2 {
+  color: var(--Secondary-700);
+  font-weight: var(--regular);
+  font-size: var(--description);
+}
+
+label {
+  color: var(--brand-blue);
+  font-weight: var(--bold);
+  font-size: var(--label);
+}
+
+p {
+  margin: 0px;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+* {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--background);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+
+@media (max-width: 375px) {
+    .Nav {
+        display: flex;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        height: 70px;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid var(--border);
+        background-color: var(--white);
+      }
+      
+    .Login_Btn {
+        width: 60px;
+        height: 48px;
+        border: none;
+        color: var(--white);
+        border-radius: 4px;
+        background-color: var(--brand-blue);
+      }
+
+    .Shop_Btn {
+        margin-top: 12px;
+    }
+      
+    .Nav_Wrap {
+        display: flex;
+        /* flex-direction: column; */
+        width: 80%;
+        /* padding: 20px 0px; */
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    h1 {
+        margin: 4px;
+        color: var(--Secondary-900);
+        font-weight: var(--bold);
+        font-size: 32px;
+        text-align: center;
+      }
+
+    h2 {
+        color: var(--Secondary-700);
+        font-weight: var(--regular);
+        font-size: 18px;
+        text-align: center;
+      }
+
+    label  {
+        color: var(--brand-blue);
+        font-weight: var(--bold);
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Main_Top {
+        display: flex;
+        position: relative;
+        height: 480px;
+        justify-content: center;
+        align-items: end;
+        background-color: var(--Secondary-blue);
+    }
+
+    .Landing_Wrap {
+        position: absolute;
+        right: 0%;
+        order: 2;
+    }
+
+    .Contents_Wrap_Top {
+        display: flex;
+        position: absolute;
+        /* left: 20%; */
+        order: 1;
+        margin-bottom: 200px;
+        flex-direction: column;
+      }
+
+    .Section {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .Section_Left {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .Section_Wrap {
+        gap: 0px;
+    }
+    
+
+    .Section_Label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+      }
+
+    .Main_Bottom {
+        height: 480px;
+    }
+
+    .Contents_Wrap_Bottom {
+        display: flex;
+        position: absolute;
+        left: 20%;
+        order: 1;
+        margin-bottom: 280px;
+        flex-direction: column;
+    }
+
+    .Banner_Wrap {
+        position: absolute;
+        right: 0%;
+        order: 2;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+        gap: 4px;
+        padding: 20px;
+    }
+
+    .CR {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PP {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FAQ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Sns_Icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
