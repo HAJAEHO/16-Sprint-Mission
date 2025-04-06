@@ -1,15 +1,10 @@
 .wrapper {
     width: 100%;
-    max-width: 991px;
-    /* 왜 max-width?*/
+    max-width: 375px;
     margin: 0 auto;
 }
 .wrapper--narrow {
-    max-width: 961px;
-}
-.banner{
-    height: 771px;
-    background-position: bottom;
+    max-width: 344px;
 }
 #hero {
     background-image: url(/images/Img_home_top.png);
@@ -20,45 +15,46 @@
 .banner {
     display: flex;
     background-position: bottom;
-    /* background-size: 80%; */
+    background-size: 90%;
     background-repeat: no-repeat;
-    height: 771px;
+    height: 540px;
+    background-position: bottom;
     background-color: #CFE5FF;
     text-align: center;
-    padding-top: 84px;
+    padding-top: 48px;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     color: #374151;
     line-height: 1.4;
-    margin-bottom: 32px;
+    margin-bottom: 18px;
 }
 
 .btn{
     background-color: #3b82f6;
     color: #F9FAFB;
     border: none;
-    padding: 16px 124px;
+    padding: 12px 71px;
     border-radius: 40px;
     cursor: pointer;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     flex-shrink: 0;
 }
 
 .features {
-    padding-bottom: 52px;
+    padding-bottom: 18px;
 }
 
 .feature {
-    padding: 52px 0;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
-    margin: 0 24px;
+    margin: 0 16px;
     text-align: left;
-    gap: 24px;
+    gap: 16px;
 }
 
 .feature-content {
@@ -68,27 +64,37 @@ h1 {
 .feature:nth-last-of-type(even){
     flex-direction: column-reverse;
 }
+
 .feature:nth-of-type(even) .feature-content {
     text-align: right;
 }
+
 .feature h1 br {
     display: none;
-  }
+}
+
+.feature h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
 
 .feature-tag {
     color: #3692ff;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 26px;
     font-weight: 700;
 }
 
 .feature-description {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 120%;
+    line-height: 140%;
     letter-spacing: 0.08em;
 }
 
 footer{
-    padding: 12px 12px 32px 12px;
+    padding: 32px 16px 42px 16px;
+    flex-wrap: wrap;
+    gap: 24px;
 }
