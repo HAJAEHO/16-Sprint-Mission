@@ -3,17 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="stylesheet" rel="./login.css" />
+    <link href="./login.css" rel="stylesheet" />
     <title>Login</title>
   </head>
   <body>
     <header>
-      <div class="logo"><img src="./logo.png" alt="" class="image-logo" /></div>
+      <div class="logo">
+        <a href="/index.html"
+          ><img src="./logo.png" alt="" class="image-logo"
+        /></a>
+      </div>
     </header>
-    <section>
-      <form action="post">
-        <label for=""></label>
+    <section class="form-section">
+      <form action="post" method="post" class="form-signup">
+        <label for="email" class="label">이메일</label>
+        <input type="email" class="input email" name="email" />
+        <label for="password" class="label">비밀번호</label>
+        <input
+          id="password-field"
+          type="password"
+          class="input password"
+          name="password"
+        />
+        <button class="signup-button">로그인</button>
       </form>
+    </section>
+    <section class="social-section">
+      <div class="social-login">
+        <p>간편 로그인하기</p>
+        <div class="social-icon">
+          <img class="google icon" src="./icon_google.png" alt="google icon" />
+          <img class="kakao icon" src="./icon_kakao.png" alt="kakao icon" />
+        </div>
+      </div>
+    </section>
+    <section>
+      <p class="signup">
+        판다마켓이 처음인가요? <a href="./signup.html">회원가입</a>
+      </p>
     </section>
   </body>
 </html>
