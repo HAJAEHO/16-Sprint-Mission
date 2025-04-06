@@ -31,6 +31,10 @@ input {
   width: 100%;
 }
 
+.form-signup {
+  position: relative;
+}
+
 .form-signup .label {
   font-size: 18px;
   font-weight: 700;
@@ -84,4 +88,11 @@ input {
 .kakao.icon {
   margin-left: 10px;
   background-color: yellow;
+}
+
+.icon-eye {
+  display: inline;
+  position: relative;
+  top: -60px;
+  right: -580px;
 }
