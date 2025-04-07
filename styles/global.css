@@ -7,11 +7,11 @@ body {
     font-size: 16px;
 }
 
-header{
+header {
     position: sticky;
-    top:0;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #DFDFDF;
+    top: 0;
+    background-color: var(--color-surface-primary);
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav {
@@ -19,23 +19,23 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 70px;
-    background: rgba(255, 255, 255);
-    color: #FFFFFF;
+    background: var(--color-surface-primary);
+    color: var(--color-surface-primary);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 a:visited {
     color: inherit;
 }
-  
+
 /* 버튼스타일 */
 .btn-small-40 {
     padding: 12px 24px;
-    background-color: #3692FF;
-    color: #FFFFFF;
+    background-color: var(--brand-blue);
+    color: var(--color-surface-primary);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -47,18 +47,18 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 32px 200px 108px 200px;
-    background-color: #111827;
-    color: #9ca3af;
+    background-color: var(--secondary-900);
+    color: var(--secondary-400);
 }
 
 #footer--sns {
     display: flex;
     gap: 12px;
-    color: #FFFFFF;
+    color: var(--color-surface-primary);
 }
 
 #footer--menu {
     display: flex;
     gap: 30px;
-    color: #E5E7EB;
+    color: var(--secondary-200);
 }

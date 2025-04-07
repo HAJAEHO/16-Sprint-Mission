@@ -13,7 +13,8 @@
 #hero {
     background-image: url(/images/Img_home_top.png);
 }
-#bottom{
+
+#bottom {
     background-image: url(/images/Img_home_bottom.png);
 }
 
@@ -24,21 +25,21 @@
     background-repeat: no-repeat;
     height: 540px;
     align-items: center;
-    background-color: #CFE5FF;
+    background-color: var(--color-surface-accent);
     padding: 0 30px;
 }
 
 h1 {
     font-size: 40px;
     font-weight: 700;
-    color: #374151;
+    color: var(--secondary-700);
     line-height: 1.4;
     margin-bottom: 32px;
 }
 
-.btn{
-    background-color: #3b82f6;
-    color: #F9FAFB;
+.btn {
+    background-color: var(--brand-blue);
+    color: var(--secondary-50);
     border: none;
     padding: 16px 124px;
     border-radius: 40px;
@@ -70,7 +71,7 @@ h1 {
 
 
 .feature-tag {
-    color: #3692ff;
+    color: var(--brand-blue);
     font-size: 18px;
     line-height: 25px;
     font-weight: 700;

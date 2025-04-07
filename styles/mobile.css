@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     height: 540px;
     background-position: bottom;
-    background-color: #CFE5FF;
+    background-color: var(--color-surface-accent);
     text-align: center;
     padding-top: 48px;
 }
@@ -27,14 +27,14 @@
 h1 {
     font-size: 32px;
     font-weight: 700;
-    color: #374151;
+    color: var(--secondary-700);
     line-height: 1.4;
     margin-bottom: 18px;
 }
 
 .btn{
-    background-color: #3b82f6;
-    color: #F9FAFB;
+    background-color: var(--brand-blue);
+    color: var(--secondary-50);
     border: none;
     padding: 12px 71px;
     border-radius: 40px;
@@ -80,7 +80,7 @@ h1 {
 }
 
 .feature-tag {
-    color: #3692ff;
+    color: var(--brand-blue);
     font-size: 16px;
     line-height: 26px;
     font-weight: 700;

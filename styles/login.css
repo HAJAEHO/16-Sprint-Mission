@@ -48,13 +48,12 @@ input{
     height: 56px;
     border: none;
     border-radius: 12px;
-    background-color: #F3F4F6;
-    color: #1F2937;
+    background-color: var(--secondary-100);
+    color: var(--secondary-800);
     font-size: 16px;
     font-weight: 400;
     padding: 8px 16px;
     align-items: center;
-
 }
 
 .input-wrapper{
@@ -82,8 +81,8 @@ input{
     padding: 16px 124px;
     border: none;
     border-radius: 40px;
-    background-color: #3692FF;
-    color: #F3F4F6;
+    background-color: var(--brand-blue);
+    color: var(--secondary-100);
     font-size: 20px;
     font-weight: 600;
     line-height: 32px;
@@ -92,7 +91,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #E6F2FF;
+    background-color: var(--color-social-login-bg);
     width: 640px;
     height: 74px;
     border: none;
@@ -123,7 +122,7 @@ input{
 
 .signup-link a{
     line-height: 1;
-    color: #3692FF;
+    color: var(--brand-blue)
 }
 
 button{
