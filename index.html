@@ -1,123 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    <meta
+      name="description"
+      content="판다마켓 - 일상의 모든 물건을 거래하는 중고거래 플랫폼"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>판다마켓</title>
+    <meta property="og:title" content="판다마켓" />
+    <meta
+      property="og:description"
+      content="일상의 모든 물건을 거래하는 중고거래 플랫폼"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="index-style.css" />
+    <title>판다 마켓</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="container">
-          <a class="logo" href="/">
-            <img src="/image/판다 얼굴.png" alt="image_logo" />
-            <span>판다마켓</span>
-          </a>
-          <a href="/login" class="btn">로그인</a>
-        </div>
+    <header class="page-header">
+      <nav aria-label="메인 메뉴" class="nav-container">
+        <a href="/" class="nav-logo-link">
+          <img
+            class="nav-logo-image"
+            src="images/판다 얼굴.png"
+            alt="메인페이지로 이동"
+          />
+          <span aria-hidden="true" class="nav-logo-text">판다마켓</span>
+        </a>
+        <a aria-label="로그인 버튼 클릭" href="/login" class="nav-btn btn"
+          >로그인</a
+        >
       </nav>
-      <div class="landing">
-        <div class="landing-content">
-          <div class="landing-title">
-            <h1 class="landing-text">
-              일상의 모든 물건을<br />
-              거래해 보세요
-            </h1>
-            <a href="/items" class="btn">구경하러 가기</a>
-          </div>
-          <img src="/image/Img_home_top.png" alt="image_landing" />
-        </div>
-      </div>
     </header>
     <main>
-      <section>
-        <div class="container">
-          <img src="/image/Img_home_01.png" alt="image_home_1" />
-          <div class="content">
-            <h1 class="header">Hot item</h1>
-            <h1 class="big">
+      <section class="landing">
+        <div class="landing-container">
+          <div class="landing-context">
+            <h1 class="landing-title">
+              일상의 모든 물건을<br />
+              거래해보세요
+            </h1>
+            <a
+              aria-label="구경하러가기 버튼 클릭"
+              class="landing-btn btn"
+              href="/items"
+              >구경하러 가기
+            </a>
+          </div>
+          <img
+            class="landing-img"
+            src="images/Img_home_top.png"
+            alt="홈페이지를 소개하고 있는 그림"
+          />
+        </div>
+      </section>
+      <section class="page-main">
+        <div class="card-container">
+          <img
+            class="card-img"
+            src="images/img_home_01.png"
+            alt="가장 HOT한 중고거래 물품을 판다마켓에서 확인해보세요"
+          />
+          <div class="card-context-right">
+            <h2 class="card-title">Hot item</h2>
+            <h3 class="card-subtitle">
               인기 상품을<br />
-              확인해보세요
-            </h1>
-            <h1 class="small">
+              확인해 보세요
+            </h3>
+            <p class="card-description">
               가장 HOT한 중고거래 물품을<br />
-              판다마켓에서 확인해보세요
-            </h1>
+              판다 마켓에서 확인해보세요
+            </p>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <div class="content">
-            <h1 class="header">Search</h1>
-            <h1 class="big">
+      <section class="page-main">
+        <div class="card-container">
+          <div class="card-context-left">
+            <h2 class="card-title">Search</h2>
+            <h3 class="card-subtitle">
               구매를 원하는<br />
               상품을 검색하세요
-            </h1>
-            <h1 class="small">
+            </h3>
+            <p class="card-description">
               구매하고 싶은 물품은 검색해서<br />
               쉽게 찾아보세요
-            </h1>
+            </p>
           </div>
-          <img src="/image/Img_home_02.png" alt="image_home_2" />
+          <img
+            class="card-img"
+            src="images/img_home_02.png"
+            alt="구매하고 싶은 물품은 검색해서 쉽게 찾아보세요"
+          />
         </div>
       </section>
-      <section>
-        <div class="container">
-          <img src="/image/Img_home_03.png" alt="image_home_3" />
-          <div class="content">
-            <h1 class="header">Register</h1>
-            <h1 class="big">
+      <section class="page-main">
+        <div class="card-container">
+          <img
+            class="card-img"
+            src="images/Img_home_03.png"
+            alt="어떤 물건이든 판매하고 싶은 상품을 쉽게 등록하세요"
+          />
+          <div class="card-context-right">
+            <h2 class="card-title">Register</h2>
+            <h3 class="card-subtitle">
               판매를 원하는<br />
               상품을 등록하세요
-            </h1>
-            <h1 class="small">
+            </h3>
+            <p class="card-description">
               어떤 물건이든 판매하고 싶은 상품을<br />
               쉽게 등록하세요
-            </h1>
+            </p>
           </div>
         </div>
       </section>
-      <div class="landing-bottom">
-        <div class="landing">
-          <div class="landing-content">
-            <div class="landing-title">
-              <h1 class="landing-text">
-                믿을 수 있는<br />
-                판다마켓 중고 거래
-              </h1>
-            </div>
-            <img src="/image/Img_home_bottom.png" alt="image_landing_bottom" />
+      <section class="page-spacing"></section>
+      <section class="landing">
+        <div class="landing-container">
+          <div class="landing-context">
+            <h1 class="landing-title">
+              믿을 수 있는<br />
+              판다마켓 중고 거래
+            </h1>
           </div>
+          <img
+            class="landing-img"
+            src="images/Img_home_bottom.png"
+            alt="중고 거래를 진행중인 그림"
+          />
         </div>
-      </div>
+      </section>
     </main>
-    <footer>
-      <div class="container">
-        <span class="logo">©codeit - 2024</span>
-        <div class="link">
-          <a href="/privacy">Privacy Policy</a>
-          <a href="/faq">FAQ</a>
+    <footer aria-label="링크 모음" class="page-footer">
+      <div class="footer-container">
+        <div class="footer-corp">@codeit - 2024</div>
+        <div class="footer-links">
+          <a href="/Privacy">Privacy Policy</a>
+          <a href="/FAQ">FAQ</a>
         </div>
-        <div class="icon">
-          <a href="https://www.facebook.com/?locale=ko_KR" target="blank">
-            <img src="/image/ic_facebook.png" alt="icon_facebook" />
+        <div class="footer-icons">
+          <a
+            href="https://www.facebook.com/?locale=ko_KR"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-icon"
+              src="images/ic_facebook.png"
+              alt="판다마켓 페이스북 채널로 이동"
+            />
           </a>
-          <a href="https://x.com/?lang=ko" target="blank">
-            <img src="/image/ic_twitter.png" alt="icon_twitter" />
+          <a
+            href="https://x.com/?lang=ko"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-icon"
+              src="images/ic_twitter.png"
+              alt="판다마켓 트위터 채널로 이동"
+            />
           </a>
-          <a href="https://www.youtube.com/" target="blank">
-            <img src="/image/ic_youtube.png" alt="icon_youtube" />
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-icon"
+              src="images/ic_youtube.png"
+              alt="판다마켓 유튜브 채널로 이동"
+            />
           </a>
-          <a href="https://www.instagram.com/" target="blank">
-            <img src="/image/ic_instagram.png" alt="icon_instagram" />
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="footer-icon"
+              src="images/ic_instagram.png"
+              alt="판다마켓 인스타그램 채널로 이동"
+            />
           </a>
         </div>
       </div>

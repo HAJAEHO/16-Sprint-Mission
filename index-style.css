@@ -1,0 +1,256 @@
+:root {
+  --font-logo: ROKAFSansMedium;
+  --font-basic: Pretendard-Regular;
+
+  --font-size-logo: 25.63px;
+  --font-size-btn-login: 16px;
+  --font-size-btn-landing: 20px;
+  --font-size-title: 40px;
+  --font-size-subtitle: 24px;
+  --font-size-cardtitle: 18px;
+  --font-size-footer: 16px;
+
+  --color-btn: #3692ff;
+  --color-btn-hover: #1967d6;
+
+  --color-bg-body: #ffffff;
+  --color-bg-card: #fcfcfc;
+  --color-bg-ft: #111827;
+  --color-bg-landing: #cfe5ff;
+
+  --color-txt-main: #374151;
+  --color-txt-ft-corp: #9ca3af;
+  --color-txt-ft-link: #e5e7eb;
+
+  --border-radius-sm: 8px;
+  --border-radius-lg: 40px;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+}
+@font-face {
+  font-family: 'ROKAFSansMedium';
+  src: url('./fonts/rokafsansmedium-normal.woff') format('woff');
+}
+
+body {
+  margin: 0px;
+}
+
+.page-header {
+  background-color: var(--color-bg-body);
+  height: 70px;
+}
+
+.nav-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 200px;
+  max-width: 1520px;
+}
+
+.nav-logo-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4.75px;
+}
+
+.nav-logo-image {
+  width: 40px;
+}
+
+.nav-logo-text {
+  font-family: var(--font-logo);
+  color: var(--color-btn);
+  font-weight: 700;
+  font-size: var(--font-size-logo);
+}
+
+.btn {
+  background-color: var(--color-btn);
+  text-decoration: none;
+  color: var(--color-bg-body);
+  font-family: var(--font-basic);
+  text-align: center;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.nav-btn {
+  max-width: 128px;
+  border-radius: var(--border-radius-sm);
+  padding: 11px 0;
+}
+
+.landing {
+  background-color: var(--color-bg-landing);
+  padding: 200px 0 0;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.landing-context {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 357px;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.landing-title {
+  font-family: var(--font-basic);
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  color: var(--color-txt-main);
+  margin: 0;
+}
+
+.landing-img {
+  max-width: 746px;
+  min-width: 500px;
+  width: 100%;
+}
+
+.landing-btn {
+  padding: 12px 0;
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-btn-landing);
+  font-weight: 600;
+}
+
+.page-main {
+  background-color: var(--color-bg-body);
+  padding: 138px 0;
+}
+
+.card-container {
+  max-width: 988px;
+  height: 100%;
+  background-color: var(--color-bg-card);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.card-img {
+  max-width: 579px;
+  min-width: 400px;
+  width: 100%;
+}
+
+.card-context-left,
+.card-context-right {
+  font-family: var(--font-basic);
+  max-width: 359px;
+}
+
+.card-context-left {
+  padding-left: 24px;
+}
+.card-context-right {
+  padding-right: 24px;
+}
+
+.card-title {
+  color: var(--color-btn);
+  font-size: var(--font-size-cardtitle);
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.card-subtitle {
+  color: var(--color-txt-main);
+  font-size: var(--font-size-title);
+  font-weight: 700;
+  line-height: 140%;
+  margin: 0 0 24px;
+}
+
+.card-description {
+  color: var(--color-txt-main);
+  font-size: var(--font-size-subtitle);
+  font-weight: 500;
+  line-height: 32px;
+  margin: 0;
+}
+
+.page-spacing {
+  background-color: var(--color-bg-card);
+  height: 138px;
+}
+
+.page-footer {
+  background-color: var(--color-bg-ft);
+  height: 160px;
+  padding-top: 32px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 200px;
+  max-width: 1510px;
+  margin: 0 auto;
+}
+
+.footer-corp {
+  color: var(--color-txt-ft-corp);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: var(--color-txt-ft-link);
+  font-size: var(--font-size-footer);
+  font-weight: 400;
+}
+
+.footer-icon {
+  width: 18px;
+}
+
+@media (min-width: 0px) {
+  :root {
+    --font-size-title: 24px;
+    --font-size-subtitle: 14px;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --font-size-title: 32px;
+    --font-size-subtitle: 19px;
+  }
+}
+@media (min-width: 1920px) {
+  :root {
+    --font-size-title: 40px;
+    --font-size-subtitle: 24px;
+  }
+}
