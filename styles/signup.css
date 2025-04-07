@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Pretendard', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.login-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    line-height: 26px;
+    gap: 24px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+input{
+    width: 640px;
+    height: 56px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F3F4F6;
+    color: #1F2937;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 16px;
+    align-items: center;
+
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+
+  input:focus + .toggle-password {
+    display: block;
+  }
+
+.btn{
+    width: 640px;
+    height: 56px;
+    padding: 16px 124px;
+    border: none;
+    border-radius: 40px;
+    background-color: #3692FF;
+    color: #F3F4F6;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.social-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E6F2FF;
+    width: 640px;
+    height: 74px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 23px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.social-buttons{
+    display: flex;
+    gap:16px;
+}
+
+.signup-link{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+}
+
+.signup-link p{
+    line-height: 24px;
+}
+
+.signup-link a{
+    line-height: 1;
+    color: #3692FF;
+}

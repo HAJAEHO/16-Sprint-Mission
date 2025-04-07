@@ -8,6 +8,8 @@ body {
 }
 
 header{
+    position: sticky;
+    top:0;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DFDFDF;
 }
@@ -17,7 +19,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 70px;
-    background-color: #ffffff;
+    background: rgba(255, 255, 255);
     color: #FFFFFF;
 }
 
