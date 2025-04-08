@@ -88,21 +88,22 @@
 }
 
 /*섹션*/
-.Section {
-  display: flex;
-  padding: 5% 20%;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
+.Section_Box {
+    display: flex;
+    gap: 20px;
+    width: 60%;
+    padding: 4%;
+    border-radius: 8px;
+    background-color: #fcfcfc;
 }
 
-.Section_Left {
+.Section {
   display: flex;
-  padding: 5% 20%;
-  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   gap: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .Section_Wrap {
@@ -114,7 +115,7 @@
   gap: 5%;
 }
 
-.Section_Wrap_2 {
+.Section_Wrap_Left {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -212,7 +213,7 @@ p {
 
 body {
   margin: 0px;
-  background-color: var(--background);
+  background-color: var(--white);
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -247,6 +248,7 @@ img {
 
     .Shop_Btn {
         margin-top: 12px;
+        height: 48px;
     }
       
     .Nav_Wrap {
@@ -255,7 +257,6 @@ img {
         width: 80%;
         /* padding: 20px 0px; */
         justify-content: space-between;
-        align-items: center;
       }
 
     h1 {
@@ -266,18 +267,22 @@ img {
         text-align: center;
       }
 
+    .Section_Contents_Title {
+        text-align: left;
+        font-size: 24px;
+    }
+
+
     h2 {
         color: var(--Secondary-700);
         font-weight: var(--regular);
         font-size: 18px;
-        text-align: center;
       }
 
     label  {
         color: var(--brand-blue);
         font-weight: var(--bold);
         font-size: 16px;
-        text-align: center;
     }
 
     .Main_Top {
@@ -310,28 +315,31 @@ img {
         gap: 32px;
     }
 
-    .Section_Left {
-        display: flex;
+    .Section_Box {
         flex-direction: column;
-        gap: 32px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .Section_Wrap {
         gap: 0px;
+        padding: 5%;
+        box-sizing: border-box;
     }
-    
+
+    .Section_Wrap_Left {
+        gap: 0px;
+        padding: 5%;
+        box-sizing: border-box;
+    }
 
     .Section_Label {
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
     }
     
-    img {
-        display: block;
-        width: 100%;
-      }
-
     .Main_Bottom {
         height: 480px;
     }
@@ -381,4 +389,10 @@ img {
         justify-content: center;
         align-items: center;
     }
+
+    img {
+        display: block;
+        width: 100%;
+      }
+
 }
