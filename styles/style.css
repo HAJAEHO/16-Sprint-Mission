@@ -3,15 +3,15 @@
 @import "common.css";
 @import "variables.css";
 
-/*=== 메인 페이지 ===*/
+/*================ 메인 ================*/
 /* header */
 .header {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  height: 4.375rem;
-  padding: 0 12.5rem;
+  height: 70px;
+  padding: 0 1.714rem;
   z-index: 9;
   background: #fff;
   display: flex;
@@ -22,111 +22,108 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0.625rem 0;
+  padding: 0.714rem 0;
 }
 
 .logo {
-  width: 9.625rem;
+  width: 7.286rem;
 }
 
 .login-button {
-  width: 8rem;
-  height: 3rem;
+  width: 9.143rem;
+  height: 3.429rem;
 }
 
 /* section */
 .section {
   display: flex;
   justify-content: center;
-  padding: var(--spacing-large) 0;
   background: #fff;
+  padding: 0 1.143rem 6rem;
 }
 
 .section-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: var(--container-width-small);
-  gap: 4rem;
-  background: var(--background-light);
-  border-radius: var(--border-radius-md);
-  overflow: hidden;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.714rem;
+}
+.section-search .section-container {
+  align-items: flex-end;
 }
 
-.section-container img {
-  width: 36.25rem;
+.section-hotitem {
+  padding-top: 3.714rem;
+}
+
+.section-info {
+  color: var(--gray700);
+}
+
+.section-search .section-info {
+  text-align: right;
 }
 
 .section-label {
-  margin-bottom: 0.75rem;
-  font-size: 1.125rem;
+  margin-bottom: 8px;
+  font-size: 1.143rem;
   font-weight: 700;
   color: var(--primary-color);
 }
 
 .section-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.143rem;
+  font-size: 1.714rem;
 }
 
 .section-desc {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2rem;
-  color: var(--text-primary);
-}
-
-.section-search {
-  text-align: right;
-}
-.section-search .section-container img {
-  order: 2;
-}
-
-.section-register .section-container {
-  justify-content: flex-start;
+  font-size: 1.143rem;
 }
 
 /* banner */
 .banner {
-  background: #cfe5ff;
+  min-height: 540px;
+  background: var(--background-blue);
+  color: var(--gray700);
+  text-align: center;
 }
 
 .banner-container {
-  height: 33.75rem;
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: 46.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 540px;
 }
 
-.banner.banner-hero .banner-container {
-  background-image: url("../../images/Img_home_top.png");
-}
-
-.banner:not(.banner-hero) {
-  margin-top: var(--spacing-large);
-}
-
-.banner .banner-container {
-  background-image: url("../images/Img_home_bottom.png");
-}
-
-.banner-info {
-  padding-top: 15rem;
-}
-
-.banner .banner-info {
-  padding-top: 16rem;
+.banner-hero {
+  background: var(--background-blue-light);
 }
 
 .banner-title {
-  margin-bottom: 2rem;
+  font-size: 2.286rem;
+  margin-bottom: 1.286rem;
+}
+
+.banner-info {
+  padding-top: 8.571rem;
+}
+
+.banner-hero .banner-info {
+  margin: 0 auto;
+  padding-top: 3.429rem;
 }
 
 .banner-info a {
-  display: inline-block;
-  width: 22.25rem;
-  margin-bottom: 6.25rem;
-  font-size: 1.25rem;
+  display: block;
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 744px;
+  margin: 0 auto;
 }
 
 /* footer */
@@ -138,10 +135,15 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0 6.75rem;
+  padding: 2rem 1.5rem 6.75rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .copyright {
+  order: 3;
+  width: 100%;
+  gap: 1.714rem;
   color: var(--gray400);
 }
 
@@ -155,7 +157,7 @@
   gap: 0.75rem;
 }
 
-/*=== 로그인 페이지 ===*/
+/*================ 로그인, 회원가입 ================*/
 .easy-login {
   display: flex;
   justify-content: space-between;
@@ -172,179 +174,102 @@
   gap: 1rem;
 }
 
-/*=== responsive ===*/
-/* desktop */
-@media (max-width: 1600px) {
+/*================ 반응형 ================*/
+@media (min-width: 640px) {
+  .logo {
+    width: 10.857rem;
+  }
+  .section-hotitem {
+    padding-top: 1.143rem;
+  }
+  .banner {
+    height: 926px;
+  }
+  .banner.banner-hero {
+    height: 770px;
+  }
+  .footer-container {
+    flex-wrap: initial;
+  }
+  .copyright {
+    order: initial;
+    width: auto;
+  }
+
+  .form {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 768px) {
   html {
     font-size: 15px;
   }
-}
 
-@media (max-width: 1280px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 1120px) {
-  .header-container,
-  .banner-container,
-  .footer-container {
-    width: 100%;
-  }
-
-  .banner-info {
-    padding: 15rem 1.5rem 0;
-  }
-
-  .footer-container {
-    padding: 2rem 1.5rem 6.75rem;
-  }
-}
-
-/* tablet */
-@media (max-width: 1024px) {
   .header {
-    padding: 0 1.5rem;
-  }
-
-  .banner-container {
-    margin: 0;
-    background-size: 60vw;
-    background-position: 40vw bottom;
-  }
-
-  .section-container {
-    width: 100%;
-    background: #fff;
-  }
-
-  .section-register .section-container {
-    justify-content: center;
-  }
-
-  .section-container img {
-    width: 50%;
-  }
-}
-
-/* large mobile */
-@media (max-width: 767px) {
-  .header-container,
-  .banner-container,
-  .footer-container {
-    width: 100%;
-  }
-
-  .banner.banner-hero {
-    margin-bottom: 1.5rem;
-    height: 55rem;
-  }
-
-  .banner:not(.banner-hero) {
-    margin-top: 4rem;
-    height: 66.214rem;
-  }
-
-  .banner-container {
-    height: 100%;
-    background-size: 100%;
-    background-position: center bottom;
-  }
-
-  .banner-info {
-    padding-top: 6rem;
-    text-align: center;
-  }
-  .banner .banner-info {
-    padding-top: 14.286rem;
-  }
-
-  .section {
-    margin-bottom: 3.25rem;
-    padding: 0 1.5rem;
-  }
-
-  .section-container {
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 0;
-    gap: 1.5rem;
-  }
-  .section-search .section-container {
-    align-items: flex-end;
-  }
-
-  .section-container img {
-    width: 100%;
-  }
-
-  .section-search .section-container img {
-    order: 0;
-  }
-
-  .easy-login-icons img {
-    width: 44px;
-  }
-}
-
-@media (max-width: 640px) {
-  .form {
-    width: 100%;
-    padding: 0 1.5rem;
-  }
-
-  .form-logo {
-    width: 65%;
-  }
-}
-
-/* mobile */
-@media (max-width: 480px) {
-  h2 {
-    font-size: 1.714rem;
-  }
-
-  .banner.banner-hero,
-  .banner:not(.banner-hero) {
-    height: 540px;
-  }
-
-  .banner-info {
-    padding-top: 8.571rem;
+    padding: 0 12.5rem;
   }
 
   .banner-hero .banner-info {
-    width: 240px;
     margin: 0 auto;
-    padding: 3.429rem 0 0;
+    padding-top: 5.6rem;
+  }
+
+  .section-container {
+    align-items: center;
+    flex-direction: row;
+    width: var(--container-width-small);
+    gap: 4rem;
+    background: var(--background-light);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+  }
+  .section-search .section-container {
+    align-items: center;
+  }
+
+  .section-container img {
+    max-width: 50%;
+  }
+  .section-search .section-container img {
+    order: 2;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+
+  .header-container,
+  .banner-container,
+  .footer-container {
+    width: var(--container-width);
+    margin: 0 auto;
+  }
+
+  .banner,
+  .banner.banner-hero {
+    height: 540px;
+  }
+  .banner-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .banner-info {
+    padding-bottom: 10.75rem;
+  }
+  .banner-hero .banner-info {
+    padding-bottom: 6.25rem;
   }
 
   .banner-title {
-    font-size: 2.286rem;
+    text-align: left;
   }
 
-  .banner-info a {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .section-title {
-    margin-bottom: 1.143rem;
-  }
-
-  .section-desc {
-    font-size: 1.143rem;
-  }
-
-  .footer-container {
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-
-  .copyright {
-    order: 3;
-    width: 100%;
-    gap: 1.714rem;
+  .section-hotitem {
+    padding-top: 8.625rem;
   }
 }

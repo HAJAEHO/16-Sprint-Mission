@@ -16,7 +16,8 @@
   --primary-click-color: #1251aa;
   --text-primary: var(--gray600);
   --background-light: #fcfcfc;
-  --background-blue: #e6f2ff;
+  --background-blue: #cfe5ff;
+  --background-blue-light: #e6f2ff;
 
   /* layout */
   --container-width: 70rem;
