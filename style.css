@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: 'ROKAF SANS';
+    src: url('fonts/ROKAF\ Sans\ Bold.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Pretendard-Regular';
+    white-space: nowrap; /*브라우저 줄였을 때 텍스트 줄바뀜 방지*/
+}
+
+.container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1520px;
+    min-width: 820px;
+    height: 70px;
+    padding: 9px 200px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.box_logo-and-url {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.url_home {
+    color: #3692ff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25.63px;
+    font-family: "ROKAF SANS";
+}
+
+.button_login{
+    display: inline-block;
+    width: 128px;
+    height: 48px;
+    background-color: #3692ff;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.move-to-market, .closing {
+    background-color: #cfe5ff;
+    height: 540px;
+    display: flex;
+    align-items: flex-end;
+}
+
+h2 {
+    font-size: max(2vw, 32px); /*둘 중 브라우저 크기에 따라 큰 값을 적용*/
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+}
+
+.container_move-to-market, .container_closing {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_move-to-market {
+    height: 340px;
+}
+
+.container_closing {
+    height: 397px;
+}
+
+.text-and-button_move-to-market {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 260px;
+    gap: 32px;
+    padding-bottom: 60px;
+    flex: 1 1 auto;
+}
+
+.button_move-to-market {
+    display: inline-block;
+    width: 357px;
+    height: 56px;
+    background-color: #3692ff;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 16px 124px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.button-interactions {
+    cursor: pointer;
+}
+
+.button-interactions:hover {
+    background-color: #1967d6;
+}
+
+.button-interactions:active {
+    background-color: #1251aa;
+}
+
+.button-interactions:disabled {
+    background-color: #9ca3af;
+}
+
+.img_top_main, .img_bottom_main {
+    max-width: 746px;
+    flex: 1 1 auto;
+}
+
+.container_main {
+    background-color: #fcfcfc;
+    max-width: 988px;
+    height: 444px;
+    display: flex;
+    border-radius: 12px;
+    gap: 64px;
+    margin: 276px auto;
+}
+
+.container_main.first_container_main {
+    margin-top: 138px;
+}
+
+.img_main {
+    width: 579px;
+    height: 444px;
+    flex: 1 1 auto;
+    object-fit: cover;
+}
+
+.box_description_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 24px;
+    flex: 1 1 auto;
+}
+
+.container_main.align_right {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.title_main {
+    color: #3692ff;
+    font-weight: 700;
+    line-height: 26px;
+    font-size: max(0.9vw, 14px);
+}
+
+.box_description_main.align_right {
+    padding-right: 0;
+    padding-left: 24px;
+}
+
+.description_main {
+    font-weight: 500;
+    line-height: 32px;
+    font-size: max(1.23vw, 20px);
+}
+
+.text_closing {
+    flex: 1 1 auto;
+}
+
+footer {
+    background-color: #111827;
+    height: 160px;
+    padding: 32px 0px;
+    gap: 10px;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    margin: 0 auto;
+}
+
+.copyright {
+    color: #9ca3af;
+    margin: 0;
+    flex: 0 1 auto;
+}
+
+.box_urls_footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex: 1 1 auto;
+}
+
+.url_privacy, .url_faq {
+  text-decoration: none;
+  color: #e5e7eb
+}
+
+.icons_footer {
+  display: flex;
+  flex: 0 1 auto;
+  gap:12px;
+}
