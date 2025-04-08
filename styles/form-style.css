@@ -32,6 +32,7 @@
   --color-txt-label: var(--color-gray800);
   --color-txt-input: var(--color-gray800);
   --color-txt: var(--color-gray800);
+  --color-bg-form-page: #fcfcfc;
   --color-bg-form-easy: #e6f2ff;
   --color-bg-input-container: var(--color-gray200);
   --color-bg-input: var(--color-gray200);
@@ -72,6 +73,7 @@
 
 body {
   font-family: var(--font-basic);
+  background-color: var(--color-bg-form-page);
 }
 
 .form-form {
