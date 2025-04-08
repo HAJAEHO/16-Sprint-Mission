@@ -1,0 +1,127 @@
+@import url(../reset.css);
+
+:root {
+  /*색상 변수*/
+  --primary-color: #3692ff;
+  --primary-hover: #1251aa;
+  --secondary-color:#1F2937;
+}
+
+main {
+  position: relative;
+}
+
+.main__login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 640px;
+  margin: 231px auto;
+}
+
+.login__logo img {
+  width: 396px;
+}
+
+.login__form {
+  width: 100%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+  position: relative;
+}
+
+/*비밀번호 보이기 안보이기*/
+label[for="toggle-showing-password"] {
+  position: absolute;
+  top: 180px;
+  right: 20px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(./img/pw_hide.png) center center;
+  background-size: cover;
+}
+
+#toggle-showing-password:checked ~ label[for="toggle-showing-password"] {
+  background-image: url(./img/pw_show.png);
+}
+
+#toggle-showing-password {
+  display: none;
+}
+
+form label {
+  display: inline-block;
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+input {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  height: 56px;
+  padding: 12px 24px;
+}
+
+button {
+  height: 56px;
+  padding: 16px 124px;
+  border-radius: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+.login__alert {
+  height: 74px;
+  background-color: #e6f2ff;
+  padding: 16px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.login__alert img {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.icon__container a:last-child {
+  margin-left: 16px;
+}
+
+.login__sign-up {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.login__sign-up a {
+  text-decoration: underline;
+  color: var(--primary-color);
+  cursor: pointer;
+}

@@ -56,6 +56,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*sprint2 추가 내용*/
+    position: sticky;
+    top:0; 
+    background-color: #fff;
 }
 
 nav {
