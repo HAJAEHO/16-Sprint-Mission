@@ -1,0 +1,79 @@
+.memberBox {
+  max-width: 640px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  padding: 230px 0;
+}
+
+.memberBox .logo {
+  margin-bottom: 40px;
+}
+.memberBox .logo a {
+  display: block;
+  max-width: 396px;
+  margin: 0 auto;
+}
+
+.form__inputBox {
+  margin-bottom: 24px;
+}
+.form__inputBox .inputBox__label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gray800);
+}
+
+/* 비밀번호 인풋박스박스 */
+.form__inputBox-pw .inputBox__input {
+  position: relative;
+}
+.form__inputBox-pw .inputBox__input .inputBox__toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: var(--space-3);
+}
+.form__inputBox-pw .inputBox__input.pw_show .inputBox__toggle {
+  background: url("../images/common/btn_pw_toggle_show.svg") center no-repeat;
+  background-size: contain;
+}
+.form__inputBox-pw .inputBox__input.pw_show .inputBox__toggle img {
+  opacity: 0;
+}
+
+.form__submitBtn {
+  width: 100%;
+  min-width: auto;
+  font-size: 20px;
+}
+
+.memberBox__snsBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--space-3) 0;
+  padding: var(--space-2) 23px;
+  background-color: #e6f2ff;
+  border-radius: 8px;
+}
+.memberBox__snsBox .snsBox__title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray800);
+}
+.memberBox__snsBox .snsBox__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.memberBox__guideText {
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray800);
+}
+.memberBox__guideText .guideText__link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
