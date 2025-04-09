@@ -44,12 +44,12 @@ nav {
 
 .login {
   padding: 16px 34px;
-  border-radius: 8px;
+  border-radius: 10px;
   color: #f3f4f6;
   margin: 0;
 }
 
-.omg {
+.title-helper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -119,8 +119,9 @@ p {
 .register {
   display: flex;
   justify-content: center;
+  border-radius: 12px;
   align-items: center;
-  gap: 48px;
+  gap: 64px;
   background-color: #fcfcfc;
   width: 1110px;
 }
