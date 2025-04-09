@@ -1,75 +1,10 @@
-:root {
-  --font-size-logo: 25.63px;
-  --font-size-btn-login: 16px;
-  --font-size-btn-landing: 20px;
-  --font-size-title: 40px;
-  --font-size-subtitle: 24px;
-  --font-size-cardtitle: 18px;
-  --font-size-footer: 16px;
-
-  --font-weight-nav-logo-text: 700;
-  --font-weight-landing-title: 700;
-  --font-weight-landing-btn: 600;
-  --font-weight-card-title: 700;
-  --font-weight-card-subtitle: 700;
-  --font-weight-card-description: 500;
-  --font-weight-footer-links: 400;
-
-  --font-line-height-card-subtitle: 140%;
-  --font-line-height-card-description: 32px;
-
-  --color-bg-body: #ffffff;
-  --color-bg-card: #fcfcfc;
-  --color-bg-ft: #111827;
-  --color-bg-landing: #cfe5ff;
-
-  --color-txt-main: #374151;
-  --color-txt-ft-corp: #9ca3af;
-  --color-txt-ft-link: #e5e7eb;
-
-  --border-radius-sm: 8px;
-  --border-radius-lg: 40px;
-
-  --size-width-footer-icon: 18px;
-  --size-width-nav-logo-img: 40px;
-  --size-height-header: 70px;
-  --size-width-nav-container-max: 1520px;
-  --size-width-footer-max: 1520px;
-  --size-width-nav-btn-max: 128px;
-  --size-width-landing-img-max: 746px;
-  --size-width-landing-img-min: 500px;
-  --size-width-card-container-max: 988px;
-  --size-width-card-img-max: 579px;
-  --size-width-card-img-min: 400px;
-  --size-width-card-context-max: 359px;
-  --size-height-footer: 160px;
-  --size-height-page-spacing: 138px;
-
-  --padding-nav-container: 0 200px;
-  --padding-nav-btn: 11px 0;
-  --padding-landing-btn: 12px 0;
-  --padding-landing: 200px 0 0;
-  --padding-page-main: 138px 0;
-  --padding-footer: 32px 0 0;
-  --padding-footer-container: 0 200px;
-
-  --margin-landing-context: 0 0 60px;
-  --margin-side-card-context: 24px;
-  --margin-card-container: 0 auto;
-  --margin-card-title: 0 0 12px;
-  --margin-card-subtitle: 0 0 24px;
-  --margin-footer-container: 0 auto;
-
-  --gap-nav-logo-container: 4.75px;
-  --gap-landing-container: 7px;
-  --gap-card-container: 64px;
-  --gap-footer-links: 30px;
-  --gap-footer-icons: 13px;
+body {
+  font-family: 'Pretendard-Regular';
 }
 
 .page-header {
-  background-color: var(--color-bg-body);
-  height: var(--size-height-header);
+  background-color: var(--color-white);
+  height: 70px;
   position: sticky;
   top: 0px;
 }
@@ -81,8 +16,8 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: var(--padding-nav-container);
-  max-width: var(--size-width-nav-container-max);
+  padding: 0 200px;
+  max-width: 1520px;
 }
 
 .nav-logo-link {
@@ -90,29 +25,29 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--gap-nav-logo-container);
+  gap: 8.59px;
 }
 
 .nav-logo-image {
-  width: var(--size-width-nav-logo-img);
+  width: 40px;
 }
 
 .nav-logo-text {
-  font-family: var(--font-logo);
-  color: var(--color-btn);
-  font-weight: var(--font-weight-nav-logo-text);
-  font-size: var(--font-size-logo);
+  font-family: 'ROKAFSansMedium';
+  color: var(--color-blue400);
+  font-weight: var(--font-weight-bold);
+  font-size: 25.63px;
 }
 
 .nav-btn {
-  max-width: var(--size-width-nav-btn-max);
-  border-radius: var(--border-radius-sm);
-  padding: var(--padding-nav-btn);
+  max-width: 128px;
+  border-radius: var(--border-radius-xs);
+  padding: 11px 0;
 }
 
 .landing {
-  background-color: var(--color-bg-landing);
-  padding: var(--padding-landing);
+  background-color: var(--color-blue200);
+  padding: 200px 0 0;
 }
 
 .landing-container {
@@ -120,7 +55,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: var(--gap-landing-container);
+  gap: 7px;
 }
 
 .landing-context {
@@ -129,151 +64,137 @@
   justify-content: center;
   width: 357px;
   gap: 32px;
-  margin: var(--margin-landing-context);
+  margin: 0 0 60px;
 }
 
 .landing-title {
-  font-family: var(--font-basic);
   font-size: var(--font-size-title);
-  font-weight: var(--font-weight-landing-title);
-  color: var(--color-txt-main);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray700);
   margin: 0;
 }
 
 .landing-img {
-  max-width: var(--size-width-landing-img-max);
-  min-width: var(--size-width-landing-img-min);
+  max-width: 746px;
+  min-width: 500px;
   width: 100%;
 }
 
 .landing-btn {
-  padding: var(--padding-landing-btn);
+  padding: 12px 0;
   border-radius: var(--border-radius-lg);
-  font-size: var(--font-size-btn-landing);
-  font-weight: var(--font-weight-landing-btn);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .page-main {
-  background-color: var(--color-bg-body);
-  padding: var(--padding-page-main);
+  background-color: var(--color-white);
+  padding: 138px 0;
 }
 
 .card-container {
-  max-width: var(--size-width-card-container-max);
+  max-width: 988px;
   height: 100%;
-  background-color: var(--color-bg-card);
-  margin: var(--margin-card-container);
+  background-color: var(--color-gray050);
+  border-radius: var(--border-radius-sm);
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: var(--gap-card-container);
+  gap: 64px;
 }
 
 .card-img {
-  max-width: var(--size-width-card-img-max);
-  min-width: var(--size-width-card-img-min);
+  max-width: 579px;
+  min-width: 400px;
   width: 100%;
 }
 
 .card-context-left,
 .card-context-right {
-  font-family: var(--font-basic);
-  max-width: var(--size-width-card-context-max);
+  max-width: 359px;
 }
 
 .card-context-left {
-  padding-left: var(--margin-side-card-context);
+  padding-left: 24px;
   text-align: right;
 }
 .card-context-right {
-  padding-right: var(--margin-side-card-context);
+  padding-right: 24px;
 }
 
 .card-title {
-  color: var(--color-btn);
-  font-size: var(--font-size-cardtitle);
-  font-weight: var(--font-weight-card-title);
-  margin: var(--margin-card-title);
+  color: var(--color-blue400);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 12px;
 }
 
 .card-subtitle {
-  color: var(--color-txt-main);
+  color: var(--color-gray700);
   font-size: var(--font-size-title);
-  font-weight: var(--font-weight-card-subtitle);
-  line-height: var(--font-line-height-card-subtitle);
-  margin: var(--margin-card-subtitle);
+  font-weight: var(--font-weight-bold);
+  line-height: 140%;
+  margin: 0 0 24px;
 }
 
 .card-description {
-  color: var(--color-txt-main);
-  font-size: var(--font-size-subtitle);
-  font-weight: var(--font-weight-card-description);
-  line-height: var(--font-line-height-card-description);
+  color: var(--color-gray700);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
+  line-height: 32px;
   margin: 0;
 }
 
 .page-spacing {
-  background-color: var(--color-bg-card);
-  height: var(--size-height-page-spacing);
+  background-color: var(--color-gray050);
+  height: 138px;
 }
 
 .page-footer {
-  background-color: var(--color-bg-ft);
-  height: var(--size-height-footer);
-  padding: var(--padding-footer);
+  background-color: var(--color-blue950);
+  height: 160px;
+  padding: 32px 0 0;
 }
 
 .footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: var(--padding-footer-container);
-  max-width: var(--size-width-footer-max);
-  margin: var(--margin-footer-container);
+  padding: 0 200px;
+  max-width: 1520px;
+  margin: 0 auto;
 }
 
 .footer-corp {
-  color: var(--color-txt-ft-corp);
+  color: var(--color-gray400);
 }
 
 .footer-links {
   display: flex;
   flex-direction: row;
-  gap: var(--gap-footer-links);
+  gap: 30px;
 }
 .footer-links a {
   text-decoration: none;
-  color: var(--color-txt-ft-link);
-  font-size: var(--font-size-footer);
-  font-weight: var(--font-weight-footer-links);
+  color: var(--color-gray300);
+  font-size: var(--font-size-base);
 }
 
 .footer-icons {
   display: flex;
   flex-direction: row;
-  gap: var(--gap-footer-icons);
+  gap: 13px;
 }
 
 .footer-icon {
-  width: var(--size-width-footer-icon);
+  width: 18px;
 }
 
 @media (min-width: 0px) {
-  :root {
-    --font-size-title: 24px;
-    --font-size-subtitle: 14px;
-  }
 }
 @media (min-width: 992px) {
-  :root {
-    --font-size-title: 32px;
-    --font-size-subtitle: 19px;
-  }
 }
 @media (min-width: 1920px) {
-  :root {
-    --font-size-title: 40px;
-    --font-size-subtitle: 24px;
-  }
 }

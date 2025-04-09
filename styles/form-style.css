@@ -1,83 +1,6 @@
-:root {
-  --font-logo: ROKAFSansMedium;
-  --font-basic: Pretendard-Regular;
-
-  --font-size-logo: 66.34px;
-  --font-size-label: 18px;
-  --font-size-input: 16px;
-  --font-size-form-btn: 20px;
-  --font-size-form-footer: 14px;
-
-  --font-weight-logo: 700;
-  --font-weight-label: 700;
-  --font-weight-input: 400;
-  --font-weight-form-btn: 400;
-  --font-weight-form-easy: 500;
-  --font-weight-form-link: 500;
-
-  --color-blue: #3692ff;
-  --color-gray900: #111827;
-  --color-gray800: #1f2937;
-  --color-gray700: #374151;
-  --color-gray600: #4b5563;
-  --color-gray500: #6b7280;
-  --color-gray400: #9ca3af;
-  --color-gray300: #e5e7eb;
-  --color-gray200: #f3f4f6;
-  --color-gray100: #f9fafb;
-
-  --color-logo-text: var(--color-blue);
-  --color-btn: var(--color-blue);
-  --color-btn-hover: #1967d6;
-  --color-txt-label: var(--color-gray800);
-  --color-txt-input: var(--color-gray800);
-  --color-txt: var(--color-gray800);
-  --color-bg-form-page: #fcfcfc;
-  --color-bg-form-easy: #e6f2ff;
-  --color-bg-input-container: var(--color-gray200);
-  --color-bg-input: var(--color-gray200);
-  --color-bg-icon-google: #ffffff;
-  --color-border-icon-google: var(--color-gray100);
-
-  --gap-logo: 22.24px;
-  --gap-form-easy-items: 16px;
-
-  --margin-btm-label: 16px;
-  --margin-btm-input: 24px;
-  --margin-btm-form-btn: 24px;
-  --margin-btm-form-easy: 24px;
-  --margin-form: 0 auto;
-  --margin-form-footer: 0 auto;
-  --margin-form-logo-container: 231px auto 40px;
-
-  --padding-left-form-input: 0 0 0 24px;
-  --padding-form-easylogin: 16px 23px;
-  --padding-side-input-container: 0 0px;
-  --margin-right-password-icon: 25.8px;
-
-  --border-r-input: 12px;
-  --border-r-btn-form: 40px;
-  --border-r-form-easy: 8px;
-  --border-r-icon: 100px;
-
-  --size-icon: 42px;
-  --size-width-form-logo-img: 103.53px;
-  --size-width-form-max: 640px;
-  --size-width-password-icon: 20.47px;
-  --size-height-password-icon-invisible: 18.07px;
-  --size-height-password-icon-visible: 14px;
-  --size-height-form-easylogin: 74px;
-  --size-height-form-input-container: 56px;
-  --size-height-form-btn: 56px;
-}
-
 body {
-  font-family: var(--font-basic);
-  background-color: var(--color-bg-form-page);
-}
-
-.form-form {
-  max-width: var(--size-width-form-max);
+  font-family: 'Pretendard-Regular';
+  background-color: var(--color-gray050);
 }
 
 .form-logo-container {
@@ -85,43 +8,43 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: var(--gap-logo);
+  gap: 22.24px;
   text-decoration: none;
-  margin: var(--margin-form-logo-container);
+  margin: 231px auto 40px;
 }
 
 .form-logo-img {
-  width: var(--size-width-form-logo-img);
+  width: 103.53px;
 }
 
 .form-logo-text {
-  font-family: var(--font-logo);
-  font-size: var(--font-size-logo);
-  font-weight: var(--font-weight-logo);
-  color: var(--color-logo-text);
+  font-family: ROKAFSansMedium;
+  font-size: 66.34px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blue400);
 }
 
 .form-form {
-  max-width: var(--size-width-form-max);
+  max-width: 640px;
   width: 100%;
-  margin: var(--margin-form);
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .form-label {
-  font-size: var(--font-size-label);
-  font-weight: var(--font-weight-label);
-  color: var(--color-txt-label);
-  margin-bottom: var(--margin-btm-label);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray800);
+  margin-bottom: 24px;
 }
 
 .form-input-container {
-  background-color: var(--color-bg-input-container);
-  height: var(--size-height-form-input-container);
-  margin-bottom: var(--margin-btm-input);
-  padding: var(--padding-side-input-container);
-  border-radius: var(--border-r-input);
+  background-color: var(--color-gray200);
+  height: 56px;
+  margin-top: 16px;
+  padding: 0 0px;
+  border-radius: var(--border-radius-sm);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -129,64 +52,66 @@ body {
 
 .form-input {
   height: 100%;
-  font-weight: var(--font-weight-input);
-  font-size: var(--font-size-input);
-  color: var(--color-txt-input);
-  background-color: var(--color-bg-input);
+  font-size: var(--font-size-base);
+  color: var(--color-gray800);
+  background-color: var(--color-gray200);
   border: none;
-  border-radius: var(--border-r-input);
+  border-radius: var(--border-radius-sm);
   flex-grow: 1;
-  padding: var(--padding-left-form-input);
+  padding: 0 0 0 24px;
 }
 
+.form-icon-password-invisible,
+.form-icon-password-visible {
+  width: 20.47px;
+  margin-right: 25.8px;
+}
 .form-icon-password-invisible {
-  width: var(--size-width-password-icon);
-  height: var(--size-height-password-icon-invisible);
-  margin-right: var(--margin-right-password-icon);
+  height: 18.07px;
 }
 .form-icon-password-visible {
-  width: var(--size-width-password-icon);
-  height: var(--size-height-password-icon-visible);
-  margin-right: var(--margin-right-password-icon);
+  height: 14px;
 }
 
 .form-btn {
-  height: var(--size-height-form-btn);
-  border-radius: var(--border-r-btn-form);
-  font-size: var(--font-size-form-btn);
-  font-weight: var(--font-weight-form-btn);
-  margin-bottom: var(--margin-btm-form-btn);
+  height: 56px;
+  font-family: 'Pretendard-Regular';
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-xl);
+  margin-bottom: 24px;
 }
 
 .form-easy {
-  height: var(--size-height-form-easylogin);
-  background-color: var(--color-bg-form-easy);
-  border-radius: var(--border-r-form-easy);
+  font-weight: 500;
+  height: 74px;
+  background-color: var(--color-blue100);
+  border-radius: var(--border-radius-xs);
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: var(--padding-form-easylogin);
-  margin-bottom: var(--margin-btm-form-easy);
-  gap: var(--gap-form-easy-items);
+  padding: 16px 23px;
+  margin-bottom: 24px;
+  gap: 16px;
 }
 
 .form-easy-text {
   margin: 0;
-  color: var(--color-txt);
+  color: var(--color-gray800);
+  font-size: var(--font-size-base);
   flex-grow: 1;
 }
 
 .form-easy-icon {
-  width: var(--size-icon);
-  height: var(--size-icon);
+  width: 42px;
+  height: 42px;
 }
 
 .form-footer {
   font-size: var(--font-size-form-footer);
-  font-weight: var(--font-weight-form-link);
-  margin: var(--margin-form-footer);
+  font-weight: 500;
+  margin: 0 auto;
 }
 
 .form-footer-link {
-  color: var(--color-btn);
+  color: var(--color-blue400);
 }
