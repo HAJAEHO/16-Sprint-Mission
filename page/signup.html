@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/style.css" />
-    <title>로그인</title>
+    <title>회원가입</title>
   </head>
   <body>
-    <section class="AuthContainer">
+    <section class="AuthContainer sign-up">
       <h1 class="title">
         <a href="../index.html">
           <img src="../images/logo_sub_page.png" alt="판다마켓로고" />
         </a>
         <span class="sr-only">판다마켓</span>
       </h1>
-
-      <form class="form-wrap" action="/login">
+      <form class="form-wrap" action="/sign">
         <label class="label" for="email">이메일</label>
         <input
           type="email"
@@ -26,13 +25,34 @@
           placeholder="codeit@email.com"
         />
 
+        <label class="label" for="nickname">닉네임</label>
+        <input
+          type="text"
+          id="nickname"
+          name="nickname"
+          required
+          class="input"
+          placeholder=""
+        />
+
         <label class="label" for="pw">비밀번호</label>
         <div class="pw-wrap">
           <input type="password" id="pw" name="pw" required class="input" />
           <span class="eye-icon"></span>
         </div>
+        <label class="label" for="pw-chk">비밀번호</label>
+        <div class="pw-wrap">
+          <input
+            type="password"
+            id="pw-chk"
+            name="pw-chk"
+            required
+            class="input"
+          />
+          <span class="eye-icon"></span>
+        </div>
 
-        <button class="form-btn" type="submit">로그인</button>
+        <button class="form-btn" type="submit">회원가입</button>
       </form>
       <div class="easy-login-wrap">
         <p class="login-info">간편 로그인하기</p>
@@ -50,8 +70,8 @@
         </ul>
       </div>
       <div class="signup-wrap">
-        <span>판다마켓이 처음이신가요?</span>
-        <span><a class="goto-signup" href="./signup.html">회원가입</a></span>
+        <span>이미 회원이신가요?</span>
+        <span><a class="goto-signup" href="./login.html">로그인</a></span>
       </div>
     </section>
   </body>
