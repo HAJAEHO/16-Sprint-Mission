@@ -25,24 +25,31 @@ main {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    container-name: main-container; /* 컨테이너 쿼리 요소 이름 */
+    container-type: inline-size;
 }
 
 .header {
     display: flex;
-    margin: 0 auto;
+    margin: 0 200px;
     justify-content: space-between;
     align-items: center;
     height: 51px;
     background-color: #ffffff;
+    max-width: 1120px;
 }
 
+@media screen and (min-width: 1920px) {
+    .header {
+      margin: 0 auto;
+    }
+  }
+
 .logo {
-    margin-left: 200px;
     height: 51px;
 }
 
 .login {
-    margin-right: 200px;
     padding: 12px 23px;
     border-radius: 8px;
     background: #3692FF;
@@ -55,127 +62,161 @@ main {
 }
 
 .banner {
-    height: 500px;
+    position: relative;
+    min-height: 390px;
     max-height: 540px;
     background-color: #CFE5FF;
+    overflow: auto;
+
 }
 
-.block {
-    display: grid;
-    grid-template-columns: 200px auto 200px;
-    min-height: 100%;
-    grid-template-areas:
-      "a b c";
+@media screen and (min-width: 1920px) {
+    .banner {
+        height: 540px;
+    }
+  }
+
+@media screen and (max-width: 1920px) {
+.banner {
+    height: 28.125vw;   /* 540/19.2 */
+}
+}  
+
+.banner .containerbox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* flex-wrap: nowrap; */
+    min-width: 744px;
+    max-width: 1110px;
+    height: 340px;      /*container 쿼리 써보기*/
+    max-height: 340px;
 }
 
-#empty-left {
-    grid-area: a;
+#bannerTop .container1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 32px;
+    max-width: 357px;
+    max-height: 260px;
 }
 
-.content {
-    grid-area: b;
-}
-
-#empty-right {
-    grid-area: c;
-}
-
-.block .content {
+.banner .container2 {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "b1 b2";
+    object-position: center;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
-#contentbox1 {
-    grid-area: b1;
+.banner .container2 img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
-#contentbox2 {
-    grid-area: b2;
+#bannerBottom .containerbox {
+    height: 397px;
+    max-height: 397px;
+    gap: 69px;
+    align-items: center;
 }
 
-.banner .block #contentbox1 p {
-    font-size: 40px;
+.banner p {
+    /* font-size: 40px; */
+    font-size: clamp(1.5rem, 4vw, 40px);
     font-weight: 700;
     line-height: 140%;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#bannerBottom .container1 p {
+    padding-bottom: 60px;
 }
 
 .item {
-    margin-bottom: 60px;
     padding: 16px 124px;
     border-radius: 40px;
     background: #3692FF;
     color: #ffffff;
-    height: 56px; 
     text-decoration: none;
     font-weight: 600;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: clamp(1rem, 4vw, 20px);
     line-height: 32px;
-}
-
-.banner #contentbox1 {
-    position: absolute;
-    left: 0;
-    bottom: 50px;
-    display: flex;
-    flex-direction: column;
+    white-space: nowrap;
+    max-height: 56px; 
+    max-width: 357px;
     gap: 10px;
 }
 
-#bannerTop .block #contentbox2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-image: url('Img_home_top.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;    
-    width: 100%;
-    height: 100%;
-}
-
-#bannerBottom .block #contentbox2 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-image: url('Img_home_bottom.png');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;    
-    width: 100%;
-    height: 100%;
-}
-
 .page {
+    padding: 138px 466px;
     height: 720px;    
     max-height: 720px;
 }
 
-.page .blcok {
-    grid-template-columns: 200px auto 200px;
-    grid-template-areas:
-      "a b c";
-}
-
-.page .content {
-    margin: 120px auto;
-    width: 988px;
+.pageContainer {
+    display: flex;
+    align-items: center;
+    gap: 0 64px;
+    width: 998px;
     height: 444px;
-    background-repeat: no-repeat;
-    background-position: center;
+    border-radius: 12px;
+    background-color: #fcfcfc;
 }
 
-#hot-content {
-    background-image: url('hotItem.png');
+.pageContainer img {
+    max-width: 579px;
+    height: 100%;
 }
 
-#search-content {
-    background-image: url('search.png');
+.pageContainerText {
+    padding-right: 24px;
+    height: fit-content;
+    vertical-align: middle;
 }
 
-#register-content {
-    background-image: url('register.png');
+.pageContainerItemSubject {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    vertical-align: middle;
+    color: #3692FF;
+}
+
+.pageContainerItemTitle {
+    margin: 12px 0 24px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    letter-spacing: 0.02rem;
+    vertical-align: middle;
+    color: #374151;
+    white-space: nowrap;
+}
+
+.pageContainerItemDesc {
+    margin: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #374151;
+    white-space: nowrap;
+}
+
+.pageContainer.pageContainerImageRight .pageContainerText {
+    padding: 0;
+    margin-left: 24px;
+    text-align: right;
 }
 
 .hr {
@@ -230,3 +271,4 @@ footer {
     width: 20px;
     height: 20px;
 }
+
