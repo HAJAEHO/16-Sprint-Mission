@@ -10,6 +10,7 @@ header {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
+  max-width: var(--desktop-width);
   align-items: center;
   margin: 0 200px;
 }
@@ -49,7 +50,6 @@ header {
 .link-img-text {
   display: flex;
   flex-direction: column;
-
   padding-bottom: 60px;
   gap: 32px;
 }
@@ -73,6 +73,7 @@ header {
 
 .link-img-panda {
   display: block;
+  aspect-ratio: 16/6;
 }
 
 .content {

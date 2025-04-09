@@ -22,37 +22,46 @@
       /></a>
       <form method="get" class="login-form_form">
         <div class="login-form_form-input">
-          <p>이메일</p>
+          <label for="email">이메일</label>
           <input
             type="email"
-            name="이메일"
+            name="email"
             id="email"
             placeholder="codeit@email.com"
+            aria-required="true"
           />
         </div>
         <div class="login-form_form-input">
-          <p>닉네임</p>
-          <input type="text" name="이메일" id="name" placeholder="판다" />
+          <label for="nickname">닉네임</label>
+          <input
+            type="text"
+            name="nickname"
+            id="nickname"
+            placeholder="판다"
+            aria-required="true"
+          />
         </div>
         <div class="login-form_form-input">
-          <p>비밀번호</p>
+          <label for="password">비밀번호</label>
           <input
             type="password"
-            name="비밀번호"
-            id="password2"
+            name="password"
+            id="password"
             placeholder="••••••••"
+            aria-required="true"
           />
           <button class="input-icon" type="button">
             <i class="fa-regular fa-eye-slash"></i>
           </button>
         </div>
         <div class="login-form_form-input">
-          <p>비밀번호 확인</p>
+          <label for="password-comfirm">비밀번호 확인</label>
           <input
             type="password"
             name="비밀번호"
-            id="password"
-            placeholder="pAssWoRD"
+            id="password-comfirm"
+            placeholder="••••••••"
+            aria-required="true"
           />
           <button class="input-icon" type="button">
             <i class="fa-regular fa-eye"></i>
