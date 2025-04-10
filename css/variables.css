@@ -2,6 +2,7 @@
   --background-color: rgba(255, 255, 255, 1);
   --link-bg: rgba(207, 229, 255, 1);
   --content-bg: rgba(252, 252, 252, 1);
+  --banner-bg: rgba(207, 229, 255, 1);
   --primary-100: rgba(54, 146, 255, 1);
   --primary-300: rgba(18, 81, 170, 1);
   --secondary-900: rgba(17, 24, 39, 1);
@@ -14,12 +15,13 @@
   --secondary-100: rgba(243, 244, 246, 1);
   --secondary-50: rgba(249, 250, 251, 1);
 
-  --container-width: 1120px;
-  --content-width: 988px;
   --header-height: 70px;
-  --footer-height: 160px;
+  --content-width: 1120px;
 
-  --desktop-width: 1920px;
+  --desktop-width: 1200px;
+  --tablet-width-max: 1199px;
+  --tablet-width-min: 768px;
+  --mobile-width-max: 767px;
 
   --spacing-xs: 9px;
   --spacing-sm: 12px;
@@ -27,8 +29,9 @@
   --spacing-lg: 32px;
   --spacing-xl: 64px;
 
-  --font-size-sm: 16px;
-  --font-size-md: 18px;
+  --font-size-xs: 16px;
+  --font-size-sm: 18px;
+  --font-size-md: 20px;
   --font-size-lg: 24px;
   --font-size-xl: 40px;
 }
