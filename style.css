@@ -8,7 +8,6 @@
        브라우저 너비 1920=> 100vw  
       16/1920*100 =0.83333...
     */
-
     /* 컨테이너 관련 변수 */
     --container-width: 70rem;
     --container-margin: 0 auto;
@@ -21,7 +20,7 @@ body {
 }
 
 .page-wrapper {
-    background-color: var(--secondary-color);
+    background-color: var(--article-background-color);
     font-family: 'Pretendard-Regular', sans-serif;
     color: var(--text-color);
     max-width: 1920px;
@@ -45,7 +44,7 @@ header {
     /*sprint2 추가 내용*/
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 nav {
@@ -128,7 +127,7 @@ article.hero__content .hero__text {
     font-family: 'Pretendard-Regular', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #F9FAFB;
+    color: var(--secondary-gray50);
     height: 2rem;
     line-height: 2rem;
 }
@@ -154,7 +153,7 @@ article.hero__content .hero__text {
 .search__content,
 .register__content {
     /*각 영역 article 공통 설정*/
-    background-color: var(--secondary-color);
+    background-color: var(--article-background-color);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -237,7 +236,7 @@ main section article>div>span {
 
 /* Footer */
 footer {
-    background-color: #111827;
+    background-color: var(--secondary-gray900);
     color: var(--white-color);
     height: 10rem;
     padding: 2rem 0;
@@ -247,7 +246,7 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 1.25rem;
-    color: #9CA3AF;
+    color: var(--secondary-gray400);
 }
 
 .footer__container>div {
@@ -258,7 +257,7 @@ footer {
 }
 
 .footer__container>div a {
-    color: #E5E7EB;
+    color: var(--secondary-gray200);
     display: inline-block;
 }
 

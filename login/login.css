@@ -64,7 +64,7 @@ input {
   margin-bottom: 24px;
   border: none;
   border-radius: 12px;
-  background-color: #f3f4f6;
+  background-color: var(--secondary-gray100);
   height: 56px;
   padding: 12px 24px;
 }
@@ -75,7 +75,7 @@ button {
   border-radius: 40px;
   background-color: var(--primary-color);
   border: none;
-  color: #fff;
+  color: var(--white-color);
   margin-bottom: 24px;
   font-family: inherit;
   cursor: pointer;
