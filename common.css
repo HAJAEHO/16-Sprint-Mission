@@ -54,3 +54,7 @@
   background-color: #3692ff;
   color: #ffffff;
 }
+
+.btn--click {
+  cursor: pointer;
+}
