@@ -1,398 +1,297 @@
-/* Nav */
-.Nav {
-  display: flex;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 70px;
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid var(--border);
-  background-color: var(--white);
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 
-.Login_Btn {
-  width: 128px;
-  height: 48px;
-  border: none;
-  color: var(--white);
-  border-radius: 4px;
-  background-color: var(--brand-blue);
-}
-
-.Nav_Wrap {
-  display: flex;
-  width: 60%;
-  padding: 20px 0px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Main_Top */
-.Main_Top {
-  display: flex;
-  position: relative;
-  height: 540px;
-  justify-content: center;
-  align-items: end;
-  background-color: var(--Secondary-blue);
-}
-
-.Landing_Wrap {
-  position: absolute;
-  right: 20%;
-  order: 2;
-}
-
-.Contents_Wrap_Top {
-  display: flex;
-  position: absolute;
-  left: 20%;
-  order: 1;
-  margin-bottom: 100px;
-  flex-direction: column;
-}
-
-.Main_Bottom {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 540px;
-  justify-content: center;
-  align-items: end;
-  background-color: var(--Secondary-blue);
-}
-
-.Banner_Wrap {
-  position: absolute;
-  right: 20%;
-  order: 2;
-}
-
-.Contents_Wrap_Bottom {
-  display: flex;
-  position: absolute;
-  left: 20%;
-  order: 1;
-  margin-bottom: 180px;
-  flex-direction: column;
-}
-
-.Shop_Btn {
-  height: 56px;
-  border: none;
-  color: white;
-  border-radius: 40px;
-  background-color: var(--brand-blue);
-}
-
-/*섹션*/
-.Section_Box {
-    display: flex;
-    gap: 20px;
-    width: 60%;
-    padding: 4%;
-    border-radius: 8px;
-    background-color: #fcfcfc;
-}
-
-.Section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.Section_Wrap {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  gap: 5%;
-}
-
-.Section_Wrap_Left {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  gap: 5%;
-}
-
-.Section_Label {
-    width: 100%;
-}
-
-.Section_Contents_Title {
-    width: 100%;
-}
-
-.Section_Contents_Description {
-    width: 100%;
-}
-
-/* footer */
-.footer {
-    display: grid;
-    width: 100%;
-    height: 160px;
-    padding: 1% 20% 0% 20%;
-    box-sizing: border-box;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: var(--Secondary-900);
-    gap: 8px;
-}
-
-.Sns_Icons {
-    display: flex;
-    flex-direction: space-between;
-    gap: 8px;
-}
-
-.PP {
-    width: 100%;
-    text-align: right;
-}
-
-/* 스타일 시트 */
+/* Sheet */
 :root {
-  /*color*/
-  --white: #ffffff;
-  --background: #fcfcfc;
-  --border: #dfdfdf;
-  --brand-blue: #3692ff;
-  --Secondary-blue: #cfe5ff;
-  --Secondary-700: #374151;
-  --Secondary-900: #111827;
-  /*size*/
-  --title: 40px;
-  --description: 24px;
-  --label: 18px;
-  /* weight */
-  --bold: 700;
-  --regular: 500;
-}
+    /* Color */
+    --brand-blue:#3692ff;
+    --cool-gray-100:#F3F4F6;
+    --secondary-100:#F3F4F6;
+    --secondary-200:#E5E7EB;
+    --secondary-300:#D1D5DB;
+    --secondary-400:#9CA3AF;
+    --secondary-700:#374151;
+    --secondary-900:#111827;
+    --base-size: 1.25rem;
+    --base-weight: 600;
+    --tag-size: 1.125rem;
+    --tag-weight: 700;
+    --title-size: 2.5rem;
+    --title-weight: 700;
+    --title-color: var(--secondary-700);
+  }
 
-h1 {
-  color: var(--Secondary-900);
-  font-weight: var(--bold);
-  font-size: var(--title);
-}
+  h1 {
+    color: var(--secondary-900);
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+    line-height: 140%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 
-h2 {
-  color: var(--Secondary-700);
-  font-weight: var(--regular);
-  font-size: var(--description);
-}
+  .feature-reverse h1 {
+    text-align: right;
+  }
 
-label {
-  color: var(--brand-blue);
-  font-weight: var(--bold);
-  font-size: var(--label);
-}
+  h3 {
+    color: var(--secondary-700);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 130%;
+    text-align: left;
+  }
 
-p {
-  margin: 0px;
-  color: var(--white);
-  font-weight: 400;
-  font-size: 16px;
-}
+  .feature-reverse h3 {
+    text-align: right;
+  }
 
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+  h4 {
+    color: var(--brand-blue);
+    font-weight: var(--tag-weight);
+    font-size: var(--tag-size);
+    text-align: left;
+  }
+
+  .feature-reverse h4 {
+    text-align: right;
+  }
+
+  .shop-btn:hover,
+  .login-btn:hover {
+    background-color: #1967D6;
+  }
+
 * {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #222;
+    line-height: 1.6;
+    font-family: 'Pretendard', sans-serif;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .container {
+    width: 90%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: var(--base-size);
+    background-color: #0070f3;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Top Banner */
+  .top-banner {
+    display: flex;
+    height: 520px;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #cbe5ff;
+  }
 
-body {
-  margin: 0px;
-  background-color: var(--white);
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
+  .top-banner .container {
+    display: flex;
+    bottom: 0px;
+    padding: 0;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+  }
 
-img {
-  display: block;
-}
+  .shop-btn {
+    width: 100%;
+    padding: 1rem 0rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: var(--base-size);
+    background-color: var(--brand-blue);
+    border-radius: 40px;
+    cursor: pointer;
+  }
 
+  .top-banner-img {
+    margin-top: 2rem;
+  }
+  
+  /* Features */
+  .features {
+    display: flex;
+    padding: 10rem 0;
+    margin: 0rem 10rem;
+    flex-direction: column;
+    gap: 10rem;
+  }
+  
+  .feature {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
 
-@media (max-width: 375px) {
-    .Nav {
-        display: flex;
-        position: fixed;
-        top: 0px;
-        width: 100%;
-        height: 70px;
-        z-index: 1;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 1px solid var(--border);
-        background-color: var(--white);
-      }
-      
-    .Login_Btn {
-        width: 60px;
-        height: 48px;
-        border: none;
-        color: var(--white);
-        border-radius: 4px;
-        background-color: var(--brand-blue);
-      }
+  .feature-reverse {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    /* flex-direction: column-reverse; */
+  }
 
-    .Shop_Btn {
-        margin-top: 12px;
-        height: 48px;
-    }
-      
-    .Nav_Wrap {
-        display: flex;
-        /* flex-direction: column; */
-        width: 80%;
-        /* padding: 20px 0px; */
-        justify-content: space-between;
-      }
+  .feature img,
+  .feature-reverse img {
+    max-width: 588px;
+  }
+  
+  .feature .tag,
+  .feature-reverse .tag {
+    color: var(--brand-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 2rem 0;
+    background-color: var(--secondary-900);
+  }
+  
+  .footer .container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .footer nav a {
+    margin: 0 0.5rem;
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .footer p {
+    color: white;
+    font-size: 1rem;
+  }
 
-    h1 {
-        margin: 4px;
-        color: var(--Secondary-900);
-        font-weight: var(--bold);
-        font-size: 32px;
-        text-align: center;
-      }
-
-    .Section_Contents_Title {
-        text-align: left;
-        font-size: 24px;
-    }
-
-
-    h2 {
-        color: var(--Secondary-700);
-        font-weight: var(--regular);
-        font-size: 18px;
-      }
-
-    label  {
-        color: var(--brand-blue);
-        font-weight: var(--bold);
-        font-size: 16px;
-    }
-
-    .Main_Top {
-        display: flex;
-        position: relative;
-        height: 480px;
-        justify-content: center;
-        align-items: end;
-        background-color: var(--Secondary-blue);
-    }
-
-    .Landing_Wrap {
-        position: absolute;
-        right: 0%;
-        order: 2;
-    }
-
-    .Contents_Wrap_Top {
-        display: flex;
-        position: absolute;
-        /* left: 20%; */
-        order: 1;
-        margin-bottom: 200px;
-        flex-direction: column;
-      }
-
-    .Section {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    .Section_Box {
-        flex-direction: column;
+  .footer .container .sns-btn {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 375px) {
+    * {
+        padding: 0;
         margin: 0;
-        width: 100%;
         box-sizing: border-box;
-    }
-
-    .Section_Wrap {
-        gap: 0px;
-        padding: 5%;
-        box-sizing: border-box;
-    }
-
-    .Section_Wrap_Left {
-        gap: 0px;
-        padding: 5%;
-        box-sizing: border-box;
-    }
-
-    .Section_Label {
-        display: flex;
-        justify-content: left;
-        align-items: center;
+      }
+    
+    .header {
+        position: static;
     }
     
-    .Main_Bottom {
+    .logo img {
+      height: 40px;
+    }
+    
+    .login-btn {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: var(--brand-blue);
+      border-radius: 2px;
+    }
+
+    .top-banner {
         height: 480px;
     }
 
-    .Contents_Wrap_Bottom {
-        display: flex;
-        position: absolute;
-        left: 20%;
-        order: 1;
-        margin-bottom: 280px;
+    .top-banner .container {
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
+    }
+  
+    .top-banner-text h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .features {
+        padding: 3rem 0rem;
+        margin: 0rem 3rem;
+    }
+
+    .feature {
+        align-items: start;
         flex-direction: column;
     }
 
-    .Banner_Wrap {
-        position: absolute;
-        right: 0%;
-        order: 2;
+    .feature-reverse {
+        align-items: end;
+        flex-direction: column;
     }
 
-    .footer {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(100px, 1fr));
-        gap: 4px;
-        padding: 20px;
+    .features h1 {
+        font-size: 1.5rem;
     }
 
-    .CR {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .features h3 {
+        font-size: 1rem;
     }
 
-    .PP {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .feature p {
+        font-size: 1rem;
     }
 
-    .FAQ {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .feature img {
+        max-width: 100%;
     }
 
-    .Sns_Icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    img {
-        display: block;
+    .feature-reverse img {
         width: 100%;
-      }
-
-}
+    }
+  }
