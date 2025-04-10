@@ -1,0 +1,18 @@
+@font-face {
+    /*Pretendard폰트*/
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    /* 색상 변수 */
+    --primary-color: #3692FF;
+    --primary-hover: #1251AA;
+    --secondary-color: #FCFCFC;
+    --background-color: #CFE5FF;
+    --text-color: #374151;
+    --white-color: #fff;
+    --secondary-color: #1f2937;
+}

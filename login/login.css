@@ -1,14 +1,7 @@
-@import url(../reset.css);
-
-:root {
-  /*색상 변수*/
-  --primary-color: #3692ff;
-  --primary-hover: #1251aa;
-  --secondary-color:#1F2937;
-}
+@import url(../global.css);
 
 main {
-  position: relative;
+  font-family: 'Pretendard-Regular', sans-serif;
 }
 
 .main__login {
@@ -38,7 +31,7 @@ fieldset {
 }
 
 /*비밀번호 보이기 안보이기*/
-label[for="toggle-showing-password"] {
+label[for="toggle-visibility-pw"] {
   position: absolute;
   top: 180px;
   right: 20px;
@@ -47,13 +40,14 @@ label[for="toggle-showing-password"] {
   height: 24px;
   background: url(./img/pw_hide.png) center center;
   background-size: cover;
+  cursor: pointer;
 }
 
-#toggle-showing-password:checked ~ label[for="toggle-showing-password"] {
+#toggle-visibility-pw:checked~label[for="toggle-visibility-pw"] {
   background-image: url(./img/pw_show.png);
 }
 
-#toggle-showing-password {
+#toggle-visibility-pw {
   display: none;
 }
 
@@ -83,6 +77,8 @@ button {
   border: none;
   color: #fff;
   margin-bottom: 24px;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 button:hover {
@@ -123,5 +119,4 @@ button:hover {
 .login__sign-up a {
   text-decoration: underline;
   color: var(--primary-color);
-  cursor: pointer;
 }

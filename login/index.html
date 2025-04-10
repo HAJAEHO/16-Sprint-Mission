@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>판다마켓 로그인</title>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" href="../images/favi.ico">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
     <main>
@@ -20,8 +22,8 @@
             <input type="text" id="user-email" name="user-email" />
             <label for="user-password">비밀번호</label>
             <input id="user-password" type="password" name="user-password" />
-            <input id="toggle-showing-password" onchange="togglePasswordView()" type="checkbox"/>
-            <label for="toggle-showing-password"></label>
+            <input id="toggle-visibility-pw" type="checkbox"/>
+            <label for="toggle-visibility-pw"></label>
             <button type="submit">로그인</button>
           </fieldset>
           <div class="login__alert">
@@ -41,15 +43,5 @@
         </form>
       </div>
     </main>
-    <script>
-      function togglePasswordView() {
-        let nowShowing = document.querySelector(
-          "#toggle-showing-password"
-        ).checked;
-        document.querySelector("#user-password").type = nowShowing
-          ? "text"
-          : "password";
-      }
-    </script>
   </body>
 </html>
