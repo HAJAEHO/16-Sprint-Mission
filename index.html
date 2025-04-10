@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- kr을 ko로 변경 -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>판다마켓</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar"><!--네비게이션 역할의 테그-->
+          <div class="site-logo">
+            <a href="index.html"
+              ><img
+                class="logo-img"
+                src="./logo.png"
+                alt="판다마켓 로고"
+                aria-label="홈으로 이동"
+            /></a><!-- aria-label을 추가하여 웹 접근성(WAI-ARIA) 준수 -->
+          </div>
+          <div class="user-auth">
+            <a href="./login.html" class="btn" aria-label="로그인으로 이동">로그인</a><!-- aria-label을 추가하여 웹 접근성(WAI-ARIA) 준수 -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section"><!--사이트의 첫 인트로-->
+        <div class="hero-container">
+          <div class="hero-text-block">
+            <div class="text">
+              <h2>일상의 모든 물건을</h2>
+              <h2>거래해보세요</h2>
+            </div>
+            <div class="hero-button">
+              <a href="./items.html" class="btn btn--rounded btn--large"
+              aria-label="구경하러 가기로 이동"
+                >구경하러 가기</a
+              ><!-- aria-label을 추가하여 웹 접근성(WAI-ARIA) 준수 -->
+            </div>
+          </div>
+          <div class="hero-image-block">
+            <div class="hero-img">
+              <img
+                class="hero-main-img"
+                src="./image1.png"
+                alt="메인이미지"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="section2-div">
+          <div class="part1">
+            <div class="sub-image">
+              <img
+                class="subImage"
+                src="./image2.png"
+                alt="구매를 원하시는 상품을 검색하세요"
+              />
+            </div>
+            <div class="sub-title left">
+              <p class="subTitle1">Hot Item</p>
+              <p class="subTitle2">
+                구매를 원하는<br />상품을 검색하세요 확인해 보세요
+              </p>
+              <p class="subTitle3">
+                구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요
+              </p>
+            </div>
+          </div>
+          <div class="part2">
+            <div class="sub-image">
+              <img
+                class="subImage"
+                src="./image3.png"
+                alt="인기상품 그림"
+              />
+            </div>
+            <div class="sub-title right">
+              <p class="subTitle1 right">Search</p>
+              <p class="subTitle2 right">
+                인기 상품을 <br />
+                확인해 보세요
+              </p>
+              <p class="subTitle3 right">
+                가장 Hot한 중고고래물품을<br />판다 마켓에서 확인해 보세요
+              </p>
+            </div>
+          </div>
+          <div class="part3">
+            <div class="sub-image">
+              <img
+                class="subImage"
+                src="./image4.png"
+                alt="구매를 원하시는 상품을 검색하세요"
+              />
+            </div>
+            <div class="sub-title left">
+              <p class="subTitle1">Register</p>
+              <p class="subTitle2">판매를 원하는<br />상품을 등록하세요</p>
+              <p class="subTitle3">
+                어떤 물건이든 판매하고 싶은 상품을 쉽게 등록하세요
+              </p><!--상품을쉽계 => 상품을 쉽게 변경-->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-text-block">
+            <div class="text">
+              <h2>믿을 수 있는</h2>
+              <h2>판다마켓 중고 거래</h2>
+            </div>
+          </div>
+          <div class="hero-image-block">
+            <div class="hero-img">
+              <img
+                class="hero-main-img"
+                src="./image5.png"
+                alt="메인이미지"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="licence">
+          <p>©codeit - 2024</p>
+        </div>
+        <div>
+          <a href="./privacy.html" class="privacy" aria-label="정보보안 약관 페이지로 이동">Privacy Policy</a><!-- aria-label을 추가하여 웹 접근성(WAI-ARIA) 준수 -->
+          <a href="./faq.html" class="FAQ" aria-label="FAQ(질의응답) 페이지로 이동">FAQ</a>
+        </div>
+        <!--외부링크의 역우는 보안을 위해 rel="noopener noreferrer"추가-->
+        <!--noopener : 새탭에서 열린 페이지가 원본 페이지에 접근하는 겋을 방지-->
+        <!--noreferrer : 리퍼러 정보가 새 페이지로 전달되는 것을 방지-->
+        <div class="social-icon button">
+          <a href="https://www.facebook.com/?locale=ko_KR" target="_blank" aria-label="페이스북 사이트로 이동" rel="noopener noreferrer"><img src="./icon_facebook.png" alt="facebook link" />
+          <a href="https://x.com/?lang=ko" target="_blank" rel="noopener noreferrer"><img src="./icon_twiter.png" alt="twiter link" aria-label="트위터 사이트로 이동" /></a>
+          <a href="https://www.youtube.com/?hl=ko&gl=KR&app=desktop" target="_blank" rel="noopener noreferrer"><img src="./icon_youtube.png" alt="youtube link" aria-label="유튜브사이트로 이동" /></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="./icon_instagram.png" alt="instagram link" aria-label="인스타 사이트로 이동" /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
