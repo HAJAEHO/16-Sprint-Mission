@@ -1,7 +1,18 @@
 @import "/css/reset.css";
 @import "/css/variables.css";
+
 @import "/css/components/home.css";
 @import "/css/components/login.css";
+
+/* media css */
+
+@import "/css/media/home_media.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html,
 body {

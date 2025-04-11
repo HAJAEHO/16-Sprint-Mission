@@ -19,9 +19,10 @@
   --content-width: 1120px;
 
   --desktop-width: 1200px;
-  --tablet-width-max: 1199px;
+  --tablet-width: 1199px;
   --tablet-width-min: 768px;
-  --mobile-width-max: 767px;
+  --mobile-width: 767px;
+  --mobile-width-min: 375px;
 
   --spacing-xs: 9px;
   --spacing-sm: 12px;
