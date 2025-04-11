@@ -7,6 +7,7 @@ body {
   height: 70px;
   position: sticky;
   top: 0px;
+  width: 100%;
 }
 
 .nav-container {
@@ -111,17 +112,18 @@ body {
   width: 100%;
 }
 
-.card-context-left,
-.card-context-right {
+.card-context-reverse,
+.card-context {
   max-width: 359px;
 }
 
-.card-context-left {
-  padding-left: 24px;
-  text-align: right;
-}
-.card-context-right {
+.card-context {
   padding-right: 24px;
+}
+
+.card-context-reverse {
+  text-align: right;
+  padding-left: 24px;
 }
 
 .card-title {
