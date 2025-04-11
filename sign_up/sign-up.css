@@ -34,7 +34,7 @@ fieldset {
 label[for="toggle-visibility-pw"],
 label[for="toggle-visibility-pwcheck"] {
   position: absolute;
-  right: 20px;
+  right: 24px;
   display: inline-block;
   width: 24px;
   height: 24px;
