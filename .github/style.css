@@ -1,3 +1,92 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%; 
+    
+    margin: auto
+    ;
+       
+}
+
+
+.head_image {
+    width: 100%;
+    
+    top: 70px;
+      
+}
+
+.sub_image {
+    width: 100%;
+    padding-top: 138px;
+    padding-right: 466px;
+    padding-bottom: 138px;
+    padding-left: 466px;
+    gap: 10px;
+       
+}
+
+.bottom_image {
+    width: 100%;
+    /* top: 2908px;  */
+    /* top 값이 적용이 안되어 일단 코멘트 처리 하였습니다. */
+}
+
+footer {
+    width: 100%;
+    top: 3448px;
+    padding-top: 3%;
+    padding-right: 20%;
+    padding-bottom: 8%;
+    padding-left: 20%;
+    gap: 10px;
+    background: #111827;   
+}
+
+.footer_display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_describe1 {
+    
+    font-family: Pretendard;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #9CA3AF;
+    
+}
+
+.footer_describe2 {
+
+    display: flex;
+    justify-content: space-between;
+    font-family: Pretendard;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #E5E7EB;
+    gap: 30px;
+}
+
+.social_icons {
+    width: 116px;
+    height: 20px;
+    
+
+}
