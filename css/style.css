@@ -7,6 +7,7 @@
 /* media css */
 
 @import "/css/media/home_media.css";
+@import "/css/media/login_media.css";
 
 html,
 body {

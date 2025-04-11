@@ -4,7 +4,7 @@
   }
 
   .banner {
-    height: 770px;
+    height: 771px;
   }
 
   .banner-group {
@@ -14,7 +14,7 @@
   }
 
   .banner-group div {
-    width: 80%;
+    width: 70%;
   }
 
   .banner-group_txt {
@@ -60,10 +60,16 @@
 
   .home-footer-group {
     max-width: var(--tablet-width-min);
+    padding: 32px 24px;
   }
 }
 @media (max-width: 767px) {
+  .banner {
+    height: 540px;
+  }
+
   .banner-group_txt {
+    font-size: 32px;
     margin-top: 48px;
     gap: 18px;
   }
@@ -95,6 +101,7 @@
     box-sizing: border-box;
     position: relative;
     margin: 0 16px;
+    padding: 32px 16px;
   }
 
   .home-footer-group p {
@@ -111,6 +118,5 @@
 
   .home-footer-group_sns {
     display: flex;
-    gap: 10px;
   }
 }
