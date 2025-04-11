@@ -89,8 +89,12 @@ a[class*="btn"] {
 }
 
 .form-logo {
-  width: 24.75rem;
+  width: 198px;
   margin: 14.375rem 0 2.5rem;
+}
+
+.form-logo img {
+  height: auto;
 }
 
 .form-contents {
