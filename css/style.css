@@ -8,12 +8,6 @@
 
 @import "/css/media/home_media.css";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html,
 body {
   background-color: var(--background-color);

@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   gap: 40px;
 }
 .signup-form {
@@ -56,7 +57,7 @@
   border: none;
   font-size: 24px;
   bottom: 15px;
-  right: var(--spacing-sm);
+  right: var(--spacing-lg);
   background-color: transparent;
   color: var(--secondary-500);
 }
@@ -103,4 +104,32 @@
 .login-form_signup a {
   text-decoration: underline;
   color: var(--primary-100);
+}
+
+@media (max-width: 767px) {
+  .login-form {
+    justify-content: flex-start;
+    height: 140vh;
+
+    box-sizing: border-box;
+    padding: 80px 16px;
+  }
+  .login-form-img {
+    width: 198px;
+  }
+  .login-form_form {
+    max-width: 400px;
+    min-width: 343px;
+    width: 100%;
+  }
+  .login-form_form-input input {
+    max-width: 400px;
+    min-width: 343px;
+    width: 100%;
+  }
+
+  .signup-form {
+    padding: 24px 16px;
+    margin-top: 0;
+  }
 }
