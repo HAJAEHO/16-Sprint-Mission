@@ -19,7 +19,7 @@
         <form class="login__form" method="POST">
           <fieldset>
             <label for="user-email">이메일</label>
-            <input type="text" id="user-email" name="user-email" placeholder="codeit@email.com"/>
+            <input type="text" id="user-email" name="user-email"/>
             <label for="user-password">비밀번호</label>
             <input id="user-password" type="password" name="user-password"/>
             <input id="toggle-visibility-pw" type="checkbox"/>
@@ -29,11 +29,11 @@
           <div class="login__alert">
             간편 로그인하기
             <div class="icon__container">
-              <a target="_blank" href="https://www.google.com/">
-                <img src="../login/img/oAuth_google.png" alt="구글로 로그인"/>
+              <a aria-label="구글로 로그인" rel="noopener" target="_blank" href="https://www.google.com/">
+                <img src="../login/img/oAuth_google.png" alt="구글 아이콘"/>
               </a>
-              <a target="_blank" href="https://www.kakaocorp.com/page/">
-                <img src="../login/img/oAuth_kakao.png" alt="카카오로 로그인"/>
+              <a aria-label="카카오로 로그인" rel="noopener" target="_blank" href="https://www.kakaocorp.com/page/">
+                <img src="../login/img/oAuth_kakao.png" alt="카카오 아이콘"/>
               </a>
             </div>
           </div>
