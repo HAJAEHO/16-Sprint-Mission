@@ -1,34 +1,63 @@
 @charset "utf-8";
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
+
 body {
   font-family: "Pretendard", sans-serif;
   background: var(--background-light);
   overflow-x: hidden;
 }
-a {
-  font-size: 1rem;
+
+/* fonts */
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  src: url("../fonts/Pretendard-Regular.woff2") format("woff2");
 }
-h2 {
-  font-size: 2.5rem;
-  line-height: 1.4;
-  color: var(--text-primary);
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  src: url("../fonts/Pretendard-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  src: url("../fonts/Pretendard-Bold.woff2") format("woff2");
 }
 
 /* layout */
 .content {
-  padding-top: 4.375rem;
+  padding-top: 70px;
 }
 
-.inner {
-  width: var(--inner-width);
-  margin: 0 auto;
+/* input */
+input {
+  font-family: "Pretendard", sans-serif;
 }
 
 /* button */
-.btn {
-  text-align: center;
+button {
+  font-family: "Pretendard", sans-serif;
+}
+
+a[class*="btn"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-lg {
+  padding: 0.75rem;
+  border-radius: var(--border-radius-lg);
+  font-size: 1.286rem;
+  font-weight: 600;
+}
+
+.btn-sm {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.143rem;
+  border-radius: var(--border-radius-xs);
 }
 
 .btn-primary {
@@ -40,4 +69,90 @@ h2 {
 }
 .btn-primary:active {
   background: var(--primary-click-color);
+}
+
+/* form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 14.375rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--gray800);
+}
+
+.form-input {
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem 1.5rem 0.875rem;
+  background: var(--gray100);
+  border-radius: var(--border-radius-sm);
+  font-size: 1rem;
+}
+
+.form-logo {
+  width: 198px;
+  margin: 14.375rem 0 2.5rem;
+}
+
+.form-logo img {
+  height: auto;
+}
+
+.form-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.visible-wrap {
+  position: relative;
+}
+
+.form .btn-lg {
+  width: 100%;
+}
+
+.btn-password-visible {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+.btn-password-visible.on {
+  background: url("../images/ic_visibility_on.svg") no-repeat center;
+}
+.btn-password-visible.off {
+  background: url("../images/ic_visibility_off.svg") no-repeat center;
+}
+
+.form-footer {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-footer-link {
+  text-decoration: underline;
+  color: var(--primary-color);
+  font-size: 14px;
 }
