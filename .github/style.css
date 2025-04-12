@@ -2,36 +2,117 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     /* display: flex; */
     /* justify-content: center; */
 }
 
-.top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%; 
+@media (min-width: 1920px) {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+    }
+    .describe_home_top_container {
+  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 70%;
+        top: 200px;
+        left: 405px;
+        gap: 7px;
+        margin-top: 180px;
+        background-color: #CFE5FF;
     
-    margin: auto
-    ;
+    
+    
+    
+    }
+    
+    
+
+}
+@media (max-width: 1920px) {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        margin-left: 200px;
+        margin-right: 200px;
+
+    }
+
+    
        
 }
 
 
-.head_image {
+.section1 {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    background: #CFE5FF;
+
+}
+
+
+.describe_home_top_container {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    top: 200px;
+    left: 405px;
+    gap: 7px;
+    margin-top: 180px;
+    background-color: #CFE5FF;
+
+
+
+
+}
+
+.describe_home_top {
+    width: 295px;
+    height: 112px;
+    font-family: Pretendard;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #374151;
+
+
+
+}
+
+.items_button {
+    width: 80%;
+
+
+}
+
+
+.image_home_top {
+    width: 55%;
     
-    top: 70px;
-      
+
+
 }
 
 .sub_image {
     width: 100%;
-    padding-top: 138px;
-    padding-right: 466px;
-    padding-bottom: 138px;
-    padding-left: 466px;
+    padding: 138px 10% 138px 10%;
     gap: 10px;
        
 }
@@ -42,6 +123,7 @@ body {
     /* top 값이 적용이 안되어 일단 코멘트 처리 하였습니다. */
 }
 
+/* footer 위 작은 공백 문제. 마진 문제인지 잘 모르겠습니다. */
 footer {
     width: 100%;
     top: 3448px;
@@ -81,6 +163,8 @@ footer {
     letter-spacing: 0%;
     text-align: center;
     color: #E5E7EB;
+    text-decoration: none;
+    
     gap: 30px;
 }
 
