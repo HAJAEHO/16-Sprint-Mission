@@ -1,0 +1,72 @@
+<!-- 
+    <VS Code에서 HTML 기본구조 자동생성하기>
+
+    - `!` 입력 후 tab 키를 누르면 HTML 기본 양식이 입력됩니다.
+
+    - 이때, <html lang="en"> 부분을 매번 lang="ko"로 바꾸는 것이 번거로우니 양식을 바꿔봅시다.
+      command/ctrl + 쉼표 를 눌러 VS Code 설정창을 열고 emmet을 검색해 주세요. 
+      스크롤을 내려 Emmet: Variables 섹션에 Add Item을 누르고 lang Item의 Value를 ko로 바꿔 입력해 주세요. 
+      마지막으로 Add Item 버튼을 눌러 저장하면 끝!
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 기본 양식 생성 후, 제목을 수정하고 해당 페이지에 적용할 파비콘 및 스타일시트를 추가해 주세요. -->
+    <title>판다마켓 - 로그인</title>
+    <link rel="icon" href="images/logo/favicon.ico" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+
+  <body class="flex-center"> 
+    <div class="container">
+      <div class="TOP flex-center">
+        <a href="/" aria-label="홈으로 이동">
+          <img src="images/logo/panda-market-logo.png">
+        </a>
+      </div>
+      <form class="flex-center">
+        <div class="emailNpassword">
+          <label for="emailW">이메일</label>
+          <input id="emailW" placeholder="이메일을 입력하세요." type="email">
+          <div class="PlusIcon">
+            <label for="password">비밀번호</label>
+            <img class="input-icon" src="images/btn_visibility_on_24px.png" alt="숨김 아이콘">
+            <input id="password" placeholder="비밀번호를 입력하세요." type="password">
+          </div>
+        </div>
+        <a href="/login" aria-label="로그인">
+          <button type="button">
+          로그인
+          </button>
+        </a>
+        <div class="loginPlusImg">
+          간편 로그인하기
+          <div class="social">
+            <a href=“https://www.google.com/” aria-label="카카오톡 아이디로 간편 로그인">
+              <img src="images/social/Component 2.png">
+            </a>
+            <a href=“https://www.kakaocorp.com/page/” aria-label="구글아이디로 간편 로그인">
+              <img src="images/social/Component 3.png">
+            </a>
+          </div>
+        </div>
+        <div class="goToSingup">
+          판다마켓이 처음이신가요?
+          <a href="/singup" aria-label="회원가입페이지로 이동">
+            회원가입
+          </a>
+        </div>
+      </form> 
+    </div>
+  </body>
+</html>
