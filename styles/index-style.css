@@ -89,8 +89,14 @@ body {
 }
 
 .page-main {
+  background-color: var(--color-gray050);
+}
+
+.cards {
   background-color: var(--color-white);
-  padding: 138px 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 138px;
 }
 
 .card-container {
@@ -98,7 +104,7 @@ body {
   height: 100%;
   background-color: var(--color-gray050);
   border-radius: var(--border-radius-sm);
-  margin: 0 auto;
+  margin: 138px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
