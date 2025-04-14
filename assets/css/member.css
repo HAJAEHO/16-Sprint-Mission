@@ -1,23 +1,23 @@
-.memberBox {
+.member-box {
   max-width: 640px;
   width: calc(100% - 30px);
   margin: 0 auto;
   padding: 230px 0;
 }
 
-.memberBox .logo {
+.member-box .logo {
   margin-bottom: 40px;
 }
-.memberBox .logo a {
+.member-box .logo a {
   display: block;
   max-width: 396px;
   margin: 0 auto;
 }
 
-.form__inputBox {
+.form__input-box {
   margin-bottom: 24px;
 }
-.form__inputBox .inputBox__label {
+.form__input-box .input-box__label {
   display: block;
   margin-bottom: 16px;
   font-size: 18px;
@@ -26,20 +26,20 @@
 }
 
 /* 비밀번호 인풋박스박스 */
-.form__inputBox-pw .inputBox__input {
+.form__input-box-pw .input-box__input {
   position: relative;
 }
-.form__inputBox-pw .inputBox__input .inputBox__toggle {
+.form__input-box-pw .input-box__input .input-box__toggle {
   position: absolute;
   top: 0;
   bottom: 0;
   right: var(--space-3);
 }
-.form__inputBox-pw .inputBox__input.pw_show .inputBox__toggle {
+.form__input-box-pw .input-box__input.pw_show .input-box__toggle {
   background: url("../images/common/btn_pw_toggle_show.svg") center no-repeat;
   background-size: contain;
 }
-.form__inputBox-pw .inputBox__input.pw_show .inputBox__toggle img {
+.form__input-box-pw .input-box__input.pw_show .input-box__toggle img {
   opacity: 0;
 }
 
@@ -49,7 +49,7 @@
   font-size: 20px;
 }
 
-.memberBox__snsBox {
+.member-box__sns-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,22 +58,22 @@
   background-color: #e6f2ff;
   border-radius: 8px;
 }
-.memberBox__snsBox .snsBox__title {
+.member-box__sns-box .sns-box__title {
   font-size: 16px;
   font-weight: 500;
   color: var(--gray800);
 }
-.memberBox__snsBox .snsBox__list {
+.member-box__sns-box .sns-box__list {
   display: flex;
   align-items: center;
   gap: var(--space-2);
 }
-.memberBox__guideText {
+.member-box__guide-text {
   text-align: center;
   font-size: 14px;
   color: var(--gray800);
 }
-.memberBox__guideText .guideText__link {
+.member-box__guide-text .guide-text__link {
   color: var(--primary-color);
   text-decoration: underline;
 }
