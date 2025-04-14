@@ -26,12 +26,12 @@
 }
 
 .logo {
-  width: 7.286rem;
+  width: 102px;
 }
 
 .login-button {
-  width: 9.143rem;
-  height: 3.429rem;
+  width: 128px;
+  height: 48px;
 }
 
 /* section */
@@ -39,7 +39,7 @@
   display: flex;
   justify-content: center;
   background: #fff;
-  padding: 0 1.143rem 6rem;
+  padding: 0 18px 96px;
 }
 
 .section-container {
@@ -47,14 +47,14 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  gap: 1.714rem;
+  gap: 24px;
 }
 .section-search .section-container {
   align-items: flex-end;
 }
 
 .section-hotitem {
-  padding-top: 3.714rem;
+  padding-top: 52px;
 }
 
 .section-info {
@@ -67,14 +67,14 @@
 
 .section-label {
   margin-bottom: 8px;
-  font-size: 1.143rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--primary-color);
 }
 
 .section-title {
-  margin-bottom: 1.143rem;
-  font-size: 1.714rem;
+  margin-bottom: 16px;
+  font-size: 24px;
 }
 
 .section-title span {
@@ -82,7 +82,7 @@
 }
 
 .section-desc {
-  font-size: 1.143rem;
+  font-size: 16px;
 }
 
 /* banner */
@@ -106,8 +106,8 @@
 }
 
 .banner-title {
-  font-size: 2.286rem;
-  margin-bottom: 1.286rem;
+  font-size: 32px;
+  margin-bottom: 18px;
 }
 
 .banner-title span {
@@ -115,17 +115,20 @@
 }
 
 .banner-info {
-  padding-top: 8.571rem;
+  padding-top: 120px;
 }
 
 .banner-hero .banner-info {
   margin: 0 auto;
-  padding-top: 3.429rem;
+  padding-top: 48px;
 }
 
-.banner-info a {
+.banner-info .btn-lg {
   display: block;
   width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 356px;
 }
 
 .banner-img {
@@ -145,24 +148,25 @@
   justify-content: space-between;
   padding: 2rem 1.5rem 6.75rem;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 24px;
+  font-size: 16px;
 }
 
 .copyright {
   order: 3;
   width: 100%;
-  gap: 1.714rem;
+  padding-top: 36px;
   color: var(--gray400);
 }
 
 .footer-menu {
   display: flex;
-  gap: 1.875rem;
+  gap: 30px;
 }
 
 .sns {
   display: flex;
-  gap: 0.75rem;
+  gap: 12px;
 }
 
 /*================ 로그인, 회원가입 ================*/
@@ -170,10 +174,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
   border-radius: var(--border-radius-xs);
   background: var(--background-blue-light);
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--gray800);
 }
 
@@ -186,14 +190,24 @@
 /* Tablet */
 @media (min-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .form {
     max-width: 40rem;
   }
+
   .form-logo {
     width: 396px;
+  }
+
+  .form-contents {
+    gap: 1.5rem;
+  }
+
+  .form-label {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
   }
 
   .header {
@@ -201,7 +215,7 @@
   }
 
   .logo {
-    width: 10.857rem;
+    width: 154px;
   }
 
   .banner {
@@ -212,19 +226,31 @@
   }
 
   .banner-hero .banner-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
-    padding-top: 5.6rem;
+    padding-top: 84px;
+  }
+
+  .banner-title {
+    font-size: 40px;
   }
 
   .banner-title span {
     display: inline-block;
   }
 
+  .banner-info .btn-lg {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
   .section-container {
     align-items: center;
     flex-direction: row;
     width: var(--container-width-small);
-    gap: 4rem;
+    gap: 64px;
     background: var(--background-light);
     border-radius: var(--border-radius-md);
     overflow: hidden;
@@ -241,24 +267,30 @@
   }
 
   .section-hotitem {
-    padding-top: 1.143rem;
+    padding-top: 1rem;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-desc {
+    font-size: 18px;
   }
 
   .footer-container {
     flex-wrap: initial;
   }
+
   .copyright {
     order: initial;
     width: auto;
+    padding-top: 0;
   }
 }
 
 /* PC */
 @media (min-width: 1200px) {
-  html {
-    font-size: 16px;
-  }
-
   .header {
     padding: 0 12.5rem;
   }
@@ -299,7 +331,16 @@
     padding-top: 8.625rem;
   }
 
+  .section-title {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+
   .section-title span {
     display: block;
+  }
+
+  .section-desc {
+    font-size: 24px;
   }
 }
