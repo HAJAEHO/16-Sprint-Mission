@@ -1,0 +1,120 @@
+body {
+  font-family: 'Pretendard-Regular';
+  background-color: var(--color-gray050);
+}
+
+.form-logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 22.24px;
+  text-decoration: none;
+  margin: 231px auto 40px;
+}
+
+.form-logo-img {
+  width: 103.53px;
+}
+
+.form-logo-text {
+  font-family: ROKAFSansMedium;
+  font-size: 66.34px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-blue400);
+}
+
+.form-container {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray800);
+  margin-bottom: 24px;
+}
+
+.form-input-container {
+  background-color: var(--color-gray200);
+  height: 56px;
+  margin-top: 16px;
+  padding: 0 0px;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-input {
+  height: 100%;
+  font-size: var(--font-size-base);
+  color: var(--color-gray800);
+  background-color: var(--color-gray200);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  flex-grow: 1;
+  padding: 0 24px 0;
+  outline: none;
+}
+
+.form-icon-password-invisible,
+.form-icon-password-visible {
+  width: 20.47px;
+  margin-right: 25.8px;
+}
+
+.form-icon-password-invisible {
+  height: 18.07px;
+}
+
+.form-icon-password-visible {
+  height: 14px;
+}
+
+.form-btn {
+  height: 56px;
+  font-family: 'Pretendard-Regular';
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-xl);
+  margin-bottom: 24px;
+}
+
+.form-social-login {
+  font-weight: 500;
+  height: 74px;
+  background-color: var(--color-blue100);
+  border-radius: var(--border-radius-xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 23px;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.form-social-text {
+  margin: 0;
+  color: var(--color-gray800);
+  font-size: var(--font-size-base);
+  flex-grow: 1;
+}
+
+.form-social-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.form-footer {
+  font-size: var(--font-size-form-footer);
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.form-footer-link {
+  color: var(--color-blue400);
+}

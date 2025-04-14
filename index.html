@@ -6,14 +6,15 @@
       name="description"
       content="판다마켓 - 일상의 모든 물건을 거래하는 중고거래 플랫폼"
     />
-    <meta property="og:title" content="판다마켓" />
+    <meta property="og:title" content="판다 마켓" />
     <meta
       property="og:description"
       content="일상의 모든 물건을 거래하는 중고거래 플랫폼"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/index-style.css" />
     <title>판다 마켓</title>
   </head>
   <body>
@@ -24,15 +25,16 @@
             class="nav-logo-image"
             src="images/판다 얼굴.png"
             alt="메인페이지로 이동"
+            width="40"
           />
           <span aria-hidden="true" class="nav-logo-text">판다마켓</span>
         </a>
-        <a aria-label="로그인 버튼 클릭" href="/login" class="nav-btn btn"
+        <a aria-label="로그인 버튼 클릭" href="/login.html" class="nav-btn btn"
           >로그인</a
         >
       </nav>
     </header>
-    <main>
+    <main class="page-main">
       <section class="landing">
         <div class="landing-container">
           <div class="landing-context">
@@ -54,14 +56,14 @@
           />
         </div>
       </section>
-      <section class="page-main">
+      <section class="cards">
         <div class="card-container">
           <img
             class="card-img"
             src="images/img_home_01.png"
             alt="가장 HOT한 중고거래 물품을 판다마켓에서 확인해보세요"
           />
-          <div class="card-context-right">
+          <div class="card-context">
             <h2 class="card-title">Hot item</h2>
             <h3 class="card-subtitle">
               인기 상품을<br />
@@ -73,10 +75,8 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="page-main">
         <div class="card-container">
-          <div class="card-context-left">
+          <div class="card-context-reverse">
             <h2 class="card-title">Search</h2>
             <h3 class="card-subtitle">
               구매를 원하는<br />
@@ -93,15 +93,13 @@
             alt="구매하고 싶은 물품은 검색해서 쉽게 찾아보세요"
           />
         </div>
-      </section>
-      <section class="page-main">
         <div class="card-container">
           <img
             class="card-img"
             src="images/Img_home_03.png"
             alt="어떤 물건이든 판매하고 싶은 상품을 쉽게 등록하세요"
           />
-          <div class="card-context-right">
+          <div class="card-context">
             <h2 class="card-title">Register</h2>
             <h3 class="card-subtitle">
               판매를 원하는<br />
@@ -114,7 +112,6 @@
           </div>
         </div>
       </section>
-      <section class="page-spacing"></section>
       <section class="landing">
         <div class="landing-container">
           <div class="landing-context">
@@ -148,6 +145,7 @@
               class="footer-icon"
               src="images/ic_facebook.png"
               alt="판다마켓 페이스북 채널로 이동"
+              width="18"
             />
           </a>
           <a
@@ -159,6 +157,7 @@
               class="footer-icon"
               src="images/ic_twitter.png"
               alt="판다마켓 트위터 채널로 이동"
+              width="18"
             />
           </a>
           <a
@@ -170,6 +169,7 @@
               class="footer-icon"
               src="images/ic_youtube.png"
               alt="판다마켓 유튜브 채널로 이동"
+              width="18"
             />
           </a>
           <a
@@ -181,6 +181,7 @@
               class="footer-icon"
               src="images/ic_instagram.png"
               alt="판다마켓 인스타그램 채널로 이동"
+              width="18"
             />
           </a>
         </div>
