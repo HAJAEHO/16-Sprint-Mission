@@ -40,11 +40,12 @@ input {
 button {
   font-family: "Pretendard", sans-serif;
 }
-
-a[class*="btn"] {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+button:disabled {
+  cursor: default;
+  background-color: var(--gray400);
+}
+button:disabled:hover {
+  background-color: var(--gray400);
 }
 
 .btn-lg {
@@ -70,6 +71,12 @@ a[class*="btn"] {
 }
 .btn-primary:active {
   background: var(--primary-click-color);
+}
+
+a[class*="btn"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* form */

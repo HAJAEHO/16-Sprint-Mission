@@ -172,7 +172,7 @@
   align-items: center;
   padding: 1rem 1.5rem;
   border-radius: var(--border-radius-xs);
-  background: var(--background-blue);
+  background: var(--background-blue-light);
   font-size: 1rem;
   color: var(--gray800);
 }
