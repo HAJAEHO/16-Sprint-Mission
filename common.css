@@ -1,0 +1,23 @@
+/* 전역 변수 설정 */
+:root {
+  --color-primary: #3692FF;
+  --color-text: #374151;
+  --color-text-light: #9CA3AF;
+  --color-background: #FFFFFF; 
+  --color-background-dark: #111827;
+  --color-background-light: #E5E7EB;
+  --color-background-banner: #CFE5FF; 
+  
+  --font-family-base: 'Pretendard-Regular', sans-serif;
+  /* --font-family-heading: 'Noto Sans KR', sans-serif; */
+  
+  /* --container-width: 1120px;
+  --header-height: 70px;
+  --footer-height: 160px;
+  
+  --spacing-xs: 12px;
+  --spacing-sm: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 60px;
+  --spacing-xl: 138px; */
+}
