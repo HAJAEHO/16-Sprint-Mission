@@ -39,7 +39,7 @@
   display: flex;
   justify-content: center;
   background: #fff;
-  padding: 0 18px 96px;
+  padding: 0 18px 40px;
 }
 
 .section-container {
@@ -48,9 +48,14 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 24px;
+  flex-grow: 1;
 }
 .section-search .section-container {
   align-items: flex-end;
+}
+
+.section-img {
+  width: 100%;
 }
 
 .section-hotitem {
@@ -146,7 +151,7 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1.5rem 6.75rem;
+  padding: 32px;
   flex-wrap: wrap;
   gap: 24px;
   font-size: 16px;
@@ -188,6 +193,40 @@
 
 /*================ 반응형 ================*/
 /* Tablet */
+@media (min-width: 640px) {
+  .logo {
+    width: 154px;
+  }
+
+  .section {
+    padding: 0 24px 52px;
+  }
+
+  .section-hotitem {
+    padding-top: 24px;
+  }
+
+  .section-title {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  .section-desc {
+    font-size: 18px;
+  }
+
+  .footer-container {
+    flex-wrap: initial;
+    padding: 2rem 6.5rem 6.75rem;
+  }
+
+  .copyright {
+    order: initial;
+    width: auto;
+    padding-top: 0;
+  }
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -246,26 +285,8 @@
     line-height: 32px;
   }
 
-  .section-hotitem {
-    padding-top: 1rem;
-  }
-
-  .section-title {
-    font-size: 32px;
-  }
-
-  .section-desc {
-    font-size: 18px;
-  }
-
-  .footer-container {
-    flex-wrap: initial;
-  }
-
-  .copyright {
-    order: initial;
-    width: auto;
-    padding-top: 0;
+  .section-container {
+    flex-grow: 0;
   }
 }
 
@@ -305,6 +326,10 @@
 
   .banner-title span {
     display: block;
+  }
+
+  .section {
+    padding: 0 24px 138px;
   }
 
   .section-container {
