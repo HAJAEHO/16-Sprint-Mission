@@ -1,0 +1,414 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+/* Sheet */
+:root {
+    /* Color */
+    --brand-blue:#3692FF;
+    --cool-gray-100:#F3F4F6;
+    --secondary-100:#F3F4F6;
+    --secondary-200:#E5E7EB;
+    --secondary-300:#D1D5DB;
+    --secondary-400:#9CA3AF;
+    --secondary-700:#374151;
+    --secondary-900:#111827;
+    --base-size: 1.25rem;
+    --base-weight: 600;
+    --tag-size: 1.125rem;
+    --tag-weight: 700;
+    --title-size: 2.5rem;
+    --title-weight: 700;
+    --title-color: var(--secondary-700);
+  }
+
+button {
+    cursor: pointer;
+  }
+
+  h1 {
+    color: var(--secondary-900);
+    font-weight: var(--title-weight);
+    font-size: var(--title-size);
+    line-height: 140%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .feature-reverse h1 {
+    text-align: right;
+  }
+
+  h3 {
+    color: var(--secondary-700);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 130%;
+    text-align: left;
+  }
+
+  .feature-reverse h3 {
+    text-align: right;
+  }
+
+  h4 {
+    color: var(--brand-blue);
+    font-weight: var(--tag-weight);
+    font-size: var(--tag-size);
+    text-align: left;
+  }
+
+  .feature-reverse h4 {
+    text-align: right;
+  }
+
+  .shop-btn:hover,
+  .login-btn:hover {
+    background-color: #1967D6;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #222;
+    line-height: 1.6;
+    font-family: 'Pretendard', sans-serif;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .container {
+    width: 90%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Header */
+  .header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: var(--base-size);
+    background-color: #0070f3;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Top Banner */
+  .top-banner {
+    display: flex;
+    height: 520px;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #cbe5ff;
+  }
+
+  .top-banner .container {
+    display: flex;
+    bottom: 0px;
+    padding: 0;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .shop-btn {
+    width: 100%;
+    padding: 1rem 0rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: var(--base-size);
+    background-color: var(--brand-blue);
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  .top-banner-img {
+    margin-top: 2rem;
+  }
+  
+  /* Features */
+  .features {
+    display: flex;
+    padding: 10rem 0;
+    margin: 0rem 10rem;
+    flex-direction: column;
+    gap: 10rem;
+  }
+  
+  .feature {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+    justify-content: center;
+  }
+
+  .feature-reverse {
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8rem;
+    justify-content: center;
+  }
+
+  .feature img,
+  .feature-reverse img {
+    max-width: 588px;
+  }
+  
+  .feature .tag,
+  .feature-reverse .tag {
+    color: var(--brand-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 2rem 0;
+    background-color: var(--secondary-900);
+  }
+  
+  .footer .container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .footer nav a {
+    margin: 0 0.5rem;
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  
+  .footer p {
+    color: white;
+    font-size: 1rem;
+  }
+
+  .footer .container .sns-btn {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Landing Responsive */
+  @media (max-width: 375px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+    
+    .header {
+        position: static;
+    }
+    
+    .logo img {
+      height: 40px;
+    }
+    
+    .login-btn {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      background-color: var(--brand-blue);
+      border-radius: 2px;
+    }
+
+    .top-banner {
+        height: 480px;
+    }
+
+    .top-banner .container {
+      text-align: center;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .top-banner-text h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .features {
+        padding: 3rem 0rem;
+        margin: 0rem 3rem;
+    }
+
+    .feature {
+        align-items: start;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .feature-reverse {
+        align-items: end;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .features h1 {
+        font-size: 1.5rem;
+    }
+
+    .features h3 {
+        font-size: 1rem;
+    }
+
+    .feature p {
+        font-size: 1rem;
+    }
+
+    .feature img {
+        max-width: 100%;
+    }
+
+    .feature-reverse img {
+        width: 100%;
+    }
+  }
+
+  /* Login */
+  .login-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form .login-btn {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 40px;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    color: inherit;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+  }
+
+  .toggle-password {
+    border: none;
+  }
+
+  .text-field {
+    display: flex;
+    width: 40rem;
+    height: 3.5rem;
+    padding: 0rem 2rem;
+    align-items: center;
+    background-color: #F3F4F6;
+    border-radius: 0.5rem;
+  }
+
+  .social-login {
+    display: flex;
+    width: 40rem;
+    height: 4.625rem;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E6F2FF;
+    border-radius: 8px;
+  }
+
+  .sns-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sns-icons .google {
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    background-color: white;
+  }
+
+  .sns-icons .kakao {
+    border: none;
+    padding: 1rem;
+    border-radius: 100%;
+    background-color: #F5E14B;
+  }
+
+  .login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .login-box .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+  .login-box .logo img{
+    height: 8.75rem;
+    margin-bottom: 4rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-container label {
+    font-weight:700;
+    font-size: 1.125rem;
+  }
+
+  .signup-guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    padding-top: 1.5rem;
+  }
+
+  .signup-guide a {
+    color: #0070f3;
+  }

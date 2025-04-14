@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+          <button class="logo">
+            <a href="/landing.html"><img src="img/logo.svg"></a>
+          </button>
+
+          <form>
+            <div class="form-container">
+                <label for="email">이메일</label>
+                <div class="text-field">
+                    <input type="email" id="email" placeholder="codeit@email.com" required>
+                </div>
+            </div>
+            <div class="form-container">
+                <label for="password">비밀번호</label>
+                <div class="text-field">
+                  <input type="password" id="password" placeholder="비밀번호" required>
+                  <button type="button" class="toggle-password"><img src="img/ic_visibility_on.svg"></button>
+                </div>
+            </div>
+            <button type="submit" class="login-btn">로그인</button>
+          </form>
+    
+          <div class="social-login">
+            <span>간편 로그인하기</span>
+            <div class="sns-icons">
+                <button class="google">
+                    <img src="img/ic_google.svg">
+                </button>
+                <button class="kakao">
+                    <img src="img/ic_kakao.svg">
+                </button>
+            </div>
+          </div>
+    
+          <p class="signup-guide">
+            판다마켓이 처음이신가요? <a href="#">회원가입</a>
+          </p>
+        </div>
+      </div>
+</body>
+</html>
