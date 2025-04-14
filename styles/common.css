@@ -85,7 +85,13 @@ a[class*="btn"] {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 0 1.5rem;
+  max-width: 400px;
+  padding: 0 16px;
+}
+
+.form-logo {
+  width: 198px;
+  margin: 14.375rem 0 2.5rem;
 }
 
 .form-label {
@@ -103,11 +109,6 @@ a[class*="btn"] {
   background: var(--gray100);
   border-radius: var(--border-radius-sm);
   font-size: 1rem;
-}
-
-.form-logo {
-  width: 198px;
-  margin: 14.375rem 0 2.5rem;
 }
 
 .form-logo img {
