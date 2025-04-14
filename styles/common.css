@@ -48,10 +48,11 @@ a[class*="btn"] {
 }
 
 .btn-lg {
-  padding: 0.75rem;
+  padding: 12px;
   border-radius: var(--border-radius-lg);
-  font-size: 1.286rem;
+  font-size: 20px;
   font-weight: 600;
+  line-height: 32px;
 }
 
 .btn-sm {
