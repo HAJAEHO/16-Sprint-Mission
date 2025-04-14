@@ -1,15 +1,40 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* 전역 변수 설정 */
+:root {
+  --color-primary: #3692FF;
+  --color-text: #374151;
+  --color-text-light: #9CA3AF;
+  --color-background: #FFFFFF; 
+  --color-background-dark: #111827;
+  --color-background-light: #E5E7EB;
+  --color-background-banner: #CFE5FF; 
+  
+  --font-family-base: 'Pretendard-Regular', sans-serif;
+  /* --font-family-heading: 'Noto Sans KR', sans-serif; */
+  
+  /* --container-width: 1120px;
+  --header-height: 70px;
+  --footer-height: 160px;
+  
+  --spacing-xs: 12px;
+  --spacing-sm: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 60px;
+  --spacing-xl: 138px; */
 }
 
-html {
-  font-family: 'Pretendard', sans-serif;
+/* Utility Classes */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: 'pretendard', sans-serif;
 }
 
 header {
-  background-color: #ffffff;
+  background-color: var(--color-background);
   width: 100%;
   height: 70px;
   border-bottom: 1px;
@@ -23,15 +48,12 @@ header {
 }
 
 .login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 12px 23px;
   gap: 10px;
   color: #ffffff;
   width: 128px;
   height: 48px;
-  background: #3692FF;
+  background: var(--color-primary);
   border-radius: 8px;
 }
 
@@ -44,17 +66,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-color: #cfe5ff; 
+  background-color: var(--color-background-banner); 
 }
 
-.main-top {
+.main-banner {
   height: 540px;
   display: flex;
   flex: 0 0 1920px;
   width: 100%;
 }
 
-.main-text {
+.main-banner-text {
   width: 357px;
   height: 260px;
   position: relative;
@@ -62,53 +84,31 @@ header {
   left: 405px;
 }
 
-.main-description {
-  color: #374151;
+.main-banner-description {
+  color: var(--color-text);
   font-size: 40px;
   font-weight: 700;
   line-height: 140%;
-  letter-spacing: 0%;
   vertical-align: middle;
   margin-bottom: 32px;
 }
 
-.main-bottom {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 540px;
-  gap: 69px;
-}
-
-.main-bottom-description {
-  color: #374151;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0%;
-  vertical-align: middle;
-  margin-bottom: 172.5px;
-}
-
-.main-text a {
+.main-banner-text a {
   text-decoration: none;
   cursor: pointer;
 }
 
 .go-to-see {
-  background-color: #3692ff;
+  background-color: var(--color-primary);
   color: #ffffff;
   width: 357px;
   height: 56px;
   border-radius: 40px;
   padding: 16px 124px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 
-.main-top img {
+.main-banner img {
   width: 746px;
   height: 340px;
   position: relative;
@@ -117,29 +117,43 @@ header {
   gap: 7px;
 }
 
+.sub-banner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 540px;
+  gap: 69px;
+}
+
+.sub-banner-description {
+  color: var(--color-text);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+  vertical-align: middle;
+  margin-bottom: 172.5px;
+}
+
 .menus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--color-background);
 }
 
 .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 64px;
   width: 988px;
   background-color: #fcfcfc;
   margin: 138px 466px;
 }
  
-.menu:nth-child(even ) {
+.menu:nth-child(even) {
   text-align: right;
 }
 
 .menu-text {
-  color: #374151;
+  color: var(--color-text)#;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -149,10 +163,9 @@ header {
   width: 100%;
   height: 26px;
   font-weight: 700;
-  color: #3692ff;
+  color: var(--color-primary);
   font-size: 18px;
   line-height: 26px;
-  letter-spacing: 0%;
   vertical-align: middle;
 }
 
@@ -160,7 +173,7 @@ header {
   height: 112px;
   font-weight: 700;
   font-size: 40px;
-  color: #374151;
+  color: var(--color-text)#;
   line-height: 140%;
   letter-spacing: 2%;
   vertical-align: middle;
@@ -170,17 +183,13 @@ header {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  letter-spacing: 0%;
   vertical-align: middle;
 }
 
 footer {
-  background-color: #111827;
+  background-color: var(--color-background-dark);
   width: 100%;
   height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer-button {
@@ -192,7 +201,7 @@ footer {
   padding-bottom: 108.5px;;
 }
 .company {
- color: #9ca3af;
+ color: var(--color-text-light);
  width: 112px;
  height: 19px;
  font-size: 16px;
@@ -208,8 +217,8 @@ display: flex;
 gap: 30px;
 }
 
-.homepage-button a {
-  color: #e5e7eb;
+.sns-icon {
+  margin-left: 10px;
   cursor: pointer;
   text-decoration: none;
 }
