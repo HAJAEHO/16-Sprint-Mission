@@ -35,11 +35,16 @@
 }
 
 /* section */
+.sections {
+  padding: 52px 16px 84px;
+  background: #fff;
+}
+
 .section {
   display: flex;
   justify-content: center;
   background: #fff;
-  padding: 0 18px 40px;
+  margin-bottom: 40px;
 }
 
 .section-container {
@@ -58,7 +63,7 @@
   width: 100%;
 }
 
-.section-hotitem {
+.sections {
   padding-top: 52px;
 }
 
@@ -198,12 +203,8 @@
     width: 154px;
   }
 
-  .section {
-    padding: 0 24px 52px;
-  }
-
-  .section-hotitem {
-    padding-top: 24px;
+  .sections {
+    padding: 24px 24px 56px;
   }
 
   .section-title {
@@ -354,7 +355,7 @@
     order: 2;
   }
 
-  .section-hotitem {
+  .sections {
     padding-top: 8.625rem;
   }
 
