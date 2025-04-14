@@ -1,12 +1,24 @@
 @import '/style/index.css';
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+
   display: flex;
-  height: 51px;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: calc(100% - 400px);
   margin: 9.5px auto;
   padding: 0 200px;
-  justify-content: space-between;
+  height: 51px;
 }
 
 .logo {
