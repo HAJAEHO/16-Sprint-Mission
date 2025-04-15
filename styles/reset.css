@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #3692FF;
+  --color-text: #374151;
+  --color-text-light: #9CA3AF;
+  --color-text-button: #F3F4F6;
+  --color-background: #FCFCFC;
+  --color-background-dark: #111827;
+  --color-background-light: #E5E7EB;
+  --color-banner: #CFE5FF;
+  
+  --font-family-base: 'Pretendard-Regular', sans-serif;
+  --font-family-heading: 'Noto Sans KR', sans-serif;
+  
+  --container-width: 1120px;
+  --header-height: 70px;
+  --footer-height: 160px;
+  
+  --spacing-xs: 12px;
+  --spacing-sm: 24px;
+  --spacing-md: 32px;
+  --spacing-lg: 60px;
+  --spacing-xl: 138px;
+}
+
+header {
+  margin: 0;
+  padding: 10px 0;
+  height: 70px;
+  background-color: var(--color-background);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between; 
+  padding: 50px 20%;
+  height: 160px;
+  background-color: var(--color-background-dark);
+  color: var(--color-background-light);
+  font-weight: 400;
+  line-height: 100%;
+}
