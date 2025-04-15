@@ -1,7 +1,13 @@
 @import url("reset.css");
 @import url("common.css");
 
-.container--header{
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+}
+
+.container--header {
     display: flex;
     justify-content: space-between;
     align-items: center;
