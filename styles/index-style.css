@@ -85,10 +85,19 @@ body {
   line-height: 140%;
 }
 
-.hero-img {
+.hero-img-container {
+  width: 100%;
   max-width: 746px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
   min-width: 447.6px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #banner-bottom .hero-img {
@@ -239,12 +248,12 @@ body {
   --hero-container-btm-padding-top: 121px;
   --hero-container-gap: 132px;
 
-  /* cards 배경색 설정 */
-  --cards-background-color: var(--color-gray050);
-
   /* 요소 크기조절 변수 */
   --card-container-width: 344px;
   --card-img-width: 344px;
+
+  /* cards 배경색 설정 */
+  --cards-background-color: var(--color-gray050);
 }
 
 /* Tablet */
@@ -269,12 +278,13 @@ body {
     --hero-container-padding-top: 84px;
     --hero-container-btm-padding-top: 201px;
     --hero-container-gap: 211px;
-    /* cards 배경색 설정 */
-    --cards-background-color: var(--color-gray050);
 
     /* 요소 크기조절 변수 */
     --card-container-width: 696px;
     --card-img-width: 696px;
+
+    /* cards 배경색 설정 */
+    --cards-background-color: var(--color-gray050);
   }
 
   .hero-title {
@@ -323,12 +333,12 @@ body {
     --hero-container-btm-padding-top: 200px;
     --hero-container-gap: 7px;
 
-    /* cards 배경색 설정 */
-    --cards-background-color: var(--color-white);
-
     /* 요소 크기조절 변수 */
     --card-container-width: 988px;
     --card-img-width: 579px;
+
+    /* cards 배경색 설정 */
+    --cards-background-color: var(--color-white);
   }
   .hero-title {
     text-align: left;
