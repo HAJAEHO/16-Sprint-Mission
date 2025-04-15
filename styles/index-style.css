@@ -164,7 +164,7 @@ body {
   color: var(--color-gray700);
   font-size: var(--card-description-font-size);
   font-weight: var(--font-weight-medium);
-  line-height: 32px;
+  line-height: 140%;
   margin: 0;
   white-space: nowrap;
 }
@@ -295,6 +295,9 @@ body {
   .footer-corp {
     flex-basis: auto;
   }
+  .card-description {
+    line-height: 32px;
+  }
 }
 
 /* PC */
@@ -349,6 +352,9 @@ body {
   }
   .footer-corp {
     flex-basis: auto;
+  }
+  .card-description {
+    line-height: 32px;
   }
 }
 /* 폰트 반응형 스타일 적용 */
