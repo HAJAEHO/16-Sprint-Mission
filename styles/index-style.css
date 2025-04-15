@@ -31,6 +31,7 @@ body {
 
 .nav-logo-image {
   width: 40px;
+  display: var(--nav-log-display);
 }
 
 .nav-logo-text {
@@ -52,38 +53,36 @@ body {
 
 .hero-container {
   display: flex;
-  flex-direction: var(--main-container-flex-direction);
   justify-content: center;
   align-items: center;
-  padding-top: var(--hero-container-padding-top);
-  gap: var(--hero-container-gap);
+  flex-direction: var(--main-container-flex-direction);
+  padding-top: 48px;
+  gap: 132px;
 }
 
 #banner-bottom .hero-container {
-  padding-top: var(--hero-container-btm-padding-top);
+  padding-top: 121px;
 }
+
 .hero-context {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 357px;
-  gap: 32px;
-  margin-bottom: 60px;
+  align-items: center;
+  width: 240px;
+  gap: 18px;
+  margin-bottom: 0;
 }
 
 .hero-title {
-  font-size: var(--font-size-hero-title);
+  font-size: var(--hero-title-font-size);
   font-weight: var(--font-weight-bold);
   color: var(--color-gray700);
   margin: 0;
   word-break: keep-all;
-  width: var(--hero-title-width);
-  text-align: var(--hero-title-text-align);
+  width: 300px;
+  text-align: center;
   line-height: 140%;
-}
-
-#banner-bottom .hero-title {
-  width: var(--hero-title-btm-width);
 }
 
 .hero-img {
@@ -109,9 +108,9 @@ body {
 }
 
 .cards {
-  background-color: var(--cards-background-color);
   display: flex;
   flex-direction: column;
+  background-color: var(--cards-background-color);
   padding-top: var(--cards-padding-top);
   padding-bottom: var(--cards-padding-bottom);
   margin-bottom: var(--cards-margin-bottom);
@@ -131,16 +130,13 @@ body {
   gap: var(--card-container-gap);
 }
 
-.card-container.reverse {
-  flex-direction: var(--main-container-flex-direction-even);
-}
-
 .card-img {
   width: var(--card-img-width);
 }
 
 .card-context {
   padding: 0 24px 0 0;
+  width: 344px;
 }
 
 .card-context.reverse {
@@ -150,24 +146,23 @@ body {
 
 .card-tag {
   color: var(--color-blue400);
-  font-size: var(--font-size-card-tag);
+  font-size: var(--card-tag-font-size);
   font-weight: var(--font-weight-bold);
   margin: 0 0 12px;
 }
 
 .card-title {
   color: var(--color-gray700);
-  font-size: var(--font-size-card-title);
+  font-size: var(--card-title-font-size);
   font-weight: var(--font-weight-bold);
   line-height: 140%;
   margin: 0 0 24px;
   word-break: keep-all;
-  width: 293px;
 }
 
 .card-description {
   color: var(--color-gray700);
-  font-size: var(--font-size-card-description);
+  font-size: var(--card-description-font-size);
   font-weight: var(--font-weight-medium);
   line-height: 32px;
   margin: 0;
@@ -222,97 +217,76 @@ body {
   width: 18px;
 }
 
-/* Mobile */
-@media (min-width: 0px) {
-  :root {
-    --nav-padding-x: 16px;
-    --footer-padding-x: 32px;
-    --main-container-flex-direction: column;
-    --main-container-flex-direction-even: column;
+/* 기본 변수 (Mobile 기준) */
+:root {
+  /* 로고 이미지 표시여부 변수 */
+  --nav-log-display: none;
 
-    --card-img-width: 344px;
+  /* 좌우 여백 변수 */
+  --nav-padding-x: 16px;
+  --footer-padding-x: 32px;
 
-    --cards-background-color: var(--color-gray050);
+  /* hero, card 배치방향 변수 */
+  --main-container-flex-direction: column;
 
-    --card-container-width: 344px;
-    --card-container-gap: 24px;
+  /* 요소 간격조절 변수 */
+  --cards-padding-top: 52px;
+  --cards-padding-bottom: 83px;
+  --cards-margin-bottom: 0px;
+  --cards-gap: 40px;
+  --card-container-gap: 24px;
 
-    --cards-padding-top: 52px;
-    --cards-padding-bottom: 83px;
-    --cards-margin-bottom: 0;
-    --cards-gap: 40px;
+  --cards-background-color: var(--color-gray050);
 
-    --hero-container-padding-top: 48px;
-    --hero-container-btm-padding-top: 121px;
-    --hero-container-gap: 132px;
+  --card-container-width: 344px;
+  --card-img-width: 344px;
 
-    --hero-title-width: 240px;
-    --hero-title-btm-width: 240px;
-    --hero-title-text-align: center;
-    --footer-corp-flex-basis: 767px;
-
-    --font-size-hero-title: 32px;
-    --font-size-card-title: 24px;
-    --font-size-card-tag: 16px;
-    --font-size-card-description: 16px;
-  }
-
-  .card-context {
-    width: 344px;
-  }
-  .card-title {
-    width: auto;
-  }
-
-  .hero-context {
-    width: 240px;
-    align-items: center;
-    gap: 18px;
-    margin-bottom: 0px;
-  }
+  --footer-corp-flex-basis: 767px;
 }
 
 /* Tablet */
 @media (min-width: 768px) {
   :root {
+    /* 로고 이미지 표시여부 변수 */
+    --nav-log-display: inline;
+
+    /* 좌우 여백 변수 */
     --nav-padding-x: 24px;
     --footer-padding-x: 104px;
-    --main-container-flex-direction: column;
-    --main-container-flex-direction-even: column;
 
-    --card-img-width: 696px;
+    /* hero, card 배치방향 변수 */
+    --main-container-flex-direction: column;
+
+    /* 요소 간격조절 변수 */
+    --cards-padding-top: 24px;
+    --cards-padding-bottom: 56px;
+    --cards-margin-bottom: 0px;
+    --cards-gap: 52px;
+    --card-container-gap: 24px;
 
     --cards-background-color: var(--color-gray050);
 
     --card-container-width: 696px;
-    --card-container-gap: 24px;
+    --card-img-width: 696px;
 
-    --cards-padding-top: 24px;
-    --cards-padding-bottom: 56px;
-    --cards-margin-bottom: 0;
-    --cards-gap: 52px;
-
-    --hero-container-padding-top: 84px;
-    --hero-container-btm-padding-top: 201px;
-    --hero-container-gap: 211px;
-
-    --hero-title-width: auto;
-    --hero-title-btm-width: 300px;
-    --hero-title-text-align: center;
     --footer-corp-flex-basis: auto;
-
-    --font-size-hero-title: 40px;
-    --font-size-card-title: 32px;
-    --font-size-card-tag: 18px;
-    --font-size-card-description: 18px;
+  }
+  .hero-title {
+    text-align: center;
+    width: auto;
+  }
+  .hero-container {
+    padding-top: 84px;
+    gap: 211px;
+  }
+  #banner-bottom .hero-container {
+    padding-top: 201px;
   }
 
   .card-context {
     width: 696px;
   }
-  .card-title {
-    width: auto;
-  }
+
   .hero-context {
     width: auto;
     align-items: center;
@@ -324,38 +298,41 @@ body {
 /* PC */
 @media (min-width: 1200px) {
   :root {
+    /* 로고 이미지 표시여부 변수 */
+    --nav-log-display: inline;
+
+    /* 좌우 여백 변수 */
     --nav-padding-x: 200px;
     --footer-padding-x: 200px;
+
+    /* hero, card 배치방향 변수 */
     --main-container-flex-direction: row;
-    --main-container-flex-direction-even: row-reverse;
 
-    --card-img-width: 579px;
-
-    --cards-background-color: var(--color-white);
-
-    --card-container-width: 988px;
-    --card-container-gap: 64px;
-
+    /* 요소 간격조절 변수 */
     --cards-padding-top: 138px;
     --cards-padding-bottom: 138px;
     --cards-margin-bottom: 138px;
     --cards-gap: 276px;
+    --card-container-gap: 64px;
 
-    --hero-container-padding-top: 200px;
-    --hero-container-btm-padding-top: 200px;
-    --hero-container-gap: 7px;
+    --cards-background-color: var(--color-white);
 
-    --hero-title-width: 300px;
-    --hero-title-btm-width: 300px;
-    --hero-title-text-align: left;
+    --card-container-width: 988px;
+    --card-img-width: 579px;
+
     --footer-corp-flex-basis: auto;
-
-    --font-size-hero-title: 40px;
-    --font-size-card-title: 40px;
-    --font-size-card-tag: 18px;
-    --font-size-card-description: 24px;
   }
-
+  .hero-title {
+    text-align: left;
+    width: 300px;
+  }
+  .hero-container {
+    padding-top: 200px;
+    gap: 7px;
+  }
+  #banner-bottom .hero-container {
+    padding-top: 200px;
+  }
   .card-context {
     width: auto;
   }
@@ -367,5 +344,17 @@ body {
     align-items: start;
     gap: 32px;
     margin-bottom: 60px;
+  }
+  .card-container.reverse {
+    flex-direction: row-reverse;
+  }
+}
+/* 폰트 반응형 스타일 적용 */
+@supports (font-size: clamp(1rem, 2vw, 3rem)) {
+  :root {
+    --hero-title-font-size: clamp(32px, 5.3763vw, 40px);
+    --card-title-font-size: clamp(24px, 4.3011vw, 40px);
+    --card-tag-font-size: clamp(16px, 2.4194vw, 18px);
+    --card-description-font-size: clamp(16px, 2.4194vw, 24px);
   }
 }
