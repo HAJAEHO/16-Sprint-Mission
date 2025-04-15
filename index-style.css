@@ -106,22 +106,6 @@ h2 {
     border-radius: 40px;
 }
 
-.btn--interactions {
-    cursor: pointer;
-}
-
-.btn--interactions:hover {
-    background-color: var(--color-primary-dark);
-}
-
-.btn--interactions:active {
-    background-color: var(--color-primary-darker);
-}
-
-.btn--interactions:disabled {
-    background-color: var(--color-disabled);
-}
-
 .img--hero, .img--closing {
     max-width: 100%;
     flex: 1 1 0;

@@ -33,3 +33,19 @@
     font-family: var(--font-primary);
     word-break: keep-all; /*텍스트를 문장 전체가 아닌 단어를 단위로 줄바꿈이 일어나지 않게 함*/
 }
+
+.btn--interactions {
+    cursor: pointer;
+}
+
+.btn--interactions:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.btn--interactions:active {
+    background-color: var(--color-primary-darker);
+}
+
+.btn--interactions:disabled {
+    background-color: var(--color-disabled);
+}
