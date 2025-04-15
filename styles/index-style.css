@@ -56,12 +56,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: var(--main-container-flex-direction);
-  padding-top: 48px;
-  gap: 132px;
+  padding-top: var(--hero-container-padding-top);
+  gap: var(--hero-container-gap);
 }
 
 #banner-bottom .hero-container {
-  padding-top: 121px;
+  padding-top: var(--hero-container-btm-padding-top);
 }
 
 .hero-context {
@@ -193,7 +193,7 @@ body {
 
 .footer-corp {
   color: var(--color-gray400);
-  flex-basis: var(--footer-corp-flex-basis);
+  flex-basis: 767px;
 }
 
 .footer-links {
@@ -235,13 +235,16 @@ body {
   --cards-margin-bottom: 0px;
   --cards-gap: 40px;
   --card-container-gap: 24px;
+  --hero-container-padding-top: 48px;
+  --hero-container-btm-padding-top: 121px;
+  --hero-container-gap: 132px;
 
+  /* cards 배경색 설정 */
   --cards-background-color: var(--color-gray050);
 
+  /* 요소 크기조절 변수 */
   --card-container-width: 344px;
   --card-img-width: 344px;
-
-  --footer-corp-flex-basis: 767px;
 }
 
 /* Tablet */
@@ -263,24 +266,20 @@ body {
     --cards-margin-bottom: 0px;
     --cards-gap: 52px;
     --card-container-gap: 24px;
-
+    --hero-container-padding-top: 84px;
+    --hero-container-btm-padding-top: 201px;
+    --hero-container-gap: 211px;
+    /* cards 배경색 설정 */
     --cards-background-color: var(--color-gray050);
 
+    /* 요소 크기조절 변수 */
     --card-container-width: 696px;
     --card-img-width: 696px;
-
-    --footer-corp-flex-basis: auto;
   }
+
   .hero-title {
     text-align: center;
     width: auto;
-  }
-  .hero-container {
-    padding-top: 84px;
-    gap: 211px;
-  }
-  #banner-bottom .hero-container {
-    padding-top: 201px;
   }
 
   .card-context {
@@ -292,6 +291,9 @@ body {
     align-items: center;
     gap: 24px;
     margin-bottom: 0px;
+  }
+  .footer-corp {
+    flex-basis: auto;
   }
 }
 
@@ -314,25 +316,22 @@ body {
     --cards-margin-bottom: 138px;
     --cards-gap: 276px;
     --card-container-gap: 64px;
+    --hero-container-padding-top: 200px;
+    --hero-container-btm-padding-top: 200px;
+    --hero-container-gap: 7px;
 
+    /* cards 배경색 설정 */
     --cards-background-color: var(--color-white);
 
+    /* 요소 크기조절 변수 */
     --card-container-width: 988px;
     --card-img-width: 579px;
-
-    --footer-corp-flex-basis: auto;
   }
   .hero-title {
     text-align: left;
     width: 300px;
   }
-  .hero-container {
-    padding-top: 200px;
-    gap: 7px;
-  }
-  #banner-bottom .hero-container {
-    padding-top: 200px;
-  }
+
   .card-context {
     width: auto;
   }
@@ -347,6 +346,9 @@ body {
   }
   .card-container.reverse {
     flex-direction: row-reverse;
+  }
+  .footer-corp {
+    flex-basis: auto;
   }
 }
 /* 폰트 반응형 스타일 적용 */
