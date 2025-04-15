@@ -211,6 +211,7 @@ body {
   flex-direction: row;
   gap: 30px;
 }
+
 .footer-links a {
   text-decoration: none;
   color: var(--color-gray300);
@@ -303,9 +304,11 @@ body {
     gap: 24px;
     margin-bottom: 0px;
   }
+
   .footer-corp {
     flex-basis: auto;
   }
+
   .card-description {
     line-height: 32px;
   }
@@ -341,6 +344,7 @@ body {
     /* cards 배경색 설정 */
     --cards-background-color: var(--color-white);
   }
+
   .hero-title {
     text-align: left;
     width: 300px;
@@ -349,21 +353,26 @@ body {
   .card-context {
     width: auto;
   }
+
   .card-title {
     width: 293px;
   }
+
   .hero-context {
     width: 357px;
     align-items: start;
     gap: 32px;
     margin-bottom: 60px;
   }
+
   .card-container.reverse {
     flex-direction: row-reverse;
   }
+
   .footer-corp {
     flex-basis: auto;
   }
+
   .card-description {
     line-height: 32px;
   }
