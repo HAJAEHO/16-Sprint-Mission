@@ -21,7 +21,6 @@ body {
 
 .page-wrapper {
     background-color: var(--article-background-color);
-    font-family: 'Pretendard-Regular', sans-serif;
     color: var(--text-color);
     max-width: 1920px;
     margin: 0 auto;
@@ -111,7 +110,6 @@ article.hero__content .hero__text {
 .hero__text button {
     background-color: var(--primary-color);
     height: 56px;
-    border: none;
     border-radius: 40px;
     cursor: pointer;
     padding: 0 7.75rem;

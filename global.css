@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+
 :root {
     /* 색상 변수 */
     --primary-color: #3692FF;

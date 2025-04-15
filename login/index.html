@@ -10,12 +10,12 @@
   </head>
   <body>
     <main>
-      <div class="main__login">
-        <h1 class="login__logo">
+      <section class="main__login">
+        <div class="login__logo">
           <a href="../" aria-label="판다마켓 홈으로 이동">
             <img src="../images/logo.png" alt="판다마켓 로고" />
           </a>
-        </h1>
+        </div>
         <form class="login__form" method="POST">
           <fieldset>
             <label for="user-email">이메일</label>
@@ -23,7 +23,7 @@
             <label for="user-password">비밀번호</label>
             <input id="user-password" type="password" name="user-password"/>
             <input id="toggle-visibility-pw" type="checkbox"/>
-            <label for="toggle-visibility-pw"></label>
+            <label aria-label="비밀번호 표시 여부" aria-checked="false" for="toggle-visibility-pw"></label>
             <button type="submit">로그인</button>
           </fieldset>
           <div class="login__alert">
@@ -41,7 +41,7 @@
             판다마켓이 처음이신가요?&nbsp;<a aria-label="회원가입 페이지로 이동" href="../sign_up/">회원가입</a>
           </div>
         </form>
-      </div>
+      </section>
     </main>
   </body>
 </html>
