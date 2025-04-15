@@ -65,9 +65,6 @@ body {
   background-color: var(--color-blue500);
 }
 
-.btn.disabled {
-  background-color: var(--color-gray400);
-}
-.btn.disabled:hover {
+.btn:disabled {
   background-color: var(--color-gray400);
 }
