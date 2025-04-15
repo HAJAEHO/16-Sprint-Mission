@@ -48,19 +48,10 @@ header .wrap {
     align-items: center;
     padding: 9px 0;
     max-width: 1920px;
-    margin: 0 auto;
+    margin: 0 200px;
     
 }
 
-header .logo {
-    margin-left: 200px;
-
-}
-
-header .login {
-    text-decoration: none;
-    margin-right: 200px;
-}
 
 .login-button {
     background-color: var(--primary-100);
@@ -70,6 +61,7 @@ header .login {
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
+    text-decoration: none;
     
 }
 
