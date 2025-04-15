@@ -124,12 +124,40 @@ body {
 
 /* Mobile */
 @media (min-width: 0px) {
+  .form-logo-img {
+    width: 51.76px;
+  }
+  .form-logo-text {
+    font-size: 33.17px;
+  }
+  .form-container {
+    max-width: 400px;
+  }
+  .form-logo-container {
+    margin: 80px auto 40px;
+  }
+  .form-label {
+    font-size: var(--font-size-sm);
+    margin-bottom: 16px;
+  }
 }
 
-/* Tablet */
+/* Tablet, PC */
 @media (min-width: 768px) {
-}
-
-/* PC */
-@media (min-width: 1200px) {
+  .form-logo-img {
+    width: 103.53px;
+  }
+  .form-logo-text {
+    font-size: 66.34px;
+  }
+  .form-container {
+    max-width: 640px;
+  }
+  .form-logo-container {
+    margin: 231px auto 40px;
+  }
+  .form-label {
+    font-size: var(--font-size-lg);
+    margin-bottom: 24px;
+  }
 }
