@@ -80,7 +80,7 @@ nav {
   cursor: pointer;
 }
 
-.top {
+.main-sec {
   min-height: 540px;
   display: flex;
   align-items: end;
@@ -88,20 +88,20 @@ nav {
   background-color: var(--color-background-blue);
 }
 
-.top-box {
+.box {
   width: 1120px;
   display: flex;
   justify-content: space-between;
 }
 
-.top-left {
+.box-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 32px;
 }
 
-.top-text {
+.box-text {
   width: 300px;
   font-weight: 700;
   font-size: 40px;
