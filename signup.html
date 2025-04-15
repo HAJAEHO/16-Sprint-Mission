@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>판다마켓 - 회원가입</title>
+    <link rel="icon" href="images/logo/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 비밀번호 열람 eye 아이콘 지원*/-->
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="loginstyle.css" />
+</head>
+    <body>
+        <main>
+            <a href="./" aria-label="홈으로 이동"><img src="./img/logo.png" alt="logo-image" class="login-page-logo"></a><!-- 로컬 서버 아닐시 디렉토리 보기로 전환될 수 있습니다.-->
+            <form name="login" method="post" class="login-form">
+              <table>
+                <tr><td><span class="input-label-style">이메일</span></td></tr>
+                <tr><td><input type="text" name="userID" class="inputbox input-id" placeholder="이메일 입력"></td></tr>
+                <tr><td><span class="input-label-style">닉네임</span></td></tr>
+                <tr><td><input type="text" name="userID" class="inputbox input-id" placeholder="닉네임 입력"></td></tr>
+                <tr><td><span class="input-label-style">비밀번호</span></td></tr>
+                <tr><td><div class="password-box"><input type="password" name="userPW" class="inputbox" placeholder="비밀번호 입력"><div class="eyes"><i class="fa-regular fa-eye-slash"></i></div></div></td></tr>
+                <tr><td><span class="input-label-style">비밀번호 확인</span></td></tr>
+                <tr><td><div class="password-box"><input type="password" name="userPW" class="inputbox" placeholder="비밀번호 입력"><div class="eyes"><i class="fa-regular fa-eye-slash"></i></div></div></td></tr>
+                <tr><td><button type="button" aria-label="회원가입 버튼" class="see-the-sight login-button">회원가입</button></td></tr>
+                <tr><td><div class="simple-login"><div>간편 로그인하기</div>
+                    <div>
+                      <a href="https://google.com" aria-label="구글로 로그인" target="_blank" rel="noopener noreferrer"><img src="./img/google_logo.png" class="sns-login-logo"></a>
+                      <a href="https://kakaocorp.com/page/" aria-label="카카오톡으로 로그인" target="_blank" rel="noopener noreferrer"><img src="./img/kakao_logo.png" class="sns-login-logo"></a>
+                    </div>
+                </div></tr></td>
+              </table>
+            </form>
+            <div id="go-to-the-register">이미 회원이신가요? <a href="./login.html">로그인</a></div>
+          </main>
+    </body>
+</html>
