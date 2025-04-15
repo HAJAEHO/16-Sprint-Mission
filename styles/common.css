@@ -84,8 +84,6 @@ a[class*="btn"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding-bottom: 14.375rem;
 }
 
 .form {
@@ -99,7 +97,7 @@ a[class*="btn"] {
 
 .form-logo {
   width: 198px;
-  margin: 14.375rem 0 2.5rem;
+  margin: 0 0 2.5rem;
 }
 
 .form-label {

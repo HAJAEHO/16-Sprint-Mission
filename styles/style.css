@@ -195,6 +195,14 @@
   gap: 1rem;
 }
 
+.login .form-container {
+  padding-top: 80px;
+}
+
+.signup .form-container {
+  padding-top: 24px;
+}
+
 /*================ 반응형 ================*/
 /* Tablet */
 @media (min-width: 640px) {
@@ -271,6 +279,10 @@
     font-size: 1.125rem;
   }
 
+  .signup .form-container {
+    padding-top: 48px;
+  }
+
   .header {
     padding: 0 24px;
   }
@@ -302,6 +314,18 @@
 
 /* PC */
 @media (min-width: 1200px) {
+  .form-container {
+    min-height: 100vh;
+  }
+
+  .login .form-container {
+    padding-top: 0;
+  }
+
+  .signup .form-container {
+    padding: 60px 0 178px;
+  }
+
   .header {
     padding: 0 12.5rem;
   }
@@ -377,5 +401,11 @@
 
   .section-desc {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 640px) and (max-height: 870px) {
+  .signup .form-container {
+    padding: 60px 0 178px;
   }
 }
