@@ -351,6 +351,7 @@
     background: var(--background-light);
     border-radius: var(--border-radius-md);
     overflow: hidden;
+    padding: 0 24px;
   }
 
   .section-search .section-container {
