@@ -49,8 +49,8 @@ header {
 .main-banner {
   height: 540px;
   display: flex;
-  flex: 0 0 1920px;
   width: 100%;
+  max-width: 1920px;
 }
 
 .main-banner-text {
@@ -133,7 +133,8 @@ header {
 
 .card {
   gap: 64px;
-  max-width: 980px;
+  width: 100%;
+  max-width: 988px;
   height: auto;
   background-color: #fcfcfc;
   margin: 138px 466px;
@@ -180,8 +181,8 @@ header {
 
 .card img {
   width: 100%;
-  max-width: 579px;
-  aspect-ratio: 579 / 444;
+  max-width: 588px;
+  aspect-ratio: 588 / 444;
   height: auto;
   object-fit: cover;
   display: block;
