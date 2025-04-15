@@ -118,3 +118,15 @@ body {
 .form-footer-link {
   color: var(--color-blue400);
 }
+
+/* Mobile */
+@media (min-width: 0px) {
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+}
+
+/* PC */
+@media (min-width: 1200px) {
+}
