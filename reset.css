@@ -1,3 +1,26 @@
+:root {
+  /* Z-Index 기본 레이어 정의 */
+  --z-negative: -1;
+  --z-base: 0;
+  --z-low: 10;
+  --z-mid: 100;
+  --z-high: 1000;
+  --z-top: 10000;
+
+  /* 구체적인 UI 요소별 z-index 값 */
+  --z-background: var(--z-negative);
+  --z-default: var(--z-base);
+  --z-content: var(--z-low);
+  --z-dropdown: var(--z-mid);
+  --z-sticky: calc(var(--z-mid) + 10);
+  --z-navigation: calc(var(--z-mid) + 20);
+  --z-overlay: var(--z-high);
+  --z-modal: calc(var(--z-high) + 10);
+  --z-notification: calc(var(--z-high) + 20);
+  --z-tooltip: calc(var(--z-high) + 30);
+  --z-loader: var(--z-top);
+}
+
 * {
   margin: 0 0;
   padding: 0 0;
