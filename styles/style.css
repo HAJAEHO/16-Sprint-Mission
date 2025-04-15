@@ -1,5 +1,5 @@
 
-/* 본문 */
+/* 메인 페이지 (main.html) */
 
 main {
     background-color: #FCFCFC;
@@ -57,6 +57,11 @@ main {
     font-weight: 700;
     color: #374151;
     padding-bottom: 60px;
+}
+
+.banner-top .content .text .btn-l {
+    background-color: var(--blue-color);
+    color: #fff;
 }
 
 .banner-top .content img {
@@ -150,4 +155,119 @@ footer .content .sns {
     display: flex;
     justify-content: flex-end;
     column-gap: 12px;
+}
+
+/* 로그인 페이지, 회원가입 페이지 (login.html, signup.html) */
+
+.container {
+    margin: 230px auto;
+    width: 640px;
+    background-color: #fff;
+}
+
+.box-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.box-header img {
+    margin: 0 auto;
+    width: 396px;
+}
+
+section.form {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+section.form .form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section.form .form-list .tit {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #1f2937;
+}
+
+section.form .form-list input {
+    width: 100%;
+    padding-left: 24px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: var(--gray100-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1f2937;
+    border: none;
+}
+
+section.form .form-list .password {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+section.form .form-list .vs {
+    position: absolute;
+    right: 24px;
+    border: none;
+    background: none;
+}
+
+section.form .btn-l {
+    background-color: var(--blue-color);
+    color: #fff;
+}
+
+section.form .sns-login {
+    background-color: #E6F2FF;
+    border-radius: 8px;
+    padding: 16px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.form .sns-login .txt {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #1F2937;
+}
+
+section.form .sns-login .sns-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+section.form .sns-login .sns-btn img {
+    width: 42px;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.box-footer p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1F2937;
+}
+
+.box-footer a {
+    color: var(--blue-color);
+    text-decoration: underline solid var(--blue-color);
 }
