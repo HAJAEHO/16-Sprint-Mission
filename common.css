@@ -8,8 +8,27 @@
     src: url('fonts/ROKAF\ Sans\ Bold.ttf') format('truetype');
 }
 
+:root {
+    /* Colors */
+    --color-primary: #3692ff;
+    --color-primary-dark: #1967d6;
+    --color-primary-darker: #1251aa;
+    --color-disabled: #9ca3af;
+    --color-background-light: #fcfcfc;
+    --color-background-blue: #cfe5ff;
+    --color-background-dark: #111827;
+    --color-text-light: #e5e7eb;
+    --color-text-grey: #9ca3af;
+    --color-white: #ffffff;
+  
+    /* Typography */
+    --font-primary: "Pretendard-Regular", sans-serif;
+    --font-secondary: "ROKAF SANS", sans-serif;
+  
+  }
+
 * {
     box-sizing: border-box;
-    font-family: 'Pretendard-Regular';
-    white-space: nowrap; /*브라우저 줄였을 때 텍스트 줄바뀜 방지*/
+    font-family: var(--font-primary);
+    word-break: keep-all; /*텍스트를 문장 전체가 아닌 단어를 단위로 줄바꿈이 일어나지 않게 함*/
 }
