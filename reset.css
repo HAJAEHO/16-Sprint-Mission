@@ -3,3 +3,25 @@
   padding: 0 0;
   box-sizing: border-box;
 }
+
+.input {
+  width: 640px;
+  height: 56px;
+  background-color: var(--background-input);
+  border: none;
+  border-radius: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.signup-button {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 56px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-bottom: 25px;
+}
