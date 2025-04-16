@@ -1,27 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  --gray-900: #111827;
-  --gray-800: #1f2937;
-  --gray-700: #374151;
-  --gray-600: #4b5563;
-  --gray-500: #6b7280;
-  --gray-400: #9ca3af;
-  --gray-200: #e5e7eb;
-  --gray-100: #f3f4f6;
-  --gray-50: #f9fafb;
-  --blru: #3692ff;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
+.page-wrapper {
   flex-direction: column;
   height: 100vh;
 }
@@ -31,7 +8,7 @@ body {
   flex-direction: column;
 }
 
-.TOP {
+.logoBox {
   margin: 0 122px 40px;
 }
 
@@ -41,7 +18,7 @@ form {
   flex-direction: column;
 }
 
-.emailNpassword {
+.getInformation {
   width: 640px;
   display: flex;
   flex-direction: column;
@@ -68,7 +45,7 @@ input {
   font-weight: 400;
 }
 
-.PlusIcon {
+.wrapper {
   position: relative;
 }
 
@@ -92,7 +69,7 @@ button {
   line-height: 32px;
 }
 
-.loginPlusImg {
+.social-login {
   display: flex;
   justify-content: space-between;
   align-items: center;
