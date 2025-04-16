@@ -29,8 +29,19 @@
                 name="email"
                 id="email"
                 class="input"
-                autocomplete="email"
                 placeholder="이메일을 입력해주세요."
+              />
+            </div>
+          </div>
+          <div class="form__input-box">
+            <label for="nickname" class="input-box__label">닉네임</label>
+            <div class="input-box__input">
+              <input
+                type="text"
+                name="nickname"
+                id="nickname"
+                class="input"
+                placeholder="닉네임을 입력해주세요."
               />
             </div>
           </div>
@@ -57,7 +68,32 @@
               </button>
             </div>
           </div>
-          <button class="btn lg form__submitBtn">로그인</button>
+          <div class="form__input-box form__input-box-pw">
+            <label for="confirm_pw" class="input-box__label"
+              >비밀번호 확인</label
+            >
+            <div class="input-box__input pw_show">
+              <input
+                type="password"
+                name="confirm_pw"
+                id="confirm_pw"
+                class="input"
+                placeholder="비밀번호를 한번 더 입력해주세요."
+              />
+              <button
+                type="button"
+                class="input-box__toggle"
+                aria-label="비밀번호 표시"
+                aria-pressed="false"
+              >
+                <img
+                  src="assets/images/common/btn_pw_toggle.svg"
+                  alt="비밀번호 보기"
+                />
+              </button>
+            </div>
+          </div>
+          <button class="btn lg form__submitBtn">회원가입</button>
         </form>
         <!-- form :: E -->
         <!-- sns-box :: S -->
@@ -90,12 +126,12 @@
         </div>
         <!-- sns-box :: E -->
         <p class="member-box__guide-text">
-          판다마켓이 처음이신가요?
+          이미 회원이신가요?
           <a
-            href="/signup.html"
-            aria-label="회원가입 페이지로 이동"
+            href="/login.html"
+            aria-label="로그인 페이지로 이동"
             class="guide-text__link"
-            >회원가입</a
+            >로그인</a
           >
         </p>
       </div>

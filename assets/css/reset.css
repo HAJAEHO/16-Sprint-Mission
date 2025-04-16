@@ -23,9 +23,21 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul,
 ol {
   list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }

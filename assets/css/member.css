@@ -1,0 +1,88 @@
+.member-box {
+  max-width: 640px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  padding: 230px 0;
+}
+
+.member-box .logo {
+  margin-bottom: 40px;
+}
+
+.member-box .logo a {
+  display: block;
+  max-width: 396px;
+  margin: 0 auto;
+}
+
+.form__input-box {
+  margin-bottom: 24px;
+}
+
+.form__input-box .input-box__label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gray800);
+}
+
+/* 비밀번호 인풋박스박스 */
+.form__input-box-pw .input-box__input {
+  position: relative;
+}
+
+.form__input-box-pw .input-box__input .input-box__toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: var(--space-3);
+}
+
+.form__input-box-pw .input-box__input.pw_show .input-box__toggle {
+  background: url("../images/common/btn_pw_toggle_show.svg") center no-repeat;
+  background-size: contain;
+}
+
+.form__input-box-pw .input-box__input.pw_show .input-box__toggle img {
+  opacity: 0;
+}
+
+.form__submitBtn {
+  width: 100%;
+  min-width: auto;
+  font-size: 20px;
+}
+
+.member-box__sns-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--space-3) 0;
+  padding: var(--space-2) 23px;
+  background-color: #e6f2ff;
+  border-radius: 8px;
+}
+
+.member-box__sns-box .sns-box__title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray800);
+}
+
+.member-box__sns-box .sns-box__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.member-box__guide-text {
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray800);
+}
+
+.member-box__guide-text .guide-text__link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
