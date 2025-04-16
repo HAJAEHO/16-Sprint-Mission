@@ -10,8 +10,7 @@
       crossorigin=""
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body class="container">
     <header>
@@ -28,35 +27,27 @@
     <main>
       <section class="kv-section">
         <div class="kv-inner">
-          <img
-            class="key-visual"
-            src="./images/kv.png?width=746"
-            srcset="
-              ./images/kv.png?width=800 800w,
-              ./images/kv.png?width=746 746w,
-              ./images/kv.png?width=500 500w,
-              ./images/kv.png?width=200 200w
-            "
-            sizes="
-    (min-width: 1200px) 746px,
-    (min-width: 900px) 600px,
-    (min-width: 767px) 100vw
-    
-  "
-            alt="판다마켓 메인 판다 캐릭터 이미지"
-          />
-
           <div class="kv-info">
             <h2 class="title">일상의 모든 물건을 거래해 보세요</h2>
             <button class="btn">
               <a href="./page/items.html">구경하러 가기</a>
             </button>
           </div>
+          <figure>
+            <img
+              class="key-visual"
+              src="./images/kv.png?width=746"
+              alt="판다마켓 메인 판다 캐릭터 이미지"
+            />
+            <figcaption class="sr-only">
+              판다마켓 메인 판다 캐릭터 이미지
+            </figcaption>
+          </figure>
         </div>
       </section>
       <section class="banner-section">
         <div class="banner-inner">
-          <div class="card hot-item">
+          <article class="card hot-item">
             <div class="img-wrap">
               <img src="./images/bannerImg01.png" alt="인기 상품 소개 배너" />
             </div>
@@ -68,8 +59,8 @@
                 판다 마켓에서 확인해 보세요
               </p>
             </div>
-          </div>
-          <div class="card search-item">
+          </article>
+          <article class="card search-item">
             <div class="img-wrap">
               <img
                 src="./images/bannerImg02.png"
@@ -82,8 +73,8 @@
               <h2 class="title">구매를 원하는 상품을 검색하세요</h2>
               <p class="desc">구매하고 싶은 물품은 검색해서 쉽게 찾아보세요</p>
             </div>
-          </div>
-          <div class="card sell-item">
+          </article>
+          <article class="card sell-item">
             <div class="img-wrap">
               <img
                 src="./images/bannerImg03.png"
@@ -102,29 +93,22 @@
                 쉽게 등록하세요
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
       <section class="pandaMarketBannerSection">
-        <img
-          class="panda-image"
-          src="./images/bottomBanner.png?width=746"
-          srcset="
-            ./images/bottomBanner.png?width=800 800w,
-            ./images/bottomBanner.png?width=746 746w,
-            ./images/bottomBanner.png?width=500 500w,
-            ./images/bottomBanner.png?width=200 200w
-          "
-          sizes="
-(min-width: 1200px) 746px,
-(min-width: 767px) 100vw
-"
-          alt="판다마켓 메인 판다 캐릭터 이미지"
-        />
         <div class="title">
           믿을 수 있는<br />
           판다마켓 중고 거래
         </div>
+        <figure>
+          <img
+            class="panda-image"
+            src="./images/bottomBanner.png?width=746"
+            alt="판다마켓 판다 캐릭터 이미지"
+          />
+          <figcaption class="sr-only">판다마켓 판다 캐릭터 이미지</figcaption>
+        </figure>
       </section>
     </main>
     <footer class="footer">
