@@ -64,6 +64,7 @@ body {
   padding: 0 24px 0;
   outline: none;
 }
+
 .form-input::placeholder {
   color: var(--color-gray400);
 }
@@ -130,21 +131,26 @@ body {
   .form-logo-img {
     width: 103.53px;
   }
+
   .form-logo-text {
     font-size: 66.34px;
   }
+
   .form-container {
     max-width: 672px;
   }
+
   .form-logo-container {
     margin: 190px auto 40px;
     height: 132px;
   }
+
   .form-label {
     font-size: var(--font-size-lg);
     margin-bottom: 24px;
   }
 }
+
 @media (min-width: 1200px) {
   .form-logo-container {
     margin: 231px auto 40px;
