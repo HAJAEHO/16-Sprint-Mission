@@ -93,6 +93,18 @@ nav a {
   color: #f9fafb;
   cursor: pointer;
 }
+.main-wrap .img1 {
+  width: 746px;
+  height: auto;
+  aspect-ratio: 746 / 340;
+  display: block;
+}
+.main-wrap .img2 {
+  width: 746px;
+  height: auto;
+  aspect-ratio: 746 / 397;
+  display: block;
+}
 .content {
   display: flex;
   width: 61.75rem;
@@ -135,7 +147,7 @@ nav a {
 .tr {
   justify-content: right;
 }
-.bottom .banner {
+.banner-bg-bottom .banner {
   margin: 0 3.7rem 11rem 0;
 }
 
@@ -204,6 +216,17 @@ footer .footer-info {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: auto;
+    aspect-ratio: 746 / 340;
+    display: block;
+  }
+  .main-wrap .img2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 746 / 397;
+    display: block;
   }
   .content {
     flex-direction: column;
