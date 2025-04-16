@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="/sprint1/css/reset.css" />
+    <link rel="stylesheet" href="/sprint1/css/common.css" />
+    <link rel="stylesheet" href="/sprint1/css/signup.css" />
     <title>판다마켓</title>
-    <link rel="icon" type="image/png" sizes="16x16"  href="img/favicon-16x16.png">
-    <link rel="stylesheet" href="signup.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="border">
-        <div class="main">
-            <a href="index.html"><img  src="img/logobig.png" alt="판다마켓 로고"></a>
-            <div class="container">
-                <label>이메일</label>
-                <input type="email">                
-                <label>닉네임</label>
-                <input>
-                <div class="pass-wrapper">       
-                    <label>비밀번호</label>
-                    <input type="password">  
-                        <div class="eye1">
-                            <img
-                            src="img/closed.png"
-                            alt="비밀번호 보기"
-                            id="toggle-password">
-                        </div>           
-                    <label>비밀번호 확인</label>
-                    <input type="password">
-                    <div class="eye2">
-                        <img
-                        src="img/closed.png"
-                        alt="비밀번호 보기"
-                        id="toggle-password">
-                    </div>           
-                </div>   
-                <a href="/login"><img class="login-button" src="img/btn_large.png" alt="로그인 버튼"></a>
-                <div class="login-as">
-                    <div class="script">
-                        <p>간편 로그인하기</p>
-                    </div>
-                    <div class="social">
-                        <a href="https://www.google.com/"><img src="img/googlelogo.png" alt="구글아이디로 로그인"></a>
-                        <a href="https://www.kakaocorp.com/page/"><img src="img/kakaologo.png" alt="카카오아이디로 로그인"></a>
-                    </div>
-                </div>
-                <div class="join">
-                    <p>이미 회원이신가요? <a class="join-us" href="login.html">로그인</a></p>
-                </div>            
+      <div class="main">
+        <a href="index.html" aria-label="홈으로 가기"
+          ><img src="img/logobig.png" alt="판다마켓 로고"
+        /></a>
+        <div class="container">
+          <label>이메일</label>
+          <input type="email" aria-label="이메일 입력하기" />
+          <label>닉네임</label>
+          <input aria-label="닉네임 입력하기" />
+          <div class="pass-wrapper">
+            <label>비밀번호</label>
+            <input type="password" aria-label="비밀번호 입력하기" />
+            <div class="eye1">
+              <img
+                src="img/opened.png"
+                alt="비밀번호 감추기"
+                id="toggle-password"
+              />
             </div>
+            <label>비밀번호 확인</label>
+            <input type="password" aria-label="비밀번호 재입력하기" />
+            <div class="eye2">
+              <img
+                src="img/closed.png"
+                alt="비밀번호 보기"
+                id="toggle-password"
+              />
+            </div>
+          </div>
+          <a href="/sprint1/index.html" aria-label="회원가입 하기"
+            ><img
+              class="login-button"
+              src="/sprint1/img/btn_large_join.jpg"
+              alt="회원가입 버튼"
+          /></a>
+          <div class="login-as">
+            <div class="script">
+              <p>간편 로그인하기</p>
+            </div>
+            <div class="social">
+              <a href="https://www.google.com/"
+                ><img src="img/googlelogo.png" alt="구글아이디로 로그인"
+              /></a>
+              <a href="https://www.kakaocorp.com/page/"
+                ><img src="img/kakaologo.png" alt="카카오아이디로 로그인"
+              /></a>
+            </div>
+          </div>
+          <div class="join">
+            <p>
+              이미 회원이신가요?
+              <a class="join-us" aira-label="로그인하러 가기" href="login.html"
+                >로그인</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
