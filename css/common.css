@@ -1,0 +1,10 @@
+:root{
+  --color-primary: #3692ff;
+}
+
+.butten{
+  background-color: #3692ff;
+  flex-shrink: 0;
+  display: block;
+  color: #ffffff
+}
