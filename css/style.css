@@ -1,10 +1,7 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "reset.css";
+@import "common.css";
 
-.header{
+.header {
   padding: 0 200px;
   display: flex;
   justify-content: space-between;
@@ -12,58 +9,47 @@
   height: 70px;
 }
 
-a{ 
-  text-decoration: none;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.butten{
+.small-bt {
   padding: 12px 23px;
-  background-color: #3692ff;
   border-radius: 8px;
-  flex-shrink: 0;
 }
 
-.banner.top{
-  background-image: url(image/home/Img_home_top.png);
-}
-
-.banner.bottom{
-  background-image: url(image/home/Img_home_bottom.png);
-}
-
-.banner{
+.banner .wrap{
   height: 540px;
-  background-color: #CFE5FF;
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: 70% bottom;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
-.watch-butten{
-  background-color: #3692ff;
+.text-box{
+  padding-bottom: 100px;
+  flex: 0 0 auto;
+}
+
+.banner {
+  background-color: #CFE5FF;
+}
+
+.big-bt {
   border-radius: 999px;
   padding: 16px 124px;
   margin-top: 32px;
-  display: inline-block
 }
 
-h1{
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 140%;
+
+h1.text-box {
+  padding-bottom: 172px;
+  flex: 0 0 auto;
 }
 
-.wrap{
+
+.wrap {
   max-width: 1050px;
   width: 100%;
   margin: 0 auto;
 }
 
-.card-wrap{
+.card-article {
   padding: 138px 0;
 }
 
@@ -75,12 +61,12 @@ h1{
   border-radius: 10px;
 }
 
-.card.turn{
+.card.turn {
   flex-direction: row-reverse;
 }
 
 
-h2{
+h2 {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -88,7 +74,7 @@ h2{
   margin-bottom: 12px;
 }
 
-p{
+p {
   font-size: 24px;
   font-weight: 500;
   line-height: 32px;
@@ -96,15 +82,20 @@ p{
   margin-top: 24px;
 }
 
-.bottom-gray-bar{
-  background-color:#FCFCFC ;
-  height: 150px;
-}
 
-footer{
+footer {
   padding:32px 400px  108px;
   background-color: #111827;
   display: flex;
   justify-content: space-between;
   color: #9CA3AF;
+}
+
+.sociol {
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  padding: 0 6px;
 }
