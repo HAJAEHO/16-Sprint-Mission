@@ -30,19 +30,18 @@ body {
 }
 
 /* header */
-header {
+.header {
     position: fixed;
     top:0; left: 0; right:0;
-    
     height: 70px;
     width: 100%;
-    
     z-index: 1;
     background: white;
     border: 1px solid #DFDFDF;
     
 }
-header .wrap {
+
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +52,7 @@ header .wrap {
 }
 
 
-.login-button {
+.header__login-link {
     background-color: var(--primary-100);
     color: white;
     padding: 12px 23px;
@@ -65,13 +64,15 @@ header .wrap {
     
 }
 
-/* main contents */
+/* --- main contents --- */
+
 main {
     width: 100%;
     margin: 70px auto 0; 
 }
+/* hero-section */
 
-.landing {
+.hero {
     position: relative;
     background-color: #CFE5FF;
     width: 100%;
@@ -82,7 +83,7 @@ main {
     flex: 1;
     
 }
-.landing .wrap {
+.hero__container {
     max-width: 1920px;
     width: 100%;
     padding: 0 200px;
@@ -90,26 +91,21 @@ main {
     align-items: center;
     justify-content: center;
 }
-.top .contents {
+.hero__contents {
     padding-bottom: 60px;
     
 }
 
-.top img, .bottom img{
-    max-width: 746px;    
-    width: 100%;
-    height: auto;
-}
 
 
-.landing .title {
+.hero__title {
     color: var(--secondary-700);
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 140%;
 
 }
-.top .items-button {
+.hero__items-link {
     width: 100%;
     border-radius: 40px;
     padding: 16px clamp(80px, 6.46vw, 124px);
@@ -117,14 +113,21 @@ main {
     background-color: var(--primary-100);
     font-size: 1.25rem;
     white-space: nowrap;
+    text-decoration: none;
 }
-/* section */
-.section {
-    
+.hero__img{
+    max-width: 746px;    
+    width: 100%;
+    height: auto;
+}
+
+/* feature-section */
+.feature {
+
     padding: 138px 0;
     white-space: nowrap;
 }
-.section .wrap {
+.feature__container {
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -134,39 +137,35 @@ main {
     border-radius: 12px;
     max-width: 988px;
     width: 100%;
-    
-
 }
-.section .wrap.right {
+.feature--reverse .feature__container {
     flex-direction: row-reverse;
 }
 
-.section .wrap img {
+.feature__img {
     max-width: 579px;
     width: 100%;
     height: auto;
 }
-.section .contents {
+.feature__contents {
     flex: 1;
-}
-.section .contents.right{
     padding-right: auto;
     text-align: left;
-    
 }
-.section .contents.left{
+
+.feature--reverse .feature__contents {
     padding-left: auto;
     text-align: right;
     
 }
 
-.section .contents .category {
+.feature__category {
     font-size: 1.2rem;
     color: var(--primary-100);
     font-weight: 700;
 }
 
-.section .contents .title {
+.feature__title {
     font-size: 2.5rem;
     color: var(--secondary-700);
     font-weight: 700;
@@ -174,14 +173,49 @@ main {
     line-height: 140%;
 }
 
-.section .contents .content {
+.feature__content {
     font-size: 1.5rem;
     color: var(--secondary-700);
     font-weight: 500;
 
 }
+/* cta-section */
+
+.cta {
+    position: relative;
+    background-color: #CFE5FF;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex: 1;
+    
+}
+.cta__container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta__title {
+    color: var(--secondary-700);
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 140%;
+
+}
+
+.cta__img{
+    max-width: 746px;    
+    width: 100%;
+    height: auto;
+}
 /* footer */
-footer {
+.footer {
     background: var(--secondary-900);
     width: 100%;
     height: 160px;
@@ -189,7 +223,7 @@ footer {
     font-weight: 400;
 }
 
-footer .wrap {
+.footer__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,24 +234,24 @@ footer .wrap {
     
 }
 
-footer .codeit {
+.footer__copyright{
     color: var(--secondary-400);
 
 }
 
-footer .link-wrap {
+.footer__links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
 
-footer .link-wrap a{
+.footer__links a{
     text-decoration: none;
     color: var(--secondary-200);
     font-weight: 400;
 }
-footer .social-wrap {
+.footer__socials {
     display: flex;
     justify-content: center;
     align-items: center;
