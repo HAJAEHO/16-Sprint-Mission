@@ -1,18 +1,24 @@
 @import "/css/reset.css";
 @import "/css/variables.css";
-@import "/css/home.css";
-@import "/css/login.css";
+
+@import "/css/components/home.css";
+@import "/css/components/login.css";
+
+/* media css */
+
+@import "/css/media/home_media.css";
+@import "/css/media/login_media.css";
 
 html,
 body {
-  height: 100%;
-  background-color: var(--content-bg);
+  background-color: var(--background-color);
+  color: var(--secondary-700);
 }
 
 .button {
-  background-color: #3692ff;
+  background-color: var(--primary-100);
   border: 0;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
