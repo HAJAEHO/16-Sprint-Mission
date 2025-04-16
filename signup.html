@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./reset.css" rel="stylesheet" />
-    <link href="./common.css" rel="stylesheet" />
-    <link href="./login.css" rel="stylesheet" />
-    <title>Login</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./signup.css" />
+    <title>signup</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <a href="/index.html" aria-label="홈으로 이동"
+        <a href="/index.html"
           ><img src="./logo.png" alt="" class="image-logo"
         /></a>
       </div>
@@ -19,20 +20,15 @@
     <section class="form-section">
       <form action="post" method="post" class="form-signup">
         <label for="email" class="label">이메일</label>
-        <input
-          type="email"
-          class="input email"
-          name="email"
-          autocomplete="email"
-        />
+        <input type="email" class="input email" name="email" />
+        <label for="nickname" class="label">닉네임</label>
+        <input type="nickname" class="input nickname" name="nickname" />
         <label for="password" class="label">비밀번호</label>
         <input
           id="password-field"
           type="password"
           class="input password"
           name="password"
-          aria-label="비밀번호 표시"
-          aria-pressed="false"
         />
         <div class="icon-eye btn--click">
           <svg
@@ -63,8 +59,43 @@
             👁️
           </span> -->
         </div>
-
-        <button class="signup-button">로그인</button>
+        <label for="password-check" class="label">비밀번호 확인</label>
+        <input
+          id="password-check-field"
+          type="password-check"
+          class="input password-check"
+          name="password-check"
+        />
+        <div class="icon-eye btn--click">
+          <svg
+            id="eye-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-eye-off"
+          >
+            <path
+              d="M17.94 17.94A10.93 10.93 0 0 1 12 20c-5 0-9.27-3.11-11-7.5a11.07
+      11.07 0 0 1 5.17-5.94M1 1l22 22"
+            ></path>
+            <path
+              d="M9.53 9.53A3.5 3.5 0 0 0 12 15.5a3.5 3.5 0 0 0 2.47-5.97"
+            ></path>
+            <path
+              d="M12 4.5c2.54 0 4.81 1.11 6.4 2.85a11.07 11.07 0 0 1 2.6 4.15 11.05
+      11.05 0 0 1-1.67 2.6"
+            ></path>
+          </svg>
+          <!-- <span class="toggle-password" onclick="togglePasswordVisibility()">
+            👁️
+          </span> -->
+        </div>
+        <button class="signup-button">회원가입</button>
       </form>
     </section>
     <section class="social-section">
@@ -85,9 +116,7 @@
       </div>
     </section>
     <section>
-      <p class="signup">
-        판다마켓이 처음인가요? <a href="./signup.html">회원가입</a>
-      </p>
+      <p class="signup">이미 회원이신가요? <a href="./login.html">로그인</a></p>
     </section>
   </body>
 </html>

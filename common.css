@@ -1,10 +1,29 @@
+/* Variables */
+:root {
+  --primary-color: #3692ff;
+  --text-primary: #374151;
+  --text-secondary: #9ca3af;
+  --text-light: #e5e7eb;
+  --background-primary: #fcfcfc;
+  --background-secondary: #cfe5ff;
+  --background-third: #e6f2ff;
+  --background-input: #f3f4f6;
+  --background-dark: #111827;
+  --border-radius-sm: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 40px;
+  --container-width: 1120px;
+  --content-width: 988px;
+}
+
+
 .btn {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
   text-align: center;
   border: none;
-  background-color: #3692ff;
+  background-color: var(--primary-color);
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 10px;
@@ -27,7 +46,8 @@
 }
 
 .btn:hover {
-  background-color: #2b74cc; /* Darker shade for hover */
+  background-color: #2b74cc;
+  /* Darker shade for hover */
 }
 
 .btn:active {
@@ -53,4 +73,8 @@
 .btn--secondary:hover {
   background-color: #3692ff;
   color: #ffffff;
+}
+
+.btn--click {
+  cursor: pointer;
 }
