@@ -3,7 +3,7 @@
   height: 100vh;
 }
 
-.container {
+.container__logo {
   display: flex;
   flex-direction: column;
 }
