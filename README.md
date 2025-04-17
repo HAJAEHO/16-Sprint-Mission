@@ -49,7 +49,7 @@
 - [x] CSS 파일 분리(reset.css, common.css)
 - [x] 컬러, 레이아웃, 여백을 변수로 선언
 - [x] @font-face 를 활용한 로컬 폰트 적용
-- [ ] prettier을 활용해 포맷팅 자동화
+- [x] prettier을 활용해 포맷팅 자동화
 
 > ref: https://github.com/codeit-bootcamp-frontend/16-Sprint-Mission/pull/33
 
@@ -59,6 +59,14 @@
   - `/icon`
   - `/img`
   - `/logo`
+  - `/fonts`
+- `/styles`
+  - `reset.css`
+  - `common.css`
+  - `variables.css`
+  - `/pages`
+    - `home.css`
+    - `
 - `index.html`
 - `style.css`
 
@@ -67,26 +75,25 @@
 ### 전역 설정
 
 - css를 `reset.css`, `common.css`, `variables.css`로 분리했습니다.
+- `font-size: clamp(12px, 1.6vw, 16px)` 를 통해, 폰트 사이즈가 12px에서 16px 사이로 유연하게 조절됩니다.
+- `.pointer` 유틸리티 클래스를 사용하여 사용자가 클릭하는 요소임을 알 수 있습니다.
 - 웹 폰트에서 압축률이 좋은 `woff2` 로컬 폰트로 변경했습니다.
 - layout, color, font-size, space 등을 전역 변수로 관리하도록 수정했습니다.
 - 접근성 향상을 위해 `aria-label`을 지정했습니다.
 - 인터렉티브 콘텐츠(`<a>, <button>`)안에 블록 요소(`<div>`)를 제거했습니다.
 - 보다 나은 클래스 구조화를 위해, **BEM 네이밍 방법론**과 **보조 클래스**를 사용했습니다.
+- `prettier`을 사용하여 포맷팅을 자동화했습니다.
 
 ### 랜딩 페이지 (index.html)
 
 - 크게 header, main, footer 영역으로 나뉘어 있습니다.
 - `<main>` 의 각 `<section> 안에는 hero, feature, cta 로 구성되어 있습니다.
-- `.hero`, `.cta` 클래스는 하위 박스인 `.wrap` 에서, `max-width`와 `margin: 0 auto`를 활용해서 하늘색 배경색은 너비를 꽉 채우도록 채워지고, 내부 요소들의 위치는 고정되고, 여백만 커지도록 구현했습니다.
+- `.hero`, `.cta` 클래스는 하위 박스인 `.container` 에서, 여백과 콘텐츠 관련 요구사항을 만족했습니다.
 - 링크로 연결되는 항목들은 `<a>`태그로 감싸서, 클릭시 특정 페이지들로 이동할 수 있습니다.
 - 폰트, 이미지, 몇몇 여백들은 `vw`를 활용해서 동적으로 크기가 조절됩니다.
 - 새 창으로 열리는 페이지들은 `target="_blank" rel="noopener"`속성을 사용하여, 보안상 취약점이 발생하고 퍼포먼스가 저하되는 문제를 해결했습니다.
+- 상단 GNB는 고정되도록 설정하였습니다.
 
 ### 회원가입 페이지
 
 ### 전역 CSS 설정
-
-- `:root` 속성을 활용해 color들을 전역 변수로 지정하여 사용했습니다.
-- `@font-face` 속성을 활용해 웹 폰트를 사용합니다.
-- `font-size: clamp(12px, 1.6vw, 16px)` 를 통해, 폰트 사이즈가 12px에서 16px 사이로 유연하게 조절됩니다.
-- `.pointer` 클래스를 사용하여 사용자가 클릭하는 요소임을 알 수 있습니다.
