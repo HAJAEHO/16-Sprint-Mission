@@ -1,0 +1,11 @@
+/* variables.css */
+/* 디자인 변수를 정의합니다. */
+:root {
+    --background-skyblue: #CFE5FF;
+    --background-litegray: #FCFCFC;
+    --primary-100: #3692FF;
+    --secondary-200: #E5E7EB;
+    --secondary-400: #9CA3AF;
+    --secondary-700: #374151;
+    --secondary-900: #111827;
+}

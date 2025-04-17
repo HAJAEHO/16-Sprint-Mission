@@ -1,0 +1,12 @@
+/* reset.css */
+/* 브라우저의 전역 스타일을 초기화합니다. */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Pretendard-Regular';
+    font-size: clamp(12px, 1.6vw, 16px)
+}
+body {
+    margin: 0;
+}
