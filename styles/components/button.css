@@ -5,6 +5,6 @@
     background-color: var(--primary-100);
     color: var(--gray-100);
     font-size: 1.25rem;
-    padding: 16px clamp(80px, 6.46vw, 124px);
+    padding: var(--spacing-xs) clamp(80px, 6.46vw, 124px);
     
 }

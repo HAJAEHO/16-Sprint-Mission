@@ -69,12 +69,6 @@ main {
   letter-spacing: 140%;
 }
 .hero__items-link {
-  width: 100%;
-  border-radius: 40px;
-  padding: 16px clamp(80px, 6.46vw, 124px);
-  color: white;
-  background-color: var(--primary-100);
-  font-size: 1.25rem;
   white-space: nowrap;
   text-decoration: none;
 }

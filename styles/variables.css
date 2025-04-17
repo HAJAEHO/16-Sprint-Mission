@@ -5,6 +5,7 @@
   --font-family-base: 'Pretendard', sans-serif;
   --font-title: 2.5rem;
   --font-content: 1.5rem;
+  --font-label: 1.125rem;
   /* Color */
   --background-skyblue: #cfe5ff;
   --background-litegray: #fcfcfc;
@@ -25,14 +26,18 @@
   --gray-900: #111827;
 
   /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
+  --spacing-xs: 1rem;
+  --spacing-sm: 1.125rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
   --spacing-xl: 8rem;
   /* Layout */
   --container-max-width: 1920px;
   --container-padding: 200px;
+  --container-top-margin: 231px;
+  --auth-container-max-width: 640;
+  /* Border-radious */
+  --radius-button : 40px;
 }
 
 /* font-face */
