@@ -47,9 +47,8 @@
 - [x] 클래스 이름에 위치, 색상, 순서 등의 키워드 자제
 - [x] `index.html`의 34번 라인 `wrap reverse` 로 수정
 - [x] CSS 파일 분리(reset.css, common.css)
-- [ ] 컬러, 레이아웃, 여백을 변수로 선언
-- [ ] @font-face 를 활용한 로컬 폰트 적용
-- [ ] 웹 폰트 최적화 기법 적용
+- [x] 컬러, 레이아웃, 여백을 변수로 선언
+- [x] @font-face 를 활용한 로컬 폰트 적용
 - [ ] prettier을 활용해 포맷팅 자동화
 
 > ref: https://github.com/codeit-bootcamp-frontend/16-Sprint-Mission/pull/33
@@ -65,9 +64,16 @@
 
 ## 구현 사항
 
-### HTML 구조
+### 전역 설정
 
-#### 랜딩 페이지 (index.html)
+- css를 `reset.css`, `common.css`, `variables.css`로 분리했습니다.
+- 웹 폰트에서 압축률이 좋은 `woff2` 로컬 폰트로 변경했습니다.
+- layout, color, font-size, space 등을 전역 변수로 관리하도록 수정했습니다.
+- 접근성 향상을 위해 `aria-label`을 지정했습니다.
+- 인터렉티브 콘텐츠(`<a>, <button>`)안에 블록 요소(`<div>`)를 제거했습니다.
+- 보다 나은 클래스 구조화를 위해, **BEM 네이밍 방법론**과 **보조 클래스**를 사용했습니다.
+
+### 랜딩 페이지 (index.html)
 
 - 크게 header, main, footer 영역으로 나뉘어 있습니다.
 - `<main>` 의 각 `<section> 안에는 hero, feature, cta 로 구성되어 있습니다.
@@ -76,16 +82,11 @@
 - 폰트, 이미지, 몇몇 여백들은 `vw`를 활용해서 동적으로 크기가 조절됩니다.
 - 새 창으로 열리는 페이지들은 `target="_blank" rel="noopener"`속성을 사용하여, 보안상 취약점이 발생하고 퍼포먼스가 저하되는 문제를 해결했습니다.
 
+### 회원가입 페이지
+
 ### 전역 CSS 설정
 
 - `:root` 속성을 활용해 color들을 전역 변수로 지정하여 사용했습니다.
 - `@font-face` 속성을 활용해 웹 폰트를 사용합니다.
 - `font-size: clamp(12px, 1.6vw, 16px)` 를 통해, 폰트 사이즈가 12px에서 16px 사이로 유연하게 조절됩니다.
 - `.pointer` 클래스를 사용하여 사용자가 클릭하는 요소임을 알 수 있습니다.
-
-### 수정 사항
-
-- 접근성 향상을 위해 `aria-label`을 지정했습니다.
-- 인터렉티브 콘텐츠(`<a>, <button>`)안에 블록 요소(`<div>`)를 제거했습니다.
-- 보다 나은 클래스 구조화를 위해, **BEM 네이밍 방법론**과 **보조 클래스**를 사용했습니다.
-  todo: css 파일 분리(reset, common, html 및 css 섹션별 분리)
