@@ -1,0 +1,17 @@
+{
+  "name": "16-sprint-mission",
+  "version": "1.0.0",
+  "description": "## 배포 링크",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"**/*.{html,css,js,md,json}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,md,json}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  }
+}

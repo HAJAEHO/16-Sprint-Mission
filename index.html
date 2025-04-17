@@ -1,112 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>판다마켓</title>
-    <link rel="stylesheet" href="/styles/reset.css"/>
-    <link rel="stylesheet" href="/styles/variables.css"/>
-    <link rel="stylesheet" href="/styles/common.css"/>
-    <link rel="stylesheet" href="/styles/pages/home.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/variables.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/pages/home.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header__container">
-            <a href="/" aria-label="랜딩 페이지로 이동" class="header__logo pointer">
-                <img src="./assets/logo/logo_sm.png" alt="판다마켓 로고">
-            </a>
-            <a href="/login" class="header__login-link pointer">
-                로그인
-            </a>
-        </div>
-        
+      <div class="header__container">
+        <a
+          href="/"
+          aria-label="랜딩 페이지로 이동"
+          class="header__logo pointer"
+        >
+          <img src="./assets/logo/logo_sm.png" alt="판다마켓 로고" />
+        </a>
+        <a href="/login" class="header__login-link pointer"> 로그인 </a>
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero__container">
-                <div class="hero__contents">
-                    <p class="hero__title">일상의 모든 물건을<br> 거래해 보세요</p>
-                    <a class="hero__items-link pointer" href="/items" aria-label="items 창으로 이동">
-                        구경하러 가기
-                    </a>
-                </div>
-                <img class="hero__img" src="./assets/img/Img_home_top.png" alt="판다 이미지">
-            </div>
-        </section>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__contents">
+            <p class="hero__title">
+              일상의 모든 물건을<br />
+              거래해 보세요
+            </p>
+            <a
+              class="hero__items-link pointer"
+              href="/items"
+              aria-label="items 창으로 이동"
+            >
+              구경하러 가기
+            </a>
+          </div>
+          <img
+            class="hero__img"
+            src="./assets/img/Img_home_top.png"
+            alt="판다 이미지"
+          />
+        </div>
+      </section>
 
-        <section class="feature">
-            <div class="feature__container">
-                <img src="./assets/img/Img_home_01.png" alt="home1" class="featrue__img">
-                <div class="feature__contents right">
-                    <p class="feature__category">
-                        Hot item</p>
-                    <p class="feature__title">
-                        인기 상품을<br>확인해 보세요</p>
-                    <p class="feature__content">
-                        가장 HOT한 중고거래 물품을<br>판다 마켓에서 확인해 보세요</p>
-                </div>
-            </div>
-        </section>
+      <section class="feature">
+        <div class="feature__container">
+          <img
+            src="./assets/img/Img_home_01.png"
+            alt="home1"
+            class="featrue__img"
+          />
+          <div class="feature__contents right">
+            <p class="feature__category">Hot item</p>
+            <p class="feature__title">인기 상품을<br />확인해 보세요</p>
+            <p class="feature__content">
+              가장 HOT한 중고거래 물품을<br />판다 마켓에서 확인해 보세요
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="feature feature--reverse">
-            <div class="feature__container">
-                <img class="feature__img" src="./assets/img/Img_home_02.png" alt="home2">
-                <div class="feature__contents">
-                    <p class="feature__category">
-                        Search</p>
-                    <p class="feature__title">
-                        구매를 원하는<br>상품을 검색해보세요</p>
-                    <p class="feature__content">구매하고 싶은 물품은 검색해서<br>쉽게 찾아보세요</p>
-                </div>
-            </div>
-        </section>
+      <section class="feature feature--reverse">
+        <div class="feature__container">
+          <img
+            class="feature__img"
+            src="./assets/img/Img_home_02.png"
+            alt="home2"
+          />
+          <div class="feature__contents">
+            <p class="feature__category">Search</p>
+            <p class="feature__title">구매를 원하는<br />상품을 검색해보세요</p>
+            <p class="feature__content">
+              구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="feature">
-            <div class="feature__container">
-                <img class="feature__img" src="./assets/img/Img_home_03.png" alt="home3">
-                <div class="feature__contents">
-                    <p class="feature__category">
-                        Register</p>
-                    <p class="feature__title">
-                        판매를 원하는<br>상품을 등록하세요</p>
-                    <p class="feature__content">
-                        어떤 물건이든 판매하고 싶은 상품을<br>쉽게 등록하세요</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="cta">
-            <div class="cta__container">
-                <p class="cta__title">믿을 수 있는<br>판다마켓 중고 거래</p>
-                <img class="cta__img" src="./assets/img/Img_home_bottom.png" alt="판다 이미지">
-            </div>
-        </section>
+      <section class="feature">
+        <div class="feature__container">
+          <img
+            class="feature__img"
+            src="./assets/img/Img_home_03.png"
+            alt="home3"
+          />
+          <div class="feature__contents">
+            <p class="feature__category">Register</p>
+            <p class="feature__title">판매를 원하는<br />상품을 등록하세요</p>
+            <p class="feature__content">
+              어떤 물건이든 판매하고 싶은 상품을<br />쉽게 등록하세요
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta__container">
+          <p class="cta__title">믿을 수 있는<br />판다마켓 중고 거래</p>
+          <img
+            class="cta__img"
+            src="./assets/img/Img_home_bottom.png"
+            alt="판다 이미지"
+          />
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
-            <p class="footer__copyright">©codeit - 2024</p>
-            <div class="footer__links">
-                <a href="/privacy" aria-label="정책 및 약관 페이지로 이동" class="pointer">Privacy Policy</a>
-                <a href="/faq" aria-label="FAQ 페이지로 이동" class="pointer">FAQ</a>
-            </div>
-            <div class="footer__socials">
-                <a href="https://www.facebook.com/codeit.kr" aria-label="페이스북 페이지로 이동" target="_blank" rel="noopener noreferrer" class="pointer">
-                    <img src="./assets//icon/ic_facebook.png" alt="facebook icon">
-                </a>
-                <a href="https://x.com/codeitkr" aria-label="X(트위터)페이지로 이동" target="_blank" rel="noopener noreferrer" class="pointer">
-                    <img src="./assets//icon/ic_twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://www.youtube.com/@codeit-kr" aria-label="유튜브 페이지로 이동" target="_blank" rel="noopener noreferrer" class="pointer">
-                    <img src="./assets//icon/ic_youtube.png" alt="youtube icon">
-                </a>
-                <a href="https://www.instagram.com/codeit_kr" aria-label="인스타그램 페이지로 이동" target="_blank" rel="noopener noreferrer" class="pointer">
-                    <img src="./assets//icon/ic_instagram.png" alt="instagram icon">
-                </a>
-                
-            </div>
+      <div class="footer__container">
+        <p class="footer__copyright">©codeit - 2024</p>
+        <div class="footer__links">
+          <a
+            href="/privacy"
+            aria-label="정책 및 약관 페이지로 이동"
+            class="pointer"
+            >Privacy Policy</a
+          >
+          <a href="/faq" aria-label="FAQ 페이지로 이동" class="pointer">FAQ</a>
         </div>
+        <div class="footer__socials">
+          <a
+            href="https://www.facebook.com/codeit.kr"
+            aria-label="페이스북 페이지로 이동"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pointer"
+          >
+            <img src="./assets//icon/ic_facebook.png" alt="facebook icon" />
+          </a>
+          <a
+            href="https://x.com/codeitkr"
+            aria-label="X(트위터)페이지로 이동"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pointer"
+          >
+            <img src="./assets//icon/ic_twitter.png" alt="twitter icon" />
+          </a>
+          <a
+            href="https://www.youtube.com/@codeit-kr"
+            aria-label="유튜브 페이지로 이동"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pointer"
+          >
+            <img src="./assets//icon/ic_youtube.png" alt="youtube icon" />
+          </a>
+          <a
+            href="https://www.instagram.com/codeit_kr"
+            aria-label="인스타그램 페이지로 이동"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pointer"
+          >
+            <img src="./assets//icon/ic_instagram.png" alt="instagram icon" />
+          </a>
+        </div>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>

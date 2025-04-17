@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -15,14 +16,20 @@ a {
   color: inherit;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font: inherit;
   background: none;
   border: none;
   outline: none;
 }
 
-img, video, canvas, svg {
+img,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }

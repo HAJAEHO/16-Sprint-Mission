@@ -56,11 +56,14 @@
 ## 프로젝트 구조
 
 - `/assets`
+
   - `/icon`
   - `/img`
   - `/logo`
   - `/fonts`
+
 - `/styles`
+
   - `reset.css`
   - `common.css`
   - `variables.css`
@@ -68,10 +71,12 @@
     - `home.css`
     - `signup.css`
     - `login.css`
+
 - `index.html`
+
 - `/pages`
-  - `signup.css`
-  - `login.css`
+  - `signup.html`
+  - `login.html`
 
 ## 구현 사항
 
