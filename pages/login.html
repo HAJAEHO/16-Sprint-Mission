@@ -1,0 +1,65 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 - 판다마켓</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/variables.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/pages/login.css" />
+  </head>
+  <body>
+    <main class="login">
+      <div class="login__container">
+        <img
+          class="login__img"
+          src="/assets/logo/logo_lg.png"
+          alt="판다마켓 로고 이미지"
+        />
+        <form class="login__form" action="/login" method="post">
+          <div class="login__field">
+            <label for="email" class="login__label">이메일</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="login__input"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div class="login__field">
+            <label for="password" class="login__label">비밀번호</label>
+            <div class="login__input-group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="login__input"
+                placeholder="********"
+                required
+              />
+              <button
+                type="button"
+                class="login__toggle-password pointer"
+                aria-label="비밀번호 표시/숨기기"
+              ></button>
+            </div>
+          </div>
+          <button type="submit" class="login__submit pointer">로그인</button>
+        </form>
+        <div class="login__social-login">
+            <p class="login__social-label">간편 로그인하기</p>
+            <div class="login__scocal-icon-group">
+                <button class="login__social-icon-img" aria-label="구글 로그인" ></button>
+                <button class="login__social-icon-img" aria-label="카카오톡 로그인" ></button>
+                
+            </div>
+        </div>
+      </div>
+      <p class="login__signup">판다마켓이 처음이신가요?
+        <a href="/pages/signup.html" class="login__link pointer" aria-label="회원가입으로 이동">회원가입</a>
+      </p>
+    </main>
+  </body>
+</html>
