@@ -1,6 +1,18 @@
 /* common.css */
-/* 공통 유틸리티 클래스 스타일시트 */
 
+/* 글로벌 기본 스타일 */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: var(--font-family-base);
+    font-size: clamp(12px, 1.6vw, 16px)
+}
+body {
+    margin: 0;
+}
+
+/* 공통 유틸리티 클래스  */
 
 .pointer {
     cursor: pointer;
