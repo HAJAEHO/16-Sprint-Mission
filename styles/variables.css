@@ -4,6 +4,7 @@
     /* Font */
     --font-family-base: 'Pretendard', sans-serif;
     --font-title: 2.5rem;
+    --font-content: 1.5rem;
     /* Color */
     --background-skyblue: #CFE5FF;
     --background-litegray: #FCFCFC;
@@ -20,7 +21,7 @@
     --spacing-xl: 8rem;
     /* Layout */
     --container-max-width: 1920px;
-    --container-margin: 200px;
+    --container-padding: 200px;
 }
 
 /* font-face */
