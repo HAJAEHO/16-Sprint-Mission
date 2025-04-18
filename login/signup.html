@@ -7,83 +7,89 @@
     <link rel="stylesheet" href="/login/login.css" />
   </head>
   <body>
-    <div class="signup_container">
-      <a href="/" div class="login_logo">
-        <img src="/assets/icons/판다 얼굴.png" />
-        <span class="logo_text">판다마켓</span>
-      </a>
-      <div class="signup_frame">
-        <div class="login_textbox">
-          <label for="email" class="login_label">이메일</label>
-          <input
-            type="email"
-            id="email"
-            class="login_input"
-            placeholder="codeit@email.com"
-          />
-          <label for="nickname" class="password_label">닉네임</label>
-          <input
-            type="text"
-            id="nickname"
-            class="nickname_input"
-            placeholder="닉네임을 입력해주세요"
-          />
-          <label for="password" class="password_label">비밀번호</label>
-          <div class="login_password_wrap">
+    <div class="page-wrapper">
+      <div class="signup_container">
+        <a href="/" div class="login_logo">
+          <img src="/assets/icons/판다 얼굴.png" />
+          <span class="logo_text">판다마켓</span>
+        </a>
+        <form class="signup_form_frame">
+          <div class="login_textbox">
+            <label for="email" class="login_label">이메일</label>
             <input
-              type="password"
-              id="password"
+              type="email"
+              id="email"
+              name="email"
               class="login_input"
-              placeholder="●●●●●●●●"
+              placeholder="codeit@email.com"
             />
-            <button type="button" class="eye_button">
-              <img
-                src="/assets/icons/btn_visibility_on_24px.png"
-                alt="비밀번호 보기"
-              />
-            </button>
-          </div>
-          <label for="passwordCheck" class="password_label">비밀번호 확인</label>
-          <div class="login_password_wrap">
+            <label for="nickname" class="password_label">닉네임</label>
             <input
-              type="password"
-              id="passwordCheck"
-              class="login_input"
-              placeholder="●●●●●●●●"
+              type="text"
+              id="nickname"
+              name="nickname"
+              class="nickname_input"
+              placeholder="닉네임을 입력해주세요"
             />
-            <button type="button" class="eye_button">
-              <img
-                src="/assets/icons/btn_visibility_on_24px.png"
-                alt="비밀번호 보기"
+            <label for="password" class="password_label">비밀번호</label>
+            <div class="login_password_wrap">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="login_input"
+                placeholder="●●●●●●●●"
               />
+              <button type="button" class="eye_button">
+                <img
+                  src="/assets/icons/btn_visibility_on_24px.png"
+                  alt="비밀번호 보기"
+                />
+              </button>
+            </div>
+            <label for="passwordCheck" class="password_label">비밀번호 확인</label>
+            <div class="login_password_wrap">
+              <input
+                type="password"
+                id="passwordCheck"
+                name="passwordCheck"
+                class="login_input"
+                placeholder="●●●●●●●●"
+              />
+              <button type="button" class="eye_button">
+                <img
+                  src="/assets/icons/btn_visibility_on_24px.png"
+                  alt="비밀번호 보기"
+                />
+            </div>
+            <button type="submit" class="login_button">로그인</button>
           </div>
-          <button type="submit" class="login_button">로그인</button>
+        </form>
+        <div class="simple_login">
+          <span class="simple_login_text">간편 로그인하기</span>
+          <div class="social_button_wrap">
+            <a
+              class="social_button"
+              href="https://www.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/icons/Component 2.png" alt="구글 로그인" />
+            </a>
+            <a
+              class="social_button"
+              href="https://www.kakaocorp.com/page/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/icons/Component 3.png" alt="카카오 로그인" />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="simple_login">
-        <span class="simple_login_text">간편 로그인하기</span>
-        <div class="social_button_wrap">
-          <a
-            class="social_button"
-            href="https://www.google.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/assets/icons/Component 2.png" alt="구글 로그인" />
-          </a>
-          <a
-            class="social_button"
-            href="https://www.kakaocorp.com/page/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/assets/icons/Component 3.png" alt="카카오 로그인" />
-          </a>
+        <div class="login_footer">
+          <span>이미 회원이신가요?</span>
+          <a href="/login/index.html" class="signup_link">로그인</a>
         </div>
-      </div>
-      <div class="login_footer">
-        <span>이미 회원이신가요?</span>
-        <a href="/login/index.html" class="signup_link">로그인</a>
       </div>
     </div>
   </body>
