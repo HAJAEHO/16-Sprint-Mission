@@ -4,34 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pandamarket.shop/" />
+    <meta property="og:title" content="판다 마켓" />
+    <meta property="og:description" content="일상의 모든 물건을 거래해보세요" />
+    <meta property="og:image" content="/images/og_img.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="판다 마켓" />
+    <meta name="twitter:description" content="일상의 모든 물건을 거래해보세요" />
+    <meta name="twitter:image" content="/images/og_img.png" />
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <title>판다마켓</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/variables.css">
-    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 743px)">
-    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 744px) and (max-width: 991px)">
-    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 992px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="(min-width: 375px) and (max-width: 767px)">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 768px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 1200px)">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="/">
+            <a href="/" aria-label="홈으로 이동">
                 <picture>
                     <source srcset="/images/Property1-2=Typo.png" media="(max-width: 743px)" />
                     <img src="/images/Property 1-2=sm.png" alt="판다마켓 로고" />
                 </picture>
             </a>
-            <a href="/login.html" class="btn-small-40">로그인</a>
+            <a href="/login.html" class="btn-small-40" aria-label="로그인으로 이동">로그인</a>
         </nav>
     </header>
     <main>
         <section id="hero" class="banner">
             <div class="wrapper">
                 <h1>일상의 모든 물건을<br>거래해 보세요</h1>
-                <a href="items.html"><button class="btn">구경하러 가기</button></a>
+                <a href="items.html"><button class="btn" aria-label="아이템으로 이동">구경하러 가기</button></a>
             </div>
         </section>
         <section class="features wrapper wrapper--narrow">
@@ -63,23 +72,23 @@
                 </div>
             </div>
         </section>
-        <section id="bottom" class="banner">
+        <section id="closing-banner" class="banner">
             <div class="wrapper">
                 <h1>믿을 수 있는<br>판다마켓 중고 거래</h1>
             </div>
         </section>
     </main>
     <footer>
-        <div>© codeit - 2024</div>
+        <div  class="footer-copyright">© codeit - 2024</div>
         <div id="footer--menu">
-            <a href="/privacy.html">Privacy Policy</a>
-            <a href="/faq.html">FAQ</a>
+            <a href="/privacy.html" aria-label="Privacy Policy로 이동">Privacy Policy</a>
+            <a href="/faq.html" aria-label="FAQ로 이동">FAQ</a>
         </div>
         <div id="footer--sns">
-            <a href="https://www.facebook.com/"><img src="/images/ic_facebook.svg"></a>
-            <a href="https://x.com/?lang=kr"><img src="/images/ic_twitter.svg"></a>
-            <a href="https://www.youtube.com/"><img src="/images/ic_youtube.svg"></a>
-            <a href="https://www.instagram.com/"><img src="/images/ic_instagram.svg"></a>
+            <a href="https://www.facebook.com/" aria-label="페이스북으로 이동"><img src="/images/ic_facebook.svg"></a>
+            <a href="https://x.com/?lang=kr" aria-label="엑스(전 트위터)으로 이동"><img src="/images/ic_twitter.svg"></a>
+            <a href="https://www.youtube.com/" aria-label="유튜브로 이동"><img src="/images/ic_youtube.svg"></a>
+            <a href="https://www.instagram.com/" aria-label="인스타그램으로 이동"><img src="/images/ic_instagram.svg"></a>
         </div>
     </footer>
 </body>
