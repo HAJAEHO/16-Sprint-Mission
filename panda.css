@@ -7,12 +7,12 @@ a ,a > button{
     cursor: pointer;
 }
 /* header */
-.header_top{
+.header_top_container{
     height: 70px;
     display: flex;
     justify-content: center;
 }
-.header_top_container{
+.header_top_box{
     width: 55%;
     display: flex;
     justify-content: space-between;
