@@ -20,6 +20,9 @@
         <form>
           <label for="email">이메일</label>
           <input type="email" id="email" placeholder="codeit@email.com" />
+          <label for="nickname">닉네임</label>
+          <input type="text" id="nickname" placeholder="판다" />
+
           <label for="password">비밀번호</label>
           <div class="password-wrap">
             <input type="password" id="password" />
@@ -27,23 +30,28 @@
               <img src="../images/btn_visibility_off.png" width="24px" height="24px" alt="btn_visibility_off_icon" />
             </button>
           </div>
-          <button type="submit" class="submit">로그인</button>
+          <label for="signup-confirm">비밀번호 확인</label>
+          <div class="password-wrap">
+            <input type="text" id="signup-confirm" value="asdffff" />
+            <button type="button" class="btn_visibility">
+              <img src="../images/btn_visibility_on.png" width="24px" height="24px" alt="btn_visibility_on_icon" />
+            </button>
+          </div>
+          <button type="submit" class="submit">회원가입</button>
         </form>
 
         <div class="simple-login">
           <span class="simple-login-text">간편 로그인하기</span>
           <div class="sns-buttons">
-            <a class="google" href="https://www.google.com/" target="_blank" aria-label="google으로 이동">
-              <img src="../images/icon_google.png" width="42px" height="42px" alt="icon_google" />
-            </a>
+            <a class="google" href="https://www.google.com/" target="_blank" aria-label="google으로 이동"><img src="../images/icon_google.png" width="42px" height="42px" alt="icon_google" /></a>
             <a class="kakao" href="https://www.kakaocorp.com/page/" target="_blank" aria-label="kakaocorp으로 이동">
               <img src="../images/icon_kakao.png" width="42px" height="42px" alt="icon_kakao" />
             </a>
           </div>
         </div>
         <footer>
-          판다마켓이 처음이신가요?
-          <a href="../signup.html">회원가입</a>
+          이미 회원이신가요?
+          <a href="../login.html">로그인</a>
         </footer>
       </section>
     </main>
