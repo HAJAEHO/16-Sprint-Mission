@@ -1,4 +1,8 @@
 :root {
+  /** layout **/
+  --container-width: 1980px;
+  --content-width: 1080px;
+
   /** colors **/
   --color-black: #000000;
   --color-gray30: #fcfcfc;
@@ -21,4 +25,13 @@
   --color-pri500: #111827;
 
   --color-Error: #f74747;
+
+  /** spacing **/
+  --spacing-xxs: 8x;
+  --spacing-xs: 12px;
+  --spacing-sm: 16px;
+  --spacing-md: 20px;
+  --spacing-lg: 24px;
+  --spacing-xl: 28px;
+  --spacing-xxl: 32px;
 }

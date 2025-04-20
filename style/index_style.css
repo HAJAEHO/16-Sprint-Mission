@@ -1,7 +1,7 @@
 /** wrap layout **/
 
 .wrap {
-  max-width: 1980px;
+  max-width: var(--container-width);
   margin: 0 auto;
 }
 
@@ -10,11 +10,8 @@
 }
 
 header .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 8px 200px;
-  min-width: 1080px;
+  min-width: var(--content-width);
 }
 
 .banner {
@@ -24,10 +21,7 @@ header .wrap {
 }
 
 .banner .wrap {
-  min-width: 1080px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-width: var(--content-width);
 }
 
 .banner .banner-description {
@@ -48,10 +42,7 @@ main .wrap {
 }
 
 .feature-card .wrap {
-  min-width: 1080px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  min-width: var(--content-width);
 }
 
 .feature-description {
@@ -68,7 +59,7 @@ footer .wrap {
   display: flex;
   justify-content: space-between;
   padding: 28px 52px;
-  min-width: 1080px;
+  min-width: var(--content-width);
 }
 
 /** header **/
@@ -80,11 +71,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-}
-
-header .img-lg {
-  /* 이미지 크기 고정 필요 */
-  height: 52px;
 }
 
 header .btn-link-login {
@@ -107,7 +93,7 @@ header .btn-link-login {
 }
 
 .banner-description {
-  gap: 32px;
+  gap: var(--spacing-xxl);
 }
 
 .banner-description h1 {
@@ -148,7 +134,7 @@ header .btn-link-login {
 
 .feature-description {
   background-color: var(--color-gray30);
-  gap: 12px;
+  gap: var(--spacing-xs);
 }
 
 .feature-card:nth-child(2n) {
@@ -189,7 +175,7 @@ footer p {
 }
 
 footer .privacy-links {
-  gap: 28px;
+  gap: var(--spacing-xl);
   height: 32px;
   display: flex;
   justify-content: space-between;
@@ -207,11 +193,8 @@ footer .privacy-links > a {
 }
 
 .sns-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   list-style-type: none;
-  gap: 12px;
+  gap: var(--spacing-xs);
 }
 
 /** pseudo-class **/

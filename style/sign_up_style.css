@@ -1,29 +1,23 @@
 main {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .wrap {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 60px;
-  gap: 24px;
+  gap: var(--spacing-lg);
 }
 
 .sign-up-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: var(--spacing-lg);
 }
 
 .input-box {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--spacing-sm);
   position: relative;
 }
 
@@ -73,9 +67,6 @@ main {
 }
 
 .oauth {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 640px;
   height: 74px;
   padding: 16px 24px;
@@ -91,10 +82,7 @@ main {
 }
 
 .oauth-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+  gap: var(--spacing-sm);
 }
 
 .login-description {
