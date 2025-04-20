@@ -50,7 +50,9 @@ main {
   position: relative;
 }
 
-.form__img {
+.btn--visibility-off {
+  border: none;
+  background-color: var(--color-input);
   position: absolute;
   top: 16px;
   right: 24px;
