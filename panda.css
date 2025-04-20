@@ -54,13 +54,13 @@ a ,a > button{
     justify-content: flex-end;
     overflow: hidden;
 }
-.header_banner_content1 , .footer_banner_content1{
+.header_banner_textbox , .footer_banner_textbox{
     margin: 40px 0;
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
 }
-.header_banner_content2 , .footer_banner_content2{
+.header_banner_imgbox , .footer_banner_imgbox{
     max-width: 750px;
     min-width: 500px;
     width: 100%;
