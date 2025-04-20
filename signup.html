@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/common.css" />
     <link rel="stylesheet" href="./style/login.css" />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -31,6 +32,10 @@
             <input type="email" value="codeit@email.com" />
           </div>
           <div class="input-box">
+            <div class="input-title">닉네임</div>
+            <input type="text" value="판다" />
+          </div>
+          <div class="input-box">
             <div class="input-title">비밀번호</div>
             <input type="password" value="12345678" />
             <img
@@ -41,10 +46,21 @@
               alt="패스워드 이미지"
             />
           </div>
+          <div class="input-box">
+            <div class="input-title">비밀번호 확인</div>
+            <input type="text" value="12345678" />
+            <img
+              class="img-password"
+              width="20px"
+              height="14px"
+              src="images/Icon_pwopen.png"
+              alt="패스워드 이미지"
+            />
+          </div>
         </section>
         <section class="login-button">
-          <button class="long-btn login" onclick="location.href='/login.html'">
-            로그인
+          <button class="long-btn login" onclick="location.href='/signup.html'">
+            회원가입
           </button>
         </section>
         <section class="simple-login">
@@ -74,8 +90,8 @@
         </section>
         <section class="login-signup">
           <div class="signup-text">
-            판다마켓이 처음이신가요?
-            <a class="signup-link" href="/signup.html">회원가입</a>
+            이미 회원이신가요?
+            <a class="signup-link" href="/login.html">로그인</a>
           </div>
         </section>
       </div>

@@ -12,6 +12,20 @@
   --color-text-gray: #9ca3af;
   --color-white: #ffffff;
 
+  --secondary-800: #1f2937;
+
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --gray-600: #4b5563;
+  --gray-500: #6b7280;
+  --gray-400: #9ca3af;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --gray-50: #f9fafb;
+  --blue: #3692ff;
+  --skyblue: #e6f2ff;
+
   /* Typography */
   --font-primary: 'Pretendard-Regular', sans-serif;
   --font-secondary: 'ROKAF SANS', sans-serif;
@@ -232,6 +246,16 @@ footer {
 .sns-icon {
   width: 20px;
   height: 20px;
+}
+
+input {
+  width: 100%;
+  height: 56px;
+  background-color: var(--gray-100);
+  border-radius: 12px;
+  font-weight: 400;
+  padding: 26px;
+  color: var(--secondary-800);
 }
 
 @media (max-width: 1920px) {
