@@ -70,7 +70,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 240px;
-  gap: 18px;
+  gap: var(--hero-context-gap);
   margin-bottom: 0;
 }
 
@@ -136,10 +136,17 @@ body {
   border-radius: var(--border-radius-sm);
   margin: 0 auto;
   display: flex;
-  flex-direction: var(--main-container-flex-direction);
   justify-content: center;
   align-items: center;
   gap: var(--card-container-gap);
+}
+
+.card-container {
+  flex-direction: var(--main-container-flex-direction);
+}
+
+.card-container.reverse {
+  flex-direction: var(--main-container-flex-direction-reverse);
 }
 
 .card-img {
@@ -243,6 +250,7 @@ body {
 
   /* hero, card 배치방향 변수 */
   --main-container-flex-direction: column;
+  --main-container-flex-direction-reverse: column;
 
   /* 요소 간격조절 변수 */
   --cards-padding-top: 52px;
@@ -253,6 +261,7 @@ body {
   --hero-container-padding-top: 48px;
   --hero-container-btm-padding-top: 121px;
   --hero-container-gap: 132px;
+  --hero-context-gap: 18px;
 
   /* 요소 크기조절 변수 */
   --card-container-width: 344px;
@@ -261,7 +270,6 @@ body {
   /* cards 배경색 설정 */
   --cards-background-color: var(--color-gray050);
 }
-
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   :root {
@@ -274,6 +282,7 @@ body {
 
     /* hero, card 배치방향 변수 */
     --main-container-flex-direction: column;
+    --main-container-flex-direction-reverse: column;
 
     /* 요소 간격조절 변수 */
     --cards-padding-top: 24px;
@@ -284,6 +293,7 @@ body {
     --hero-container-padding-top: 84px;
     --hero-container-btm-padding-top: 201px;
     --hero-container-gap: 211px;
+    --hero-context-gap: 24px;
 
     /* 요소 크기조절 변수 */
     --card-container-width: 696px;
@@ -305,7 +315,6 @@ body {
   .hero-context {
     width: auto;
     align-items: center;
-    gap: 24px;
     margin-bottom: 0px;
   }
 
@@ -326,6 +335,7 @@ body {
 
     /* hero, card 배치방향 변수 */
     --main-container-flex-direction: row;
+    --main-container-flex-direction-reverse: row-reverse;
 
     /* 요소 간격조절 변수 */
     --cards-padding-top: 138px;
@@ -336,6 +346,7 @@ body {
     --hero-container-padding-top: 200px;
     --hero-container-btm-padding-top: 200px;
     --hero-container-gap: 7px;
+    --hero-context-gap: 32px;
 
     /* 요소 크기조절 변수 */
     --card-container-width: 988px;
@@ -361,12 +372,7 @@ body {
   .hero-context {
     width: 357px;
     align-items: start;
-    gap: 32px;
     margin-bottom: 60px;
-  }
-
-  .card-container.reverse {
-    flex-direction: row-reverse;
   }
 
   .card-description {
