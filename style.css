@@ -212,7 +212,7 @@ footer .footer-info {
     padding: 0 200px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
   /** 타블렛 가로, 노트북 */
   .main-title br,
   .banner br {
@@ -222,7 +222,7 @@ footer .footer-info {
   }
 
   header {
-    padding: 0 1.875rem;
+    padding: 0 1.5rem;
   }
   .banner-bg {
     position: relative;
@@ -287,7 +287,10 @@ footer .footer-info {
     padding: 2rem 2rem 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
+  header {
+    padding: 0 1rem;
+  }
   .logo img {
     display: none;
   }

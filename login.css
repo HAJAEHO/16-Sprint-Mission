@@ -142,3 +142,9 @@ footer a {
   text-decoration: underline;
   text-decoration-style: solid;
 }
+@media (max-width: 767px) {
+  main {
+    padding: 0 1rem;
+    width: 25rem; /* 400px */
+  }
+}
