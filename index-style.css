@@ -1,7 +1,13 @@
 @import url("reset.css");
 @import url("common.css");
 
-.container--header{
+header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-white);
+}
+
+.container--header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +35,6 @@
     font-weight: 700;
     font-size: 25.63px;
     font-family: var(--font-secondary);
-    line-height: normal;
 }
 
 .btn--login{
@@ -41,7 +46,6 @@
     color: var(--color-white);
     padding: 12px 20px;
     text-align: center;
-    line-height: normal;
     border-radius: 8px;
 }
 
@@ -96,24 +100,7 @@ h2 {
     color: var(--color-white);
     padding: 16px 124px;
     text-align: center;
-    line-height: normal;
     border-radius: 40px;
-}
-
-.btn--interactions {
-    cursor: pointer;
-}
-
-.btn--interactions:hover {
-    background-color: var(--color-primary-dark);
-}
-
-.btn--interactions:active {
-    background-color: var(--color-primary-darker);
-}
-
-.btn--interactions:disabled {
-    background-color: var(--color-disabled);
 }
 
 .img--hero, .img--closing {
