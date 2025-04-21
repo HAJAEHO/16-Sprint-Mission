@@ -196,18 +196,18 @@ body {
 
 .footer-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   padding: 0 var(--footer-padding-x);
   max-width: 1520px;
   margin: 0 auto;
-  flex-wrap: wrap-reverse;
   gap: 60px 0;
 }
 
 .footer-corp {
   color: var(--color-gray400);
-  flex-basis: 767px;
+  flex-basis: 100%;
 }
 
 .footer-links {
@@ -263,7 +263,7 @@ body {
 }
 
 /* Tablet */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   :root {
     /* 로고 이미지 표시여부 변수 */
     --nav-log-display: inline;
@@ -307,10 +307,6 @@ body {
     align-items: center;
     gap: 24px;
     margin-bottom: 0px;
-  }
-
-  .footer-corp {
-    flex-basis: auto;
   }
 
   .card-description {
@@ -371,10 +367,6 @@ body {
 
   .card-container.reverse {
     flex-direction: row-reverse;
-  }
-
-  .footer-corp {
-    flex-basis: auto;
   }
 
   .card-description {
