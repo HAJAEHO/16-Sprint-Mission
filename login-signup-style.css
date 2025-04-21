@@ -2,14 +2,12 @@
 @import url("common.css");
 
 body {
-  line-height: normal;
   color: var(--color-font-login);
 }
 
 main {
   width: 640px;
   margin: 230px auto;
-
 }
 
 .container--home {

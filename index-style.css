@@ -35,7 +35,6 @@ header {
     font-weight: 700;
     font-size: 25.63px;
     font-family: var(--font-secondary);
-    line-height: normal;
 }
 
 .btn--login{
@@ -47,7 +46,6 @@ header {
     color: var(--color-white);
     padding: 12px 20px;
     text-align: center;
-    line-height: normal;
     border-radius: 8px;
 }
 
@@ -102,7 +100,6 @@ h2 {
     color: var(--color-white);
     padding: 16px 124px;
     text-align: center;
-    line-height: normal;
     border-radius: 40px;
 }
 
