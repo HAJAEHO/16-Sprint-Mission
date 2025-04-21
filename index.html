@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="판다마켓으로 일상의 모든 것을 거래해보세요."
-    />
-    <meta property="og:title" content="판다마켓" />
+    <meta name="description" content="일상의 모든 물건을 거래해보세요." />
+    <meta property="og:title" content="판다 마켓" />
     <meta
       property="og:description"
-      content="판다마켓으로 일상의 모든 것을 거래해보세요."
+      content="일상의 모든 물건을 거래해보세요."
     />
-    <meta property="og:image" content="images/logo-396.png" />
-    <meta name="twitter:card" content="images/logo-396.png" />
-    <meta name="twitter:title" content="판다마켓" />
+    <meta
+      property="og:image"
+      content="https://panda-market-fe16sd.netlify.app/images/og_thumb.png"
+    />
+    <meta property="og:url" content="https://panda-market-fe16sd.netlify.app" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="판다 마켓" />
     <meta
       name="twitter:description"
-      content="판다마켓으로 일상의 모든 것을 거래해보세요."
+      content="일상의 모든 물건을 거래해보세요."
+    />
+    <meta
+      name="twitter:url"
+      content="https://panda-market-fe16sd.netlify.app"
+    />
+    <meta
+      name="twitter:image"
+      content="https://panda-market-fe16sd.netlify.app/images/og_thumb.png"
     />
     <title>판다마켓</title>
     <link
@@ -32,7 +42,22 @@
     <header class="header">
       <div class="header-container">
         <a href="/" class="logo" aria-label="판다마켓 홈으로 이동">
-          <img loading="eager" src="images/logo-153.png" alt="판다마켓 로고" />
+          <img
+            class="logo-img"
+            src="images/logo-panda.svg"
+            alt="판다 마켓 로고 - 판다 얼굴"
+            loading="eager"
+            width="40"
+            height="40"
+          />
+          <img
+            class="logo-txt"
+            src="images/logo-txt.svg"
+            alt="판다 마켓 로고 - 판다 마켓"
+            loading="eager"
+            width="104"
+            height="36"
+          />
         </a>
         <a href="login.html" class="login-button btn-sm btn-primary">로그인</a>
       </div>
@@ -41,7 +66,7 @@
       <div class="banner banner-hero" aria-label="상단 배너">
         <div class="banner-container">
           <div class="banner-info">
-            <h2 class="banner-title">일상의 모든 물건을<br />거래해 보세요</h2>
+            <h2 class="banner-title">일상의 모든 물건을 거래해 보세요</h2>
             <a
               href="items.html"
               aria-label="상품 페이지로 이동"
@@ -65,85 +90,87 @@
           />
         </div>
       </div>
-      <section class="section section-hotitem" aria-label="인기 상품 확인">
-        <div class="section-container">
-          <img
-            srcset="
-              images/Img_home_01-344.png 344w,
-              images/Img_home_01-696.png 696w
-            "
-            sizes="
-              (min-width: 768px) 580px,
-              (min-width: 480px) 696px,
-              344px
-            "
-            loading="lazy"
-            src="images/Img_home_01.png"
-            alt="두 마리의 팬더가 인기 상품인 초록색 티셔츠를 보고 있는 일러스트"
-          />
-          <div class="section-info">
-            <div class="section-label">Hot item</div>
-            <h2 class="section-title">인기 상품을<br />확인해 보세요</h2>
-            <p class="section-desc">
-              가장 HOT한 중고거래 물품을<br />
-              판다 마켓에서 확인해 보세요
-            </p>
+      <div class="sections">
+        <section class="section section-hotitem" aria-label="인기 상품 확인">
+          <div class="section-container">
+            <img
+              srcset="
+                images/Img_home_01-344.png 344w,
+                images/Img_home_01-696.png 696w
+              "
+              sizes="
+                (min-width: 768px) 580px,
+                (min-width: 480px) 696px,
+                344px
+              "
+              loading="lazy"
+              src="images/Img_home_01.png"
+              alt="두 마리의 팬더가 인기 상품인 초록색 티셔츠를 보고 있는 일러스트"
+              class="section-img"
+            />
+            <div class="section-info">
+              <div class="section-label">Hot item</div>
+              <h2 class="section-title">인기 상품을 확인해 보세요</h2>
+              <p class="section-desc">
+                가장 HOT한 중고거래 물품을<br />
+                판다 마켓에서 확인해 보세요
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="section section-search" aria-label="상품 검색">
-        <div class="section-container">
-          <img
-            srcset="
-              images/Img_home_02-344.png 344w,
-              images/Img_home_02-696.png 696w
-            "
-            sizes="
-              (min-width: 768px) 580px,
-              (min-width: 480px) 696px,
-              344px
-            "
-            loading="lazy"
-            src="images/Img_home_02.png"
-            alt="돋보기로 상품들 중 가운데 상품을 확대해서 보는 일러스트"
-          />
-          <div class="section-info">
-            <div class="section-label">Search</div>
-            <h2 class="section-title">
-              구매를 원하는<br />
-              상품을 검색하세요
-            </h2>
-            <p class="section-desc">
-              구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요
-            </p>
+        </section>
+        <section class="section section-search" aria-label="상품 검색">
+          <div class="section-container">
+            <img
+              srcset="
+                images/Img_home_02-344.png 344w,
+                images/Img_home_02-696.png 696w
+              "
+              sizes="
+                (min-width: 768px) 580px,
+                (min-width: 480px) 696px,
+                344px
+              "
+              loading="lazy"
+              src="images/Img_home_02.png"
+              alt="돋보기로 상품들 중 가운데 상품을 확대해서 보는 일러스트"
+              class="section-img"
+            />
+            <div class="section-info">
+              <div class="section-label">Search</div>
+              <h2 class="section-title">구매를 원하는 상품을 검색하세요</h2>
+              <p class="section-desc">
+                구매하고 싶은 물품은 검색해서<br />쉽게 찾아보세요
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="section section-register" aria-label="상품 등록">
-        <div class="section-container">
-          <img
-            srcset="
-              images/Img_home_03-344.png 344w,
-              images/Img_home_03-696.png 696w
-            "
-            sizes="
-              (min-width: 768px) 580px,
-              (min-width: 480px) 696px,
-              344px
-            "
-            loading="lazy"
-            src="images/Img_home_03.png"
-            alt="아래에 폴더들이 있고, 그 위에 마법봉으로 가운데의 연필꽂이, 공책, 하트 프레임 안경을 가리키는 일러스트"
-          />
-          <div class="section-info">
-            <div class="section-label">Register</div>
-            <h2 class="section-title">판매를 원하는<br />상품을 등록하세요</h2>
-            <p class="section-desc">
-              어떤 물건이든 판매하고 싶은 상품을<br />쉽게 등록하세요
-            </p>
+        </section>
+        <section class="section section-register" aria-label="상품 등록">
+          <div class="section-container">
+            <img
+              srcset="
+                images/Img_home_03-344.png 344w,
+                images/Img_home_03-696.png 696w
+              "
+              sizes="
+                (min-width: 768px) 580px,
+                (min-width: 480px) 696px,
+                344px
+              "
+              loading="lazy"
+              src="images/Img_home_03.png"
+              alt="아래에 폴더들이 있고, 그 위에 마법봉으로 가운데의 연필꽂이, 공책, 하트 프레임 안경을 가리키는 일러스트"
+              class="section-img"
+            />
+            <div class="section-info">
+              <div class="section-label">Register</div>
+              <h2 class="section-title">판매를 원하는 상품을 등록하세요</h2>
+              <p class="section-desc">
+                어떤 물건이든 판매하고 싶은 상품을<br />쉽게 등록하세요
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <div class="banner" aria-label="하단 배너">
         <div class="banner-container">
           <div class="banner-info">

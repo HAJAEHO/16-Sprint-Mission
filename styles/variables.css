@@ -19,10 +19,21 @@
   --background-blue: #cfe5ff;
   --background-blue-light: #e6f2ff;
 
+  /* button */
+  --banner-btn-font-size: 18px;
+
   /* layout */
+  --header-padding-lr: 16px;
   --container-width: 70rem;
   --container-width-small: 61.75rem;
-  --spacing-large: 8.625rem;
+  --sections-padding: 24px 16px 84px;
+  --section-margin-bottom: 16px;
+  --footer-padding: 32px;
+
+  /* form */
+  --form-padding-top: 24px;
+  --form-label-margin-bottom: 8px;
+  --form-contents-gap: 16px;
 
   /* border-radius */
   --border-radius-xs: 8px;

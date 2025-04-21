@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <main>
+    <main class="signup auth">
       <div class="form-container">
         <form class="form" id="signupForm" method="POST">
           <div class="form-logo">
             <a href="/signup.html" aria-label="새로고침">
               <img
-                src="images/logo-396.png"
+                src="images/logo.svg"
                 alt="판다마켓 로고"
                 width="396"
                 height="132"
@@ -67,6 +67,7 @@
                   class="btn-password-visible off"
                   title="비밀번호 표시/숨김"
                   aria-label="비밀번호 표시/숨김"
+                  aria-pressed="false"
                 ></button>
               </div>
             </div>
@@ -89,10 +90,13 @@
                   class="btn-password-visible on"
                   title="비밀번호 표시/숨김"
                   aria-label="비밀번호 표시/숨김"
+                  aria-pressed="true"
                 ></button>
               </div>
             </div>
-            <button type="submit" class="btn-lg btn-primary">회원가입</button>
+            <button type="submit" class="btn-lg btn-primary" disabled>
+              회원가입
+            </button>
             <div class="easy-login">
               간편 로그인하기
               <div class="easy-login-icons">
