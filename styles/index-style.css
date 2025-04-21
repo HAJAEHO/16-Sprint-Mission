@@ -141,6 +141,7 @@ body {
 
 .card-img {
   width: var(--card-img-width);
+  aspect-ratio: 588 / 444;
   height: auto;
 }
 
