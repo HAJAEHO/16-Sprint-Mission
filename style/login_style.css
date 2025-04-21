@@ -1,0 +1,110 @@
+main {
+  height: 100vh;
+}
+
+.wrap {
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  position: relative;
+}
+
+.login-form input,
+.login-form .login-btn {
+  width: 640px;
+  height: 56px;
+}
+
+.login-form label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--color-gray800);
+}
+
+.login-form input {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--color-gray800);
+  background-color: var(--color-gray100);
+  padding-left: 24px;
+  border: 0;
+  outline: 0;
+  border-radius: 12px;
+}
+
+.login-form .toggle-visiblity {
+  position: absolute;
+  right: 20px;
+  top: 56px;
+  width: 24px;
+  height: 24px;
+}
+
+.login-form .login-btn {
+  width: 100%;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: var(--color-gray100);
+  background-color: var(--color-pri100);
+}
+
+.oauth {
+  width: 640px;
+  height: 74px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background-color: var(--color-pri30);
+}
+
+.oauth p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--color-gray800);
+}
+
+.oauth-img {
+  gap: var(--spacing-sm);
+}
+
+.sign-up-description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: var(--color-gray800);
+}
+
+.sign-up-link {
+  color: var(--color-pri100);
+  text-decoration: underline;
+}
+
+.login-btn:hover {
+  background-color: var(--color-pri200);
+}
+
+.login-btn:active {
+  background-color: var(--color-pri300);
+}
+
+.input-box input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
