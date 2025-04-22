@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>로그인</title>
+    <title>회원가입</title>
     <meta
       name="description"
       content="판다마켓 - 일상의 모든 물건을 거래하는 중고거래 플랫폼"
@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <main class="login-container">
-      <header class="header__login">
+    <main class="signup-container">
+      <header class="header__signup">
         <a href="/" aria-label="홈으로 이동">
           <img
             src="/assets/images/logos/panda-logo-lg.png"
@@ -35,7 +35,7 @@
           />
         </a>
       </header>
-      <form class="form__login">
+      <form class="form__signup">
         <label class="form__label-email" for="email">이메일</label>
         <input
           class="form__input-email"
@@ -43,6 +43,16 @@
           id="email"
           name="email"
           autocomplete="email"
+          placeholder="이메일"
+          required
+        />
+        <label class="form__label-nickname" for="nickname">닉네임</label>
+        <input
+          class="form__input-nickname"
+          type="nickname"
+          id="nickname"
+          name="nickname"
+          autocomplete="nickname"
           placeholder="이메일"
           required
         />
@@ -60,15 +70,39 @@
           <button
             type="button"
             class="form__toggle-password"
-            aria-label="비밀번호 숨김/표시 버튼"
+            aria-label="비밀번호 보기 토글"
           >
             <img
               src="/assets/images/icons/icon_visibilityOn.svg"
-              alt="비밀번호 숨김/표시 버튼"
+              alt="비밀번호 보기"
             />
           </button>
         </div>
-        <button class="form__input-button" type="submit">로그인</button>
+        <label class="form__label-password-confirm" for="password-confirm"
+          >비밀번호 확인</label
+        >
+        <div class="form__input-wrapper">
+          <input
+            class="form__input-password-confirm"
+            type="password"
+            id="password-confirm"
+            name="password-confirm"
+            autocomplete="current-password-confirm  "
+            placeholder="비밀번호 확인"
+            required
+          />
+          <button
+            type="button"
+            class="form__toggle-password-confirm"
+            aria-label="비밀번호 보기 토글"
+          >
+            <img
+              src="/assets/images/icons/icon_visibilityOn.svg"
+              alt="비밀번호 보기"
+            />
+          </button>
+        </div>
+        <button class="form__input-button" type="submit">회원가입</button>
       </form>
       <section class="quick-login">
         <p class="quick-login__title">간편 로그인하기</p>
@@ -91,12 +125,12 @@
       </section>
       <footer>
         <p class="footer__title">
-          판다마켓이 처음이신가요?
+          이미 회원이신가요?
           <a
             class="footer__link"
-            href="/signup.html"
+            href="/login.html"
             aria-label="회원가입으로 이동"
-            >회원가입</a
+            >로그인</a
           >
         </p>
       </footer>
