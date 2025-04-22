@@ -25,14 +25,28 @@
             />판다마켓</a
           >
         </section>
-        <section class="login-input">
+        <form class="login-input">
           <div class="input-box">
-            <div class="input-title">이메일</div>
-            <input type="email" value="codeit@email.com" />
+            <label class="input-title" for="email">이메일</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="codeit@email.com"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
           </div>
           <div class="input-box">
-            <div class="input-title">비밀번호</div>
-            <input type="password" value="12345678" />
+            <label class="input-title" for="password">비밀번호</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              aria-required="true"
+            />
             <img
               class="img-password"
               width="20px"
@@ -41,7 +55,7 @@
               alt="패스워드 이미지"
             />
           </div>
-        </section>
+        </form>
         <section class="login-button">
           <button class="long-btn login" onclick="location.href='/login.html'">
             로그인
