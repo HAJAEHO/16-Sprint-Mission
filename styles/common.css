@@ -20,7 +20,6 @@ body {
   --font-size-xl: 20px;
   --font-size-2xl: 24px;
   --font-size-3xl: 30px;
-  --font-size-title: 40px;
 
   --font-weight-bold: 700;
   --font-weight-semi-bold: 600;
@@ -64,4 +63,8 @@ body {
 
 .btn:hover {
   background-color: var(--color-blue500);
+}
+
+.btn:disabled {
+  background-color: var(--color-gray400);
 }

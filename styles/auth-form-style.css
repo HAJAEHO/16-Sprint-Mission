@@ -10,33 +10,36 @@ body {
   align-items: center;
   gap: 22.24px;
   text-decoration: none;
-  margin: 231px auto 40px;
+  margin: 80px auto 40px;
+  height: 66px;
 }
 
 .form-logo-img {
-  width: 103.53px;
+  width: 51.76px;
+  height: auto;
 }
 
 .form-logo-text {
   font-family: ROKAFSansMedium;
-  font-size: 66.34px;
+  font-size: 33.17px;
   font-weight: var(--font-weight-bold);
   color: var(--color-blue400);
 }
 
 .form-container {
-  max-width: 640px;
+  max-width: 432px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
 }
 
 .form-label {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   color: var(--color-gray800);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .form-input-container {
@@ -60,6 +63,10 @@ body {
   flex-grow: 1;
   padding: 0 24px 0;
   outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-gray400);
 }
 
 .form-icon-password-invisible,
@@ -110,11 +117,42 @@ body {
 }
 
 .form-footer {
-  font-size: var(--font-size-form-footer);
+  font-size: 14px;
   font-weight: 500;
   margin: 0 auto;
 }
 
 .form-footer-link {
   color: var(--color-blue400);
+}
+
+/* Tablet, PC */
+@media (min-width: 768px) {
+  .form-logo-img {
+    width: 103.53px;
+  }
+
+  .form-logo-text {
+    font-size: 66.34px;
+  }
+
+  .form-container {
+    max-width: 672px;
+  }
+
+  .form-logo-container {
+    margin: 190px auto 40px;
+    height: 132px;
+  }
+
+  .form-label {
+    font-size: var(--font-size-lg);
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-logo-container {
+    margin: 231px auto 40px;
+  }
 }
