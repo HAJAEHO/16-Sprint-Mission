@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+a ,a > button {
+    cursor: pointer;
+}
+/* header */
+.header_top_container {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+.header_top_box {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.header_top_logo {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+.header_top_login {
+    display: flex;
+    align-items: center;
+}
+.logo_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.login_button {
+    padding: 11px 42px;
+    border-radius: 8px;
+    background-color: #3692FF;
+    color: white;
+    border: none;
+}
+/* banner */
+.header_banner ,.footer_banner {
+    background-color: #CFE5FF;
+    height: 540px;
+    padding: 200px 0 0;    
+}
+.header_banner_container ,.footer_banner_container {
+    width: 1110px;
+    height: 340px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.header_banner_textbox , .footer_banner_textbox {
+    margin: 40px 0;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.header_banner_imgbox , .footer_banner_imgbox {
+    max-width: 750px;
+    min-width: 500px;
+    width: 100%;
+}
+.link_itmes_button {
+    padding: 12px 124px;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    background-color: #3692FF;
+}
+.header_img , .footer_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header_banner h1 , .footer_banner h1 {
+    font-size: 40px;
+}
+
+
+/* content */
+.content {
+    max-width: 900px;
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: row;
+    margin: 138px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    
+}
+.content_img_container {
+    width: 580px;
+}
+.content_img {
+    width: 100%;
+    height: 100%;
+}
+.content_font_container h2 {
+    color: #3692FF;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    color: white;
+    height: 140px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer_container {
+    width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer a {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+.footer_link {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+}
