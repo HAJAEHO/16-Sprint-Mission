@@ -1,29 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
-:root {
-    --color-primary: #3692FF;
-    --color-text: #374151;
-    --color-text-light: #9CA3AF;
-    --color-background: #FCFCFC;
-    --color-background-dark: #111827;
-    --color-background-light: #E5E7EB;
-    --color-banner: #CFE5FF;
-    
-    --font-family-base: 'Pretendard-Regular', sans-serif;
-    --font-family-heading: 'Noto Sans KR', sans-serif;
-    
-    --container-width: 1120px;
-    --header-height: 70px;
-    --footer-height: 160px;
-    
-    --spacing-xs: 12px;
-    --spacing-sm: 24px;
-    --spacing-md: 32px;
-    --spacing-lg: 60px;
-    --spacing-xl: 138px;
-  }
   
 html {
     font-size: 16px;
@@ -32,7 +9,7 @@ html {
 }
   
 body {
-    max-width: 1920px;
+    width: 1920px;
     margin: 0 auto;
     width: 100%;
 }
@@ -89,6 +66,8 @@ main {
     min-height: 390px;
     max-height: 540px;
     background-color: #CFE5FF;
+    overflow: auto;
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -115,12 +94,11 @@ main {
     /* flex-wrap: nowrap; */
     min-width: 744px;
     max-width: 1110px;
-    /* height: 340px;      container 쿼리 써보기 */
-    height: 90%;
+    height: 340px;      /*container 쿼리 써보기*/
     max-height: 340px;
 }
 
-#bannerTop .containerCommon {
+#bannerTop .container1 {
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
@@ -129,22 +107,22 @@ main {
     max-height: 260px;
 }
 
-.banner .containerImage {
+.banner .container2 {
     position: relative;
     object-position: center;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
 
-.banner .containerImage img {
+.banner .container2 img {
     position: absolute;
     width: 100%;
-    height: inherit;
     bottom: 0;
 }
 
 #bannerBottom .containerbox {
+    height: 397px;
     max-height: 397px;
     gap: 69px;
     align-items: center;
@@ -159,7 +137,7 @@ main {
     white-space: nowrap;
 }
 
-#bannerBottom .containerCommon p {
+#bannerBottom .container1 p {
     padding-bottom: 60px;
 }
 
@@ -180,22 +158,19 @@ main {
 }
 
 .page {
-    display: flex;
-    justify-content: center;
+    padding: 138px 466px;
+    height: 720px;    
     max-height: 720px;
-    padding: 168px 0;
 }
 
 .pageContainer {
     display: flex;
     align-items: center;
     gap: 0 64px;
+    width: 998px;
+    height: 444px;
     border-radius: 12px;
     background-color: #fcfcfc;
-}
-
-.pageContainerItemImage {
-    height: 100%;
 }
 
 .pageContainer img {
@@ -251,14 +226,19 @@ main {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between; 
-    padding: 50px 20%;
     height: 160px;
     background-color: #111827;
     color: #E5E7EB;
     font-weight: 400;
     line-height: 100%;
+}
+
+.footer {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;    
 }
 
 .copyright {
