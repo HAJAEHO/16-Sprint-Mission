@@ -11,12 +11,14 @@
     <link 
       href="https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff"
       rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/common.css" />
   </head>
   <body>
     <header>
       <div class="header">
-        <a href="/">
+        <a href="/" aria-label="홈으로 이동">
           <img class="logo" src="images/logo.png" alt="헤더 로고">
         </a>        
         <a href="/login" class="login">로그인</a>
@@ -24,24 +26,24 @@
     </header>
     <main>
       <section class="banner" id="bannerTop">
-        <div class="containerbox" id="bannerTop-containerbox">
-          <div class="container1" id="container1">
+        <div class="containerbox" id="bannerTopContainerbox">
+          <div class="containerCommon" id="containerCommon">
             <p>
               일상의 모든 물건을<br>
               거래해보세요.
             </p>
             <a href="/items" class="item">구경하러 가기</a>
           </div>
-          <div class="container2">
-            <img src="images/Img_home_top.png">
+          <div class="containerImage">
+            <img src="images/Img_home_top.png" alt="판다 한 마리가 파란색 장바구니 들고 있는 그림">
           </div>
           </div>
         </div>
       </section>    
       <section class="page" id="hot">
-        <div class="pageContainer pageContainerImageLeft" id="pageContainer-hot">
+        <div class="pageContainer pageContainerImageLeft" id="pageContainerHot">
           <div class="pageContainerItemImage">
-            <img src="images/Img_home_01.png">
+            <img src="images/Img_home_01.png" alt="초록색 티셔츠와 하트 그림">
           </div>
           <div class="pageContainerItemText">
             <p class="pageContainerItemSubject">Hot Item</p>
@@ -57,7 +59,7 @@
         </div> 
       </section>
       <section class="page" id="search">
-        <div class="pageContainer pageContainerImageRight" id="pageContainer-search">
+        <div class="pageContainer pageContainerImageRight" id="pageContainerSearch">
           <div class="pageContainerText">
             <p class="pageContainerItemSubject">Search</p>
             <h1 class="pageContainerItemTitle">
@@ -69,15 +71,15 @@
               쉽게 찾아보세요
             </h2>
           </div>
-          <div class="pageContainerImage">
-            <img src="images/Img_home_02.png">
+          <div class="pageContainerItemImage">
+            <img src="images/Img_home_02.png" alt="돋보기 그림">
           </div>
         </div> 
       </section>
       <section class="page" id="register">
-        <div class="pageContainer pageContainerImageLeft" id="pageContainer-register">
+        <div class="pageContainer pageContainerImageLeft" id="pageContainerRegister">
           <div class="pageContainerItemImage">
-            <img src="images/Img_home_03.png">
+            <img src="images/Img_home_03.png" alt="아래쪽엔 폴더가 있고 위쪽엔 색연필, 공책, 하트 안경이 있는 그림">
           </div>
           <div class="pageContainerItemText">
             <p class="pageContainerItemSubject">Register</p>
@@ -95,46 +97,44 @@
       <div class="hr"></div>
       <section class="banner" id="bannerBottom">
         <div class="containerbox" id="bannerBottom-containerbox">
-          <div class="container1" id="container1">
+          <div class="containerCommon" id="containerCommon">
             <p>
               믿을 수 있는<br>
               판다마켓 중고 거래
             </p>
           </div>
-          <div class="container2" id="container2">
-            <img src="images/Img_home_bottom.png">
+          <div class="containerImage" id="containerImage">
+            <img src="images/Img_home_bottom.png" alt="판다 두 마리가 파란색 장바구니 들고 있는 그림">
           </div>
         </div>
       </section>   
     </main>
     <footer>
-      <div class="footer">
-        <div clss="copyright">
-            ⓒcodeit - 2024
-        </div>
-        <div class="privAndFaq">
-          <a href="/privacy" class="privacy">
-            Privacy Policy
-          </a>
-          <a href="/faq" class="faq">
-            FAQ
-          </a>
-        </div>
-        <div class="sns">
-          <a href="https://www.facebook.com/" target="_black">
-            <img class="facebook" src="images/ic_facebook.png"/>
-          </a>
-          <a href="https://www.instagram.com/" target="_black">
-            <img class="twitter" src="images/ic_twitter.png"/>
-          </a>
-          <a href="https://www.youtube.com/" target="_black">
-            <img class="youtube" src="images/ic_youtube.png"/>
-          </a>
-          <a href="https://www.instagram.com/" target="_black">
-            <img class="instagram" src="images/ic_instagram.png"/>
-          </a>
-        </div>
-      </div>
+      <div clss="copyright">
+        ⓒcodeit - 2024
+    </div>
+    <div class="privAndFaq">
+      <a href="/privacy" class="privacy">
+        Privacy Policy
+      </a>
+      <a href="/faq" class="faq">
+        FAQ
+      </a>
+    </div>
+    <div class="sns">
+      <a href="https://www.facebook.com/" target="_black">
+        <img class="facebook" src="images/ic_facebook.png"/>
+      </a>
+      <a href="https://www.instagram.com/" target="_black">
+        <img class="twitter" src="images/ic_twitter.png"/>
+      </a>
+      <a href="https://www.youtube.com/" target="_black">
+        <img class="youtube" src="images/ic_youtube.png"/>
+      </a>
+      <a href="https://www.instagram.com/" target="_black">
+        <img class="instagram" src="images/ic_instagram.png"/>
+      </a>
+    </div>
     </footer>
   </body>
 </html>
