@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  word-break: keep-all;
+  font-family: Pretendard, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  border-bottom: 1px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 400px;
+  width: 1920px;
+  height: 70px;
+}
+h1 {
+  color: #3692ff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+}
+p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h2,
+p {
+  color: #374151;
+}
+
+.Section_Standard > img {
+  width: 579px;
+  height: 444px;
+}
+
+.LoginButton {
+  border-radius: 8px;
+  background-color: #3692ff;
+  color: #ffffff;
+  gap: 10px;
+  height: 42px;
+  padding: 12px 23px;
+  text-decoration: none;
+}
+.BuyButton {
+  background-color: #3692ff;
+  border-radius: 40px;
+  color: #ffffff;
+  padding: 16px 124px;
+  text-decoration: none;
+}
+article {
+  display: block;
+}
+.Section1 {
+  align-items: center;
+  background-color: #cfe5ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 540px;
+}
+
+.Section1_Article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Section1_Container {
+  display: flex;
+  justify-content: flex-end;
+}
+.Section_Standard {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  height: 720px;
+  justify-content: center;
+}
+.Article_Standard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 37px;
+}
+.Section_Container_Standard {
+  display: flex;
+  width: 988px;
+  height: 444px;
+}
+.footer {
+  background-color: #111827;
+  display: flex;
+  flex-direction: column;
+}
+.footer_inner {
+  height: 160px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+.footer_content_left > a {
+  color: #9ca3af;
+}
+.footer_content_right {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+}
+.footer_content_center > a {
+  color: #e5e7eb;
+}
+#Section3 {
+  text-align: right;
+}
