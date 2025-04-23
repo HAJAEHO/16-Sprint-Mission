@@ -1,0 +1,81 @@
+@import url(../global.css);
+@import url(../login/login.css);
+
+.main__sign-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 640px;
+  margin: 231px auto;
+}
+
+.sign-up__logo img {
+  width: 396px;
+}
+
+.sign-up__form {
+  width: 100%;
+}
+
+/*비밀번호 보이기 안보이기*/
+label[for="toggle-visibility-pw"],
+label[for="toggle-visibility-pwcheck"] {
+  position: absolute;
+  right: 24px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(./img/pw_hide.png) center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+label[for="toggle-visibility-pw"] {
+  top: 304px;
+}
+
+label[for="toggle-visibility-pwcheck"] {
+  top: 424px;
+}
+
+#toggle-visibility-pwcheck:checked~label[for="toggle-visibility-pwcheck"] {
+  background-image: url(./img/pw_show.png);
+}
+
+#toggle-visibility-pwcheck {
+  display: none;
+}
+
+.sign-up__alert {
+  height: 74px;
+  background-color: #e6f2ff;
+  padding: 16px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.sign-up__alert img {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.sign-up__login {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.sign-up__login a {
+  text-decoration: underline;
+  color: var(--primary-color);
+}

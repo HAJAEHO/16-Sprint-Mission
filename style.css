@@ -1,10 +1,4 @@
-@font-face {
-    /*Pretendard폰트*/
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+@import url(./global.css);
 
 :root {
     /* font-size: 16px; */
@@ -14,18 +8,9 @@
        브라우저 너비 1920=> 100vw  
       16/1920*100 =0.83333...
     */
-
     /* 컨테이너 관련 변수 */
     --container-width: 70rem;
     --container-margin: 0 auto;
-
-    /* 색상 변수 */
-    --primary-color: #3692FF;
-    --primary-hover: #1251AA;
-    --secondary-color: #FCFCFC;
-    --background-color: #CFE5FF;
-    --text-color: #374151;
-    --white-color: #fff;
 }
 
 body {
@@ -35,8 +20,7 @@ body {
 }
 
 .page-wrapper {
-    background-color: var(--secondary-color);
-    font-family: 'Pretendard-Regular', sans-serif;
+    background-color: var(--article-background-color);
     color: var(--text-color);
     max-width: 1920px;
     margin: 0 auto;
@@ -56,6 +40,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*sprint2 추가 내용*/
+    position: sticky;
+    top: 0;
+    background-color: var(--white-color);
 }
 
 nav {
@@ -122,7 +110,6 @@ article.hero__content .hero__text {
 .hero__text button {
     background-color: var(--primary-color);
     height: 56px;
-    border: none;
     border-radius: 40px;
     cursor: pointer;
     padding: 0 7.75rem;
@@ -138,7 +125,7 @@ article.hero__content .hero__text {
     font-family: 'Pretendard-Regular', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #F9FAFB;
+    color: var(--secondary-gray50);
     height: 2rem;
     line-height: 2rem;
 }
@@ -164,7 +151,7 @@ article.hero__content .hero__text {
 .search__content,
 .register__content {
     /*각 영역 article 공통 설정*/
-    background-color: var(--secondary-color);
+    background-color: var(--article-background-color);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -247,7 +234,7 @@ main section article>div>span {
 
 /* Footer */
 footer {
-    background-color: #111827;
+    background-color: var(--secondary-gray900);
     color: var(--white-color);
     height: 10rem;
     padding: 2rem 0;
@@ -257,7 +244,7 @@ footer {
     display: flex;
     justify-content: space-between;
     height: 1.25rem;
-    color: #9CA3AF;
+    color: var(--secondary-gray400);
 }
 
 .footer__container>div {
@@ -268,7 +255,7 @@ footer {
 }
 
 .footer__container>div a {
-    color: #E5E7EB;
+    color: var(--secondary-gray200);
     display: inline-block;
 }
 
