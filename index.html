@@ -5,42 +5,45 @@
         <title>판다마켓</title>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="common.css">
     </head>
     <body>
         <header>
-            <div class="head-block">
+            <nav>
+                <div class="head-block">
+                    <div>
+                        <a href="./" aria-label="홈으로 이동"><img src="./img/Property 1=md.png" alt="logo-image"></a>
+                    </div>
                 <div>
-                    <a href="./"><img src="./img/Property 1=md.png"></a>
+                    <button type="button" onclick = "location.href = './login.html' " aria-label="로그인 화면 이동" class="login">
+                    로그인
+                    </button>
                 </div>
-            <div>
-                <button type="button" onclick = "location.href = '/login' " class="login">
-                로그인
-                </button>
             </div>
-        </div>
+        </nav>
         </header>
         <main>
-            <div class="I-block">
-                <div class="sky_blue_bg">
+            <section class="watchpage-image-block">
+                <div class="img_bg">
                 <div class="panda-greeting-desc">
-                    <div style="font-size: 40px;font-weight: 700;color: #374151;">
+                    <div class="keyword-big">
                     일상의 모든 물건을 거래해 보세요
                     </div>
                     <div class="as">
-                        <button type="button"  onclick = "location.href = '/items' " class="see-the-sight">
+                        <button type="button"  onclick = "location.href = './items.html' " aria-label="아이템 페이지 이동" class="see-the-sight">
                             구경하러 가기
                         </button>
                     </div>
                 </div>
                 <div style="margin:0;display: flex;">
-                <img class="panda-greeting" src="./img/Img_home_top.png">
+                <img class="panda-greeting" src="./img/Img_home_top.png" alt="the panda looks at you and says hello">
                 </div>
             </div>
-            </div>
-            <div class="II-block">
+            </section>
+            <section class="ad-part-block">
                 <div class="gray-box">
                     <div style="margin:0;display: flex;">
-                        <img class="gray-box-img" src="./img/Img_home_01.png">
+                        <img class="gray-box-img" src="./img/Img_home_01.png" alt="hot item image">
                     </div>
                     <div class="keyword-desc">
                         <div class="keyword-blue">
@@ -69,12 +72,12 @@
                         </div>
                     </div>
                     <div>
-                        <img class="gray-box-img" src="./img/Img_home_02.png">
+                        <img class="gray-box-img" src="./img/Img_home_02.png" alt="search image">
                     </div>
                 </div>
                 <div class="gray-box">
                     <div>
-                        <img class="gray-box-img" src="./img/Img_home_03.png">
+                        <img class="gray-box-img" src="./img/Img_home_03.png" alt="register image">
                     </div>
                     <div class="keyword-desc">
                         <div class="keyword-blue">
@@ -89,33 +92,33 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="III-block">
-                <div class="sky_blue_bg">
+            </section>
+            <section class="bottom-image-block">
+                <div class="img_bg">
                     <div class="panda-greeting-desc">
                         <div class="keyword-big">
                          믿을 수 있는<br> 판다마켓 중고 거래
                         </div>
                     </div>
                     <div style="margin:0;display: flex;">
-                       <img class="panda-greeting" src="./img/Img_home_bottom.png">
+                       <img class="panda-greeting" src="./img/Img_home_bottom.png" alt="meet panda each other">
                        </div>
                     </div>
-            </div>
+            </section>
         </main>
         <footer>
-            <div class="IV-block">
+            <div class="footer-block">
             <div>
             ©codeit -2024
             </div>
             <div>
-                <a href="/privacy" class="text-link"> Policy</a> <a href="/faq" class="text-link"> FAQ </a> 
+                <a href="/privacy" aria-label="Privacy 페이지 이동" class="text-link"> Policy</a> <a href="/faq" aria-label="FAQ" class="text-link"> FAQ </a> 
             </div>
             <div class="SNS-image-link">
-                <a href="https://www.facebook.com/"><img src="./img/ic_facebook.png"></a>
-                <a href="https://www.x.com"><img src="./img/ic_twitter.png"></a>
-                <a href="https://www.youtube.com"><img src="./img/ic_youtube.png"></a>
-                <a href="https://www.instagram.com"><img src="./img/ic_instagram.png"></a>
+                <a href="https://www.facebook.com/" aria-label="페이스 북 페이지 이동" target="_blank" rel="noopener noreferrer"><img src="./img/ic_facebook.png"></a>
+                <a href="https://www.x.com" aria-label="X(구 트위터) 페이지 이동" target="_blank" rel="noopener noreferrer"><img src="./img/ic_twitter.png"></a>
+                <a href="https://www.youtube.com" aria-label="유튜브 페이지 이동" target="_blank" rel="noopener noreferrer"><img src="./img/ic_youtube.png"></a>
+                <a href="https://www.instagram.com" aria-label="인스타그램 페이지 이동" target="_blank" rel="noopener noreferrer"><img src="./img/ic_instagram.png"></a>
             </div>
             </div>
         </footer>

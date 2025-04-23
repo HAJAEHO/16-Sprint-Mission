@@ -1,0 +1,73 @@
+main{
+    width: 640px;
+    height: 618px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-page-logo{
+    width: 396px;
+    height: 132px;
+}
+
+table{
+    width: 640px;
+    border-spacing: 0px 20px;
+}
+
+.inputbox{
+    border: none;
+    background-color: var(--gray100);
+    width: 640px;
+    height: 56px;
+    border-radius: 12px;
+    font-size: 13px;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.input-label-style{
+    font-weight: 600;
+}
+
+button{ 
+    width: 100%;
+    font-size: 20px;
+}
+
+.simple-login{
+    border-radius: 10px;
+    background-color: #e6f2ff;
+    display: flex;
+    padding: 8px 26px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.sns-login-logo{
+    width: 42px;
+    height: 42px;
+    margin-left: 14px;
+}
+
+#go-to-the-register{
+    font-size: 13px;
+}
+
+.password-box{
+    position: relative;
+}
+
+.eyes{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    bottom: 50%;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}

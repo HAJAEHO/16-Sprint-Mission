@@ -1,0 +1,39 @@
+*{
+    margin:0;
+}
+
+:root{
+    --color-primary: #3692ff;
+    
+    --bg-max-width:1920px;
+    --gray900: #111827;
+    --gray800: #1f2937;
+    --gray700: #374151;
+    --gray600: #485536;
+    --gray500: #687280;
+    --gray400: #9ca3af;
+    --gray200: #E5E7EB;
+    --gray100: #f3f4f6;
+    --gray50:  #F9FAFB;
+    --skyblue: #CFE5FF;
+    /**white (#FFFFFF) 는 제외했습니다.**/
+}
+
+body{
+    box-sizing: border-box;
+    font-family: Poppins, 'Noto Sans KR', sans-serif;
+}
+
+button{
+    cursor:pointer;
+}
+
+button.see-the-sight{
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    border: none;
+    font-size: 15px;
+    border-radius: 40px;
+    padding: 12px 35%;
+}
