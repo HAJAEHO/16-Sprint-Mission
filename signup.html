@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+          <button class="logo">
+            <a href="/landing.html"><img src="img/logo.svg"></a>
+          </button>
+
+          <form>
+            <div class="form-container">
+                <label for="email">이메일</label>
+                <div class="text-field">
+                    <input type="email" id="email" placeholder="codeit@email.com" required>
+                </div>
+            </div>
+            <div class="form-container">
+                <label for="name">닉네임</label>
+                <div class="text-field">
+                    <input type="name" id="name" placeholder="닉네임을 설정해주세요." required>
+                </div>
+            </div>
+            <div class="form-container">
+                <label for="password">비밀번호</label>
+                <div class="text-field">
+                  <input type="password" id="password" placeholder="비밀번호" required>
+                  <button type="button" class="toggle-password"><img src="img/ic_visibility_on.svg"></button>
+                </div>
+            </div>
+            <div class="form-container">
+                <label for="password">비밀번호 확인</label>
+                <div class="text-field">
+                  <input type="password" id="password" placeholder="비밀번호" required>
+                  <button type="button" class="toggle-password"><img src="img/ic_visibility_on.svg"></button>
+                </div>
+            </div>
+            <button type="submit" class="login-btn">회원가입</button>
+          </form>
+    
+          <div class="social-login">
+            <span>간편 로그인하기</span>
+            <div class="sns-icons">
+                <a href="https://www.google.com/%E2%80%9D,%E2%80%A8-">
+                    <button class="google">
+                        <img src="img/ic_google.svg">
+                    </button>
+                </a>
+                <a href="https://www.kakaocorp.com/page/%E2%80%9D">
+                    <button class="kakao">
+                        <img src="img/ic_kakao.svg">
+                    </button>
+                </a>
+            </div>
+          </div>
+    
+          <p class="signup-guide">
+            이미 회원이신가요? <a href="/login.html">로그인</a>
+          </p>
+        </div>
+    </div>
+</body>
+</html>
