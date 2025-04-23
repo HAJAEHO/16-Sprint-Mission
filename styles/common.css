@@ -1,39 +1,3 @@
-:root {
-  --primary-color: #3692FF;
-  --background-light: #CFE5FF;
-  --text-dark: #374151;
-  --white: #ffffff;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;   
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  background: none;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  cursor: pointer;
-}
-
-img {
-  vertical-align: bottom;
-}
-
-body {
-  color: var(--text-dark);
-  font-family: Pretendard, sans-serif;
-}
-
-
 header {
   background-color: var(--white);
   border: 1px solid #DFDFDF;
@@ -69,7 +33,7 @@ form {
 label {
   color: #1F2937;
   display: block;
-  font-size: 18px;
+  font-size: var(--text-lg);
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 16px;
@@ -83,9 +47,10 @@ input {
   border: 2px solid #F3F4F6;
   width: 640px;
   height: 56px;
-  font-size: 16px;
+  font-size: var(--text-base);
   font-weight: 400;
   line-height: 26px;
+  padding-left: 20px;
 }
 
 #footer-page {
@@ -100,14 +65,14 @@ input {
   gap: 12px;
 }
 
-.wrapper {
-  max-width: 1200px;;
+.layout-container {
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: var(--text-3xl);
   font-weight: 700;
   line-height: 56px;
 }
@@ -135,7 +100,7 @@ h1 {
 }
 
 .pill-button {
-  font-size: 20px;
+  font-size: var(--text-xl);
   font-weight: 700;
   border-radius: 999px;
   padding: 16px 124px;

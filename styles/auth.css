@@ -9,7 +9,6 @@
   align-items: center;
 }
 
-
 .auth-logo {
   width: 396px;
   height: 132px;
@@ -76,10 +75,9 @@
   border-radius: 8px;
   padding: 16px 23px;
   gap: 10px;
-}
+} 
 
 .login-easy {
-  width: 594px;
   height: 42px;
   display: flex;
   justify-content: space-between;
