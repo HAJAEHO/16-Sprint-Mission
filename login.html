@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="icon" href="/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet" />
     <title>판다마켓</title>
   </head>
-  <body>
+  <body class="page-wrapper">
     <main>
       <header>
         <a href="../index.html" aria-label="홈으로 이동">
@@ -17,20 +18,20 @@
         </a>
       </header>
       <section>
-        <form>
+        <form class="form-wrap" autocomplete="on">
           <label for="email">이메일</label>
-          <input type="email" id="email" placeholder="codeit@email.com" />
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="codeit@email.com" />
           <label for="password">비밀번호</label>
           <div class="password-wrap">
-            <input type="password" id="password" />
-            <button type="button" class="btn_visibility">
+            <input type="password" id="password" name="password" autocomplete="current-password"/>
+            <button type="button" class="btn_visibility" aria-label="비밀번호 표시" aria-pressed="false">
               <img src="../images/btn_visibility_off.png" width="24px" height="24px" alt="btn_visibility_off_icon" />
             </button>
           </div>
-          <button type="submit" class="submit">로그인</button>
+          <button type="submit" class="submit w100p">로그인</button>
         </form>
 
-        <div class="simple-login">
+        <div class="simple-login w100p">
           <span class="simple-login-text">간편 로그인하기</span>
           <div class="sns-buttons">
             <a class="google" href="https://www.google.com/" target="_blank" aria-label="google으로 이동"><img src="../images/icon_google.png" width="42px" height="42px" alt="icon_google" /></a>
