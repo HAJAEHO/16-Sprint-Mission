@@ -21,14 +21,24 @@
         <form class="form-wrap" autocomplete="on">
           <label for="email">이메일</label>
           <input type="email" id="email" name="email" autocomplete="email" placeholder="codeit@email.com" />
+          <label for="nickname">닉네임</label>
+          <input type="text" id="nickname" name="nickname" autocomplete="nickname" placeholder="판다" />
+
           <label for="password">비밀번호</label>
           <div class="password-wrap">
-            <input type="password" id="password" name="password" autocomplete="current-password"/>
+            <input type="password" id="password" name="password" autocomplete="new-password" />
             <button type="button" class="btn_visibility" aria-label="비밀번호 표시" aria-pressed="false">
               <img src="../images/btn_visibility_off.png" width="24px" height="24px" alt="btn_visibility_off_icon" />
             </button>
           </div>
-          <button type="submit" class="submit w100p">로그인</button>
+          <label for="signup-confirm">비밀번호 확인</label>
+          <div class="password-wrap">
+            <input type="text" id="signup-confirm" name="signup-confirm" autocomplete="new-password" value="asdffff" />
+            <button type="button" class="btn_visibility" aria-label="비밀번호 표시" aria-pressed="false">
+              <img src="../images/btn_visibility_on.png" width="24px" height="24px" alt="btn_visibility_on_icon" />
+            </button>
+          </div>
+          <button type="submit" class="submit w100p">회원가입</button>
         </form>
 
         <div class="simple-login w100p">
@@ -41,8 +51,8 @@
           </div>
         </div>
         <footer>
-          판다마켓이 처음이신가요?
-          <a href="../signup.html">회원가입</a>
+          이미 회원이신가요?
+          <a href="../login.html">로그인</a>
         </footer>
       </section>
     </main>

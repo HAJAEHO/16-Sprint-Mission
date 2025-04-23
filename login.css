@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+body.page-wrapper {
+  margin-top: 8vh;
+  font-family: "Pretendard";
+}
+
+:root {
+  --gray-900: #111827;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --gray-600: #4b5563;
+  --gray-500: #6b7280;
+  --gray-400: #9ca3af;
+  --gray-200: #e5e7eb;
+  --gray-100: #f3f4f6;
+  --gray-50: #f9fafb;
+
+  --blue: #3692ff;
+  --blue-50: #cfe5ff;
+  --white: #ffffff;
+  --white-50: #fcfcfc;
+}
+
+button {
+  background-color: initial;
+  cursor: pointer;
+}
+
+main {
+  margin: 0 auto;
+  width: 40rem; /* 640px */
+}
+
+header {
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header img {
+  vertical-align: middle;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 4.14625rem;
+  line-height: 100%;
+  color: var(--blue);
+  vertical-align: middle;
+  margin-left: 1.25rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+form label {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+}
+
+form input {
+  background-color: var(--gray-100);
+  border-radius: 0.75rem;
+  height: 3.5rem;
+  padding-left: 1.875rem;
+  margin: 1.25rem 0;
+}
+
+.password-wrap {
+  position: relative;
+}
+
+button.btn_visibility {
+  position: absolute;
+  right: 1.875rem;
+  height: calc(3.5rem + 2.5rem);
+}
+
+.password-wrap button img {
+  vertical-align: middle;
+}
+
+#password {
+  padding-left: 1.875rem;
+}
+
+form input::placeholder,
+#password,
+form input {
+  color: var(--gray-800);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+form button.submit {
+  background-color: var(--blue);
+  border-radius: 2.5rem;
+  height: 3.5rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  color: var(--gray-100);
+}
+
+.simple-login {
+  background-color: var(--blue-50);
+  border-radius: 0.5rem;
+  height: 4.625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.875rem;
+  margin: 1.25rem 0 1.875rem;
+}
+
+.simple-login .simple-login-text {
+  color: var(--gray-800);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.sns-buttons a.kakao {
+  margin-left: 0.625rem;
+}
+
+footer {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: var(--gray-800);
+  text-align: center;
+}
+
+footer a {
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
