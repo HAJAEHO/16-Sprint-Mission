@@ -1,0 +1,273 @@
+
+/* 메인 페이지 (main.html) */
+
+main {
+    background-color: #FCFCFC;
+}
+
+header {
+    width: 100%;
+    padding: 9px 0;
+    position: fixed;
+    background-color: #fff;
+}
+
+header .content {
+    width: 1120px;
+    margin: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .content img {
+    width: 153px;
+}
+
+header .content .btn-s-48 {
+    width: 128px;
+    background-color: var(--blue-color);
+    color: #fff;
+}
+
+main {
+    width: 100%;
+    background-color: #FCFCFC;
+}
+
+.banner-top {
+    margin: 0;
+    background-color: #CFE5FF;
+    height: 540px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner-top .content {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-top .content .text {
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 700;
+    color: #374151;
+    padding-bottom: 60px;
+}
+
+.banner-top .content .text .btn-l {
+    background-color: var(--blue-color);
+    color: #fff;
+}
+
+.banner-top .content img {
+    width: 746px;
+}
+
+.banner-top .content .text p {
+    margin-bottom: 32px;
+}
+
+.main-section {
+    margin: 0;
+    padding: 138px 0;
+}
+
+main .main-section:last-child {
+    margin-bottom: 138px;
+}
+
+.main-section .content {
+    margin: 0 auto;
+    width: 988px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FCFCFC;
+}
+
+.main-section .content img {
+    width: 579px;
+}
+
+.main-section .content .right {
+    text-align: right;
+}
+
+.main-section .content .text .sub-s {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #3692ff;
+    margin-bottom: 12px;
+}
+
+.main-section .content .text .sub-l {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 140%;
+    color: #374151;
+    margin-bottom: 24px;
+}
+
+.main-section .content .text .ex {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #374151;
+}
+
+footer {
+    width: 100%;
+    padding-top: 32px;
+    background-color: #111827;
+    height: 160px;
+}
+
+footer .content {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+footer .content .sign {
+    color: #9CA3AF;
+}
+
+footer .content .notice span a{
+    color: #fff;
+}
+
+footer .content .notice span:first-child {
+    margin-right: 30px;
+}
+
+footer .content .sns {
+    width: 20px;
+    margin-left: 12px;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 12px;
+}
+
+/* 로그인 페이지, 회원가입 페이지 (login.html, signup.html) */
+
+.container {
+    margin: 230px auto;
+    width: 640px;
+    background-color: #fff;
+}
+
+.box-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.box-header img {
+    margin: 0 auto;
+    width: 396px;
+}
+
+section.form {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+section.form .form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+section.form .form-list .tit {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #1f2937;
+}
+
+section.form .form-list input {
+    width: 100%;
+    padding-left: 24px;
+    height: 56px;
+    border-radius: 12px;
+    background-color: var(--gray100-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1f2937;
+    border: none;
+}
+
+section.form .form-list .password {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+section.form .form-list .vs {
+    position: absolute;
+    right: 24px;
+    border: none;
+    background: none;
+}
+
+section.form .btn-l {
+    background-color: var(--blue-color);
+    color: #fff;
+}
+
+section.form .sns-login {
+    background-color: #E6F2FF;
+    border-radius: 8px;
+    padding: 16px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.form .sns-login .txt {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #1F2937;
+}
+
+section.form .sns-login .sns-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+section.form .sns-login .sns-btn img {
+    width: 42px;
+}
+
+.box-footer {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.box-footer p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #1F2937;
+}
+
+.box-footer a {
+    color: var(--blue-color);
+    text-decoration: underline solid var(--blue-color);
+}
