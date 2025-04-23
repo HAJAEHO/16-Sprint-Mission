@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>로그인 - 판다마켓</title>
+    <title>회원가입 - 판다마켓</title>
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/common.css" />
     <link rel="stylesheet" href="./style/login.css" />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -39,6 +40,17 @@
             />
           </div>
           <div class="input-box">
+            <label class="input-title" for="nickname">닉네임</label>
+            <input
+              type="text"
+              name="nickname"
+              id="nickname"
+              required
+              aria-required="true"
+              placeholder="판다"
+            />
+          </div>
+          <div class="input-box">
             <label class="input-title" for="password">비밀번호</label>
             <input
               type="password"
@@ -55,10 +67,29 @@
               alt="패스워드 이미지"
             />
           </div>
+          <div class="input-box">
+            <label class="input-title" for="password-check"
+              >비밀번호 확인</label
+            >
+            <input
+              type="text"
+              name="password-check"
+              id="password-check"
+              required
+              aria-required="true"
+            />
+            <img
+              class="img-password"
+              width="20px"
+              height="14px"
+              src="images/Icon_pwopen.png"
+              alt="패스워드 이미지"
+            />
+          </div>
         </form>
         <section class="login-button">
-          <button class="long-btn login" onclick="location.href='/login.html'">
-            로그인
+          <button class="long-btn login" onclick="location.href='/signup.html'">
+            회원가입
           </button>
         </section>
         <section class="simple-login">
@@ -88,8 +119,8 @@
         </section>
         <section class="login-signup">
           <div class="signup-text">
-            판다마켓이 처음이신가요?
-            <a class="signup-link" href="/signup.html">회원가입</a>
+            이미 회원이신가요?
+            <a class="signup-link" href="/login.html">로그인</a>
           </div>
         </section>
       </div>
