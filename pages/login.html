@@ -1,0 +1,88 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 - 판다마켓</title>
+    <link rel="stylesheet" href="/styles/reset.css" />
+    <link rel="stylesheet" href="/styles/variables.css" />
+    <link rel="stylesheet" href="/styles/common.css" />
+    <link rel="stylesheet" href="/styles/components/button.css" />
+    <link rel="stylesheet" href="/styles/components/form-field.css" />
+    <link rel="stylesheet" href="/styles/components/social-login.css" />
+
+    <link rel="stylesheet" href="/styles/pages/login.css" />
+  </head>
+  <body>
+    <main class="login">
+      <div class="login__container">
+        <a href="/index.html" aria-label="홈페이지로 이동">
+          <img
+            class="login__img"
+            src="/assets/logo/logo_lg.png"
+            alt="판다마켓 로고 이미지"
+          />
+        </a>
+        <form class="login__form" action="/login" method="post">
+          <div class="form-field">
+            <label for="email" class="form-field__label">이메일</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-field__input"
+              placeholder="codeit@example.com"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="password" class="form-field__label">비밀번호</label>
+            <div class="form-field__group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-field__input"
+                placeholder="********"
+                required
+              />
+              <button
+                type="button"
+                class="form-field__toggle-password pointer"
+                aria-label="비밀번호 표시/숨기기"
+              ></button>
+            </div>
+          </div>
+          <button type="submit" class="button pointer">로그인</button>
+          <div class="social-login">
+            <p class="social-login__label">간편 로그인하기</p>
+            <div class="social-login__icon-group">
+              <a href="" aria-label="구글 로그인">
+                <img
+                  class="social-login__icon-img pointer"
+                  src="/assets/icon/ic_google.png"
+                  alt="구글"
+                />
+              </a>
+              <a href="" aria-label="카카오톡 로그인">
+                <img
+                  class="social-login__icon-img pointer"
+                  src="/assets/icon/ic__kakao.png"
+                  alt="카카오톡"
+                />
+              </a>
+            </div>
+          </div>
+          <p class="login__signup">
+            판다마켓이 처음이신가요?
+            <a
+              href="/pages/signup.html"
+              class="login__signup-link pointer"
+              aria-label="회원가입으로 이동"
+              >회원가입</a
+            >
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

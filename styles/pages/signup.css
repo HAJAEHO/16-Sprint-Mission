@@ -1,0 +1,30 @@
+.signup {
+  display: flex;
+  justify-content: center;
+}
+.signup__container {
+  margin-top: var(--container-top-margin);
+  max-width: var(--auth-container-max-width);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-md);
+  width: 100%;
+}
+.signup__login {
+  font-size: 14px;
+  color: var(--secondary-800);
+  text-align: center;
+  font-weight: 500;
+}
+.signup__login-link {
+  color: var(--primary-100);
+  text-decoration: underline;
+}
