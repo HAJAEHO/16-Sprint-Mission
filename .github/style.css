@@ -16,7 +16,6 @@ body {
         margin: auto;
     }
     .describe_home_top_container {
-  
         display: flex;
         justify-content: center;
         align-items: center;
@@ -38,7 +37,6 @@ body {
         
         margin-left: 200px;
         margin-right: 200px;
-
     }
 }
 
@@ -47,7 +45,6 @@ body {
     justify-content: center;
     width: 100%;
     background: #CFE5FF;
-
 }
 
 
@@ -78,14 +75,11 @@ body {
 
 .items_button {
     width: 80%;
-
-
 }
 
 
 .image_home_top {
     width: 55%;
-    
 }
 
 .features_container {
@@ -134,7 +128,6 @@ body {
     justify-content: center;
     width: 100%;
     margin: 0 auto;
-    
   }
 
   .bottom_features {
