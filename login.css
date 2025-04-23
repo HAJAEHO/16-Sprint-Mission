@@ -1,0 +1,81 @@
+body {
+  background-color: #ffffff;
+  color: #374151;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 231px auto;
+  width: 640px;
+}
+
+.form-container-logo {
+  width: 369px;
+  height: 132px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  margin-top: 48px;
+}
+
+.form-content-label {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.form-content-input {
+  background-color: var(--color-gray100);
+  border: none;
+  border-radius: 12px;
+  height: 56px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.visibility-icon {
+  position: absolute;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 23px;
+  background-color: #e6f2ff;
+  border-radius: 8px;
+  margin: 24px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+a {
+  color: var(--color-blue)
+}
