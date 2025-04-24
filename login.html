@@ -8,6 +8,12 @@
     <link rel="icon" href="/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet" />
     <title>판다마켓</title>
+    <meta property="og:title" content="판다 마켓" />
+    <meta property="og:description" content="일상의 모든 물건을 거래해보세요" />
+    <meta property="og:url" content="https://www.kakaocorp.com/page/" />
+    <meta property="og:image" content="../images/mataimg_example.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="판다 마켓" />
   </head>
   <body class="page-wrapper">
     <main>
@@ -18,12 +24,12 @@
         </a>
       </header>
       <section>
-        <form class="form-wrap" autocomplete="on">
+        <form class="form-wrap" action="../items.html" autocomplete="on">
           <label for="email">이메일</label>
           <input type="email" id="email" name="email" autocomplete="email" placeholder="codeit@email.com" />
           <label for="password">비밀번호</label>
           <div class="password-wrap">
-            <input type="password" id="password" name="password" autocomplete="current-password"/>
+            <input type="password" id="password" name="password" autocomplete="current-password" />
             <button type="button" class="btn_visibility" aria-label="비밀번호 표시" aria-pressed="false">
               <img src="../images/btn_visibility_off.png" width="24px" height="24px" alt="btn_visibility_off_icon" />
             </button>
@@ -46,5 +52,6 @@
         </footer>
       </section>
     </main>
+    <script src="login.js"></script>
   </body>
 </html>
