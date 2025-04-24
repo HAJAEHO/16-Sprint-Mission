@@ -97,7 +97,7 @@
   color: var(--color-primary);
 }
 
-@media all and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .login-box {
     margin-top: 25px;
   }
